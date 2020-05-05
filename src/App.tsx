@@ -36,7 +36,9 @@ function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {me}
-            <SiteList/>
+            <div className="od-controls">
+                <SiteList/>
+            </div>
         </Map>
     </div>
 }

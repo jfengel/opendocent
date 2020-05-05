@@ -16,3 +16,12 @@ html, body {
 .App {
   height: 100%;
 }
+
+.od-controls {
+  z-index: 1000;
+  position: absolute;
+  right: 0;
+  height: 90%;
+  width: 20em;
+  background-color: white;
+}
