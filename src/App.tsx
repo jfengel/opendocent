@@ -6,6 +6,10 @@ import './App.css';
 
 // @ts-ignore
 import tj from "@mapbox/togeojson";
+import {AppBar} from "@material-ui/core";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const MAX_ZOOM = 18;
 
@@ -42,7 +46,21 @@ function App() {
 
     const me = position &&
         <CircleMarker center={{lat: position[0], lng: position[1]}} radius={5}/>
+
     return <div className='App'>
+        <AppBar style={{position:'unset'}}>
+            <Toolbar>
+                <IconButton
+                    edge="start"
+                    color="inherit"
+                    aria-label="open drawer"
+                >
+                    <MenuIcon />
+                </IconButton>
+                <img src='/OpenDocent.svg' height={40} alt='OpenDocent logo'/>
+                OpenDocent
+            </Toolbar>
+        </AppBar>
         <Map viewport={vp} onViewportChanged={setViewport}>
             <TileLayer
                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'

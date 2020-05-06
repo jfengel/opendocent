@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mapbox/togeojson": "^0.16.0",
+    "@material-ui/core": "*",
+    "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -12,12 +15,11 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-leaflet": "^2.5.1",
     "leaflet": "*",
+    "mapbox": "*",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.6.3",
     "react-scripts": "3.4.1",
-    "mapbox" : "*",
-    "@mapbox/togeojson": "^0.16.0",
     "typescript": "~3.7.2"
   },
   "scripts": {
