@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Map, TileLayer, CircleMarker} from 'react-leaflet'
+import {Map, TileLayer, CircleMarker, Marker, Popup} from 'react-leaflet'
 
 import SiteList from "./components/SiteList";
 import './App.css';
@@ -10,6 +10,7 @@ import {AppBar} from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
+import {FeatureCollection, Feature, Point} from "geojson";
 
 const MAX_ZOOM = 18;
 
@@ -26,6 +27,7 @@ function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [init, setInit] = useState(false);
+    const [currentFeature, setCurrentFeature] = useState();
 
     if (navigator.geolocation && !init) {
         setInit(true);
@@ -45,6 +47,26 @@ function App() {
 
     const me = position &&
         <CircleMarker center={{lat: position[0], lng: position[1]}} radius={5}/>
+
+    const tour : FeatureCollection = unesco;
+    const siteMarkers = tour && tour.features && tour.features
+        .filter(feature => feature.geometry)
+        .map((feature, i) =>
+            <Marker key={i} position={{
+                lat: (feature.geometry as Point).coordinates[1],
+                lng: (feature.geometry as Point).coordinates[0]}}>
+                <Popup>
+                    {feature.properties && feature.properties.name}
+                    {JSON.stringify(feature)}
+                </Popup>
+            </Marker>
+    )
+    const goto = (feature : Feature) => {
+        console.info('Go to feature', feature);
+        const coordinates = (feature.geometry as Point).coordinates;
+        setCurrentFeature(feature);
+        setViewport({center : {lat : coordinates[1], lng: coordinates[0]}, zoom: MAX_ZOOM});
+    }
 
     return <div className='App'>
         <AppBar style={{position:'unset'}}>
@@ -66,8 +88,9 @@ function App() {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             {me}
+            {siteMarkers}
             <div className="od-controls">
-                <SiteList tour={unesco}/>
+                <SiteList current={currentFeature} tour={tour} onClick={goto}/>
             </div>
         </Map>
     </div>
