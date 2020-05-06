@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+
+  <Document>
+	  <Style id="GeoToursKMLStyle">
+		<IconStyle>
+		  <Icon>
+		    <href>http://www.geovative.com/GeoTours/images/kmlIcon.png</href>
+		  </Icon>
+		</IconStyle>
+	  </Style>
+
+<Placemark>
+<name>
+	<![CDATA[
+City Center Salsburg
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/784<br>Salzburg has managed to preserve an extraordinarily rich urban fabric, developed over the period from the Middle Ages to the 19th century when it was a city-state ruled by a prince-archbishop. Its Flamboyant Gothic art attracted many craftsmen and artists before the city became even better known through the work of the Italian architects Vincenzo Scamozzi and Santini Solari, to whom the centre of Salzburg owes much of its Baroque appearance. This meeting-point of northern and southern Europe perhaps sparked the genius of Salzburg's most famous son, Wolfgang Amadeus Mozart, whose name has been associated with the city ever since.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>13.043333,47.800556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Schonbrunn Palace
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/786<br>From the 18th century to 1918, Schönbrunn was the residence of the Habsburg emperors. It was designed by the architects Johann Bernhard Fischer von Erlach and Nicolaus Pacassi and is full of outstanding examples of decorative art. Together with its gardens, the site of the world's first zoo in 1752, it is a remarkable Baroque ensemble and a perfect example of Gesamtkunstwerk.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.31268,48.186676,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Hallstatt-Dachenstein Salzkammergut
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/806<br>Human activity in the magnificent natural landscape of the Salzkammergut began in prehistoric times, with the salt deposits being exploited as early as the 2nd millennium B.C. This resource formed the basis of the area's prosperity up to the middle of the 20th century, a prosperity that is reflected in the fine architecture of the town of Hallstatt.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>13.645835,47.554837,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Semmering Railway
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/785<br>The Semmering Railway, built over 41 km of high mountains between 1848 and 1854, is one of the greatest feats of civil engineering from this pioneering phase of railway building. The high standard of the tunnels, viaducts and other works has ensured the continuous use of the line up to the present day. It runs through a spectacular mountain landscape and there are many fine buildings designed for leisure activities along the way, built when the area was opened up due to the advent of the railway.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.824389,47.650414,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Graz Historic Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/931<br>Graz is a particularly fine example of a central European urban complex whichexperienced many centuries of Habsburg rule. The old city is a harmonious blend of the architectural styles and artistic movements that have succeeded each other since the Middle Ages, together with cultural influences from the neighbouring regions.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.43474,47.075894,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Wachu Cultural Landscape
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/970<br>The Wachau is a stretch of the Danube Valley between Melk and Krems, a landscape of high visual quality. It preserves in an intact and visible form many traces - in terms of architecture, (monasteries, castles, ruins), urban design, (towns and villages), and agricultural use, principally for the cultivation of vines - of its evolution since prehistoric times.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.434167,48.364444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Ferto/Neusiedlersee Cultural Landscape
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/772<br>The Fertö/Neusiedler Lake area has been the meeting place of different cultures for eight millennia. This is graphically demonstrated by its varied landscape, the result of an evolutionary symbiosis between human activity and the physical environment. The remarkable rural architecture of the villages surrounding the lake and several 18th- and 19th-century palaces adds to the area's considerable cultural interest.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.913452,47.694974,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Vienna Historic Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/1033<br>Vienna developed from early Celtic and Roman settlements into a Medieval and Baroque city, the capital of the Austro-Hungarian Empire. It played an essential role as a leading European music centre, from the great age of Viennese Classicism through the early part of the 20th century. The historic centre of Vienna is rich in architectural ensembles, including Baroque castles and gardens, as well as the late-19th-century Ringstrasse lined with grand buildings, monuments and parks.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.371346,48.208173,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Cesky Krumlov Historic Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/617<br>Situated on the banks of the Vltava river, the town was built around a 13th-century castle with Gothic, Renaissance and Baroque elements. It is an outstanding example of a small central European medieval town whose architectural heritage has remained intact thanks to its peaceful evolution over more than five centuries.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>14.314327,48.81082,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Prague Hisgtoric Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/616<br>Built between the 11th and 18th centuries, the Old Town, the Lesser Town and the New Town speak of the great architectural and cultural influence enjoyed by this city since the Middle Ages. The many magnificent monuments, such as Hradcani Castle, St Vitus Cathedral, Charles Bridge and numerous churches and palaces, built mostly in the 14th century under the Holy Roman Emperor, Charles IV.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>14.421192,50.087719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Telc Historic Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/621<br>The houses in Telc, which stands on a hilltop, were originally built of wood. After a fire in the late 14th century, the town was rebuilt in stone, surrounded by walls and further strengthened by a network of artificial ponds. The town's Gothic castle was reconstructed in High Gothic style in the late 15th century.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.45477,49.183779,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Plgrimage Church of St. John
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/690<br>Location is a bit of a guess, but in the vicinity.<br>This pilgrimage church, built in honour of St John of Nepomuk, stands at Zelena Hora, not far from Zdar nad Sazavou in Moravia. Constructed at the beginning of the 18th century on a star-shaped plan, it is the most unusual work by the great architect Jan Blazej Santini, whose highly original style falls between neo-Gothic and Baroque.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.94202,49.580111,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Kutna Hora Historic Center
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/732<br>Kutná Hora developed as a result of the exploitation of the silver mines. In the 14th century it became a royal city endowed with monuments that symbolized its prosperity. The Church of St Barbara, a jewel of the late Gothic period, and the Cathedral of Our Lady at Sedlec, which was restored in line with the Baroque taste of the early 18th century, were to influence the architecture of central Europe. These masterpieces today form part of a well-preserved medieval urban fabric with some particularly fine private dwellings.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.269129,49.949397,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Lednice-Valtice Cultural Landscape
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/763<br>Between the 17th and 20th centuries, the ruling dukes of Liechtenstein transformed their domains in southern Moravia into a striking landscape. It married Baroque architecture (mainly the work of Johann Bernhard Fischer von Erlach) and the classical and neo-Gothic style of the castles of Lednice and Valtice with countryside fashioned according to English romantic principles of landscape architecture. At 200 sq. km, it is one of the largest artificial landscapes in Europe
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.775,48.775828,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Kromeriz Castle
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/860<br>Krom??íž stands on the site of an earlier ford across the River Morava, at the foot of the Chriby mountain range which dominates the central part of Moravia. The gardens and castle of Krom??íž are an exceptionally complete and well-preserved example of a European Baroque princely residence and its gardens.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>17.377222,49.3,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Holasovice Historical Village
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/861<br>Holašovice is an exceptionally complete and well-preserved example of a traditional central European village. It has a large number of outstanding 18th- and 19th-century vernacular buildings in a style known as 'South Bohemian folk Baroque', and preserves a ground plan dating from the Middle Ages.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>14.252778,48.959722,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Litomysl Castle
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/901<br>Litomyšl Castle was originally a Renaissance arcade-castle of the type first developed in Italy and then adopted and greatly developed in central Europe in the 16th century. Its design and decoration are particularly fine, including the later High-Baroque features added in the 18th century. It preserves intact the range of ancillary buildings associated with an aristocratic residence of this type.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.314444,49.873611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Holy Trinity Column Olomouc
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/859<br>This memorial column, erected in the early years of the 18th century, is the most outstanding example of a type of monument specific to central Europe. In the characteristic regional style known as Olomouc Baroque and rising to a height of 35 m, it is decorated with many fine religious sculptures, the work of the distinguished Moravian artist Ondrej Zahner.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>17.250617,49.59398,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Tugendhat Villa Brno
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/1052<br>The Tugendhat Villa in Brno, designed by the architect Mies van der Rohe, is an outstanding example of the international style in the modern movement in architecture as it developed in Europe in the 1920s. Its particular value lies in the application of innovative spatial and aesthetic concepts that aim to satisfy new lifestyle needs by taking advantage of the opportunities afforded by modern industrial production<br><br>Book in advance
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.6175,49.202611,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Jewish Quarter & St. Procopius
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/1078<br>The ensemble of the Jewish Quarter, the old Jewish cemetery and the Basilica of St Procopius in Trebíc are reminders of the co-existence of Jewish and Christian cultures from the Middle Ages to the 20th century. The Jewish Quarter bears outstanding testimony to the different aspects of the life of this community. St Procopius Basilica, built as part of the Benedictine monastery in the early 13th century, is a remarkable example of the influence of Western European architectural heritage in this region.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.878889,49.217222,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Banska Stivnica & Monuments
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/618<br>Over the centuries, the town of Banska Stiavnica was visited by many outstanding engineers and scientists, many of whom contributed to its fame. The old medieval mining centre grew into a town with Renaissance palaces, 16th-century churches, elegant squares and castles. The urban centre blends into the surrounding landscape, which contains vital relics of the mining and metallurgical activities of the past.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>18.901548,48.464328,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Spissky Hrad & Monuments
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/620<br>Spissky Hrad has one of the largest ensembles of 13th- and 14th-century military, political and religious buildings in eastern Europe, and its Romanesque and Gothic architecture has remained remarkably intact
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>20.768366,49.00297,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Vlkolinec settlement
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/622<br>Vlkolínec, situated in the centre of Slovakia, is a remarkably intact settlement of 45 buildings with the traditional features of a central European village. It is the region's most complete group of these kinds of traditional log houses, often found in mountainous areas.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>19.283333,49.033333,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Aggtelek & Slovak Karst Caves
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/725<br>The variety of formations and the fact that they are concentrated in a restricted area means that the 712 caves currently identified make up a typical temperate-zone <br>karstic system. Because they display an extremely rare combination of tropical and glacial climatic effects, they make it possible to study geological history over tens of millions of years.  Area of caves is very large.  As far north as Poland.  UNESCO lat/long seems to be boarder crossing between the Czech and Hungarian parks.  Location in this tour is Combasecka jaskyna cave in Czech Republic.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>20.460405,48.572178,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Bardejov Town
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/973<br>Bardejov is a small but exceptionally complete and well-preserved example of a fortified medieval town, which typifies the urbanisation in this region. Among other remarkable features, it also contains a small Jewish quarter around a fine 18th-century synagogue.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>21.276398,49.291742,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Beech Forests of the Carpathians
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+whc.unesco.org/en/list/1133<br>The Primeval Beech Forests of the Carpathian constitute a transnational serial property of ten separate components along a 185 km axis from the Rakhiv Mountains and the Chornohirskyi Range in Ukraine, west along the Polonynian Ridge, to the Bukovské Vrchy and Vihorlat Mountains in Slovakia. The ten sites represent an outstanding example of undisturbed, complex temperate forests and exhibit the most complete and comprehensive ecological patterns and processes of pure stands of European beech across a variety of environmental conditions. They contain an invaluable genetic reservoir of beech and many species associated with, and dependent on, these forest habitats. They also represent an outstanding example of the re-colonization and development of terrestrial ecosystems and communities after the last ice age, a process which is still ongoing.  Another very large site.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>22.536111,49.869444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Speyer Cathedral
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Speyer Cathedral, a basilica with four towers and two domes, was founded by Conrad II in 1030 and remodelled at the end of the 11th century. It is one of the most important Romanesque monuments from the time of the Holy Roman Empire. The cathedral was the burial place of the German emperors for almost 300 years.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>8.441577,49.317122,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Speyer Cathedral
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Speyer Cathedral, a basilica with four towers and two domes, was founded by Conrad II in 1030 and remodelled at the end of the 11th century. It is one of the most important Romanesque monuments from the time of the Holy Roman Empire. The cathedral was the burial place of the German emperors for almost 300 years.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>8.441577,49.317122,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Wurzburg Residence & Gardens
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+This magnificent Baroque palace – one of the largest and most beautiful in Germany and surrounded by wonderful gardens – was created under the patronage of the prince-bishops Lothar Franz and Friedrich Carl von Schönborn. It was built and decorated in the 18th century by an international team of architects, painters (including Tiepolo), sculptors and stucco-workers, led by Balthasar Neumann.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>9.938889,49.792778,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Pilgrimage Church of Wies
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Miraculously preserved in the beautiful setting of an Alpine valley, the Church of Wies (1745–54), the work of architect Dominikus Zimmermann, is a masterpiece of Bavarian Rococo – exuberant, colourful and joyful.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>10.900139,47.681278,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Upper German Raetian Lines
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The site consists of remains of the south-east Germany border line of the Roman Empire at its greatest extent in the 2nd century A.D., part of what is known as the "Roman Limes". All together, the Limes stretched over 5,000kms from the Atlantic coast of northern Britain, through Europe to the Black Sea, and from there to the Red Sea and across North Africa to the Atlantic coast. Vestiges in this site include remains of the ramparts, walls and ditches, watchtowers, forts, and civilian settlements, which accommodated tradesmen, craftsmen and others who
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>12.035833,47.7175,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Town of Bamberg
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+From the 10th century onwards, this town became an important link with the Slav peoples, especially those of Poland and Pomerania. During its period of greatest prosperity, from the 12th century onwards, the architecture of Bamberg strongly influenced northern Germany and Hungary. In the late 18th century it was the centre of the Enlightenment in southern Germany, with eminent philosophers and writers such as Hegel and Hoffmann living there.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>10.888889,49.891667,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Old Town of Regensburg with Stadamhof
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Located on the Danube river in Bavaria, this medieval town contains many buildings of exceptional quality that testify to its history as a trading centre and to its influence on the region as of the 9th century. It has preserved a notable number of historic structures spanning some two millennia, including ancient Roman, Romanesque and Gothic buildings. Regensburg's 11th - 13th -century architecture – including the market, City Hall and Cathedral, still defines the character of the town marked by tall buildings, dark, narrow lanes, and strong fortifications. The buildings include medieval Patrician houses and towers, a large number of churches and monastic ensembles as well as the Old Bridge, which dates from the 12th century. The town is also remarkable for the vestiges that testify to its rich institutional and religious history as one of the centres of the Holy Roman Empire that turned to Protestantism.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>12.097222,49.020278,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Skocjan Caves
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+WARNING:  Coordinates are a bit of a guess.  Basically the biggest parking lot in the approximate location.<br><br>This exceptional system of limestone caves comprises collapsed dolines, some 6 km of underground passages with a total depth of more than 200 m, many waterfalls and one of the largest known underground chambers. The site, located in the Kras region (literally meaning Karst), is one of the most famous in the world for the study of karstic phenomena.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>13.988943,45.662958,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Historical Complex of Aplit with the Palace of Dio
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The ruins of Diocletian's Palace, built between the late 3rd and the early 4th centuries A.D., can be found throughout the city. The cathedral was built in the Middle Ages, reusing materials from the ancient mausoleum. Twelfth- and 13th-century Romanesque churches, medieval fortifications, 15th-century Gothic palaces and other palaces in Renaissance and Baroque style make up the rest of the protected area.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.443333,43.509444,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Old City of Dubrovnik
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The 'Pearl of the Adriatic', situated on the Dalmatian coast, became an important Mediterranean sea power from the 13th century onwards. Although severely damaged by an earthquake in 1667, Dubrovnik managed to preserve its beautiful Gothic, Renaissance and Baroque churches, monasteries, palaces and fountains. Damaged again in the 1990s by armed conflict, it is now the focus of a major restoration programme co-ordinated by UNESCO.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>18.091389,42.650556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Plitvice Lakes National Park
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The waters flowing over the limestone and chalk have, over thousands of years, deposited travertine barriers, creating natural dams which in turn have created a series of beautiful lakes, caves and waterfalls. These geological processes continue today. The forests in the park are home to bears, wolves and many rare bird species.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.622988,44.882908,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Episcopal Complex of the Euphrasian Basilica in th
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The group of religious monuments in Porec, where Christianity was established as early as the 4th century, constitutes the most complete surviving complex of its type. The basilica, atrium, baptistery and episcopal palace are outstanding examples of religious architecture, while the basilica itself combines classical and Byzantine elements in an exceptional manner.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>13.593408,45.228704,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Historic City of Trogir
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Trogir is a remarkable example of urban continuity. The orthogonal street plan of this island settlement dates back to the Hellenistic period and it was embellished by successive rulers with many fine public and domestic buildings and fortifications. Its beautiful Romanesque churches are complemented by the outstanding Renaissance and Baroque buildings from the Venetian period.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>16.250646,43.517692,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+The Cathedral of St James in Šibenik
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The Cathedral of St James in Šibenik (1431-1535), on the Dalmatian coast, bears witness to the considerable exchanges in the field of monumental arts between Northern Italy, Dalmatia and Tuscany in the 15th and 16th centuries. The three architects who succeeded one another in the construction of the Cathedral - Francesco di Giacomo, Georgius Mathei Dalmaticus and Niccolò di Giovanni Fiorentino - developed a structure built entirely from stone and using unique construction techniques for the vaulting and the dome of the Cathedral. The form and the decorative elements of the Cathedral, such as a remarkable frieze decorated with 71 sculptured faces of men, women, and children, also illustrate the successful fusion of Gothic and Renaissance art.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>15.890378,43.736289,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Budapest, including the Banks of the Danube, the B
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+This site has the remains of monuments such as the Roman city of Aquincum and the Gothic castle of Buda, which have had a considerable influence on the architecture of various periods. It is one of the world's outstanding urban landscapes and illustrates the great periods in the history of the Hungarian capital.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>19.059906,47.486556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Old Village of Hollókö and its Surroundings
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Hollokö is an outstanding example of a deliberately preserved traditional settlement. This village, which developed mainly during the 17th and 18th centuries, is a living example of rural life before the agricultural revolution of the 20th century.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>19.590769,47.997274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Old Village of Hollókö and its Surroundings
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+Hollokö is an outstanding example of a deliberately preserved traditional settlement. This village, which developed mainly during the 17th and 18th centuries, is a living example of rural life before the agricultural revolution of the 20th century.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>19.590769,47.997274,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Millenary Benedictine Abbey of Pannonhalma and its
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The first Benedictine monks settled here in 996. They went on to convert the Hungarians, to found the country's first school and, in 1055, to write the first document in Hungarian. From the time of its founding, this monastic community has promoted culture throughout central Europe. Its 1,000-year history can be seen in the succession of architectural styles of the monastic buildings (the oldest dating from 1224), which still today house a school and the monastic community.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>17.759485,47.55336,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Hortobágy National Park - the Puszta
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The cultural landscape of the Hortobágy Puszta consists of a vast area of plains and wetlands in eastern Hungary. Traditional forms of land use, such as the grazing of domestic animals, have been present in this pastoral society for more than two millennia.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>21.147652,47.581621,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Hortobágy National Park - the Puszta
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The cultural landscape of the Hortobágy Puszta consists of a vast area of plains and wetlands in eastern Hungary. Traditional forms of land use, such as the grazing of domestic animals, have been present in this pastoral society for more than two millennia.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>21.147652,47.581621,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Hortobágy National Park - the Puszta
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The cultural landscape of the Hortobágy Puszta consists of a vast area of plains and wetlands in eastern Hungary. Traditional forms of land use, such as the grazing of domestic animals, have been present in this pastoral society for more than two millennia.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>21.147652,47.581621,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Early Christian Necropolis of Pécs (Sopianae)
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+n the 4th century, a remarkable series of decorated tombs were constructed in the cemetery of the Roman provincial town of Sopianae (modern Pécs). These are important both structurally and architecturally, since they were built as underground burial chambers with memorial chapels above the ground. The tombs are important also in artistic terms, since they are richly decorated with murals of outstanding quality depicting Christian themes.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>18.223486,46.07719,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>
+	<![CDATA[
+Tokaj Wine Region Historic Cultural Landscape
+	]]>
+</name>
+<styleUrl>#GeoToursKMLStyle</styleUrl>
+<description>
+<![CDATA[
+<table>
+<tr>
+<td align="left" valign="top">
+</td>
+<td valign="top" align="left">
+The cultural landscape of Tokaj graphically demonstrates the long tradition of wine production in this region of low hills and river valleys. The intricate pattern of vineyards, farms, villages and small towns, with their historic networks of deep wine cellars, illustrates every facet of the production of the famous Tokaj wines, the quality and management of which have been strictly regulated for nearly three centuries.
+</td>
+</tr>
+</table>
+<br><b>View the full tour <a target=_blank href="http://www.geovative.com/view?t=EFEM">here</a>.</b><br><br>
+]]>
+</description>
+<Point>
+<coordinates>21.412182,48.121356,0</coordinates>
+</Point>
+</Placemark>
+ </Document>
+</kml>

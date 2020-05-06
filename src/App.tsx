@@ -4,7 +4,20 @@ import {Map, TileLayer, CircleMarker} from 'react-leaflet'
 import SiteList from "./components/SiteList";
 import './App.css';
 
+// @ts-ignore
+import tj from "@mapbox/togeojson";
+
 const MAX_ZOOM = 18;
+
+let unesco: any;
+
+fetch("/tours/UNESCO_WORLD_HERITAGE_SITES.kml")
+    .then(async response => {
+        const text = await response.text();
+        const kml = new DOMParser().parseFromString(text, "text/xml");
+        unesco = tj.kml(kml, { styles: true });
+        console.info('unesco', unesco);
+    })
 
 function App() {
     const [viewport, setViewport] = useState();
@@ -37,7 +50,7 @@ function App() {
             />
             {me}
             <div className="od-controls">
-                <SiteList/>
+                <SiteList tour={unesco}/>
             </div>
         </Map>
     </div>
