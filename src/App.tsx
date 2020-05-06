@@ -20,7 +20,6 @@ fetch("/tours/UNESCO_WORLD_HERITAGE_SITES.kml")
         const text = await response.text();
         const kml = new DOMParser().parseFromString(text, "text/xml");
         unesco = tj.kml(kml, { styles: true });
-        console.info('unesco', unesco);
     })
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
                 >
                     <MenuIcon />
                 </IconButton>
-                <img src='/OpenDocent.svg' height={40} alt='OpenDocent logo'/>
+                <img src={'/OpenDocent.svg'} height={40} title='OpenDocent' alt='OpenDocent logo'/>
                 OpenDocent
             </Toolbar>
         </AppBar>
