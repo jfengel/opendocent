@@ -2,6 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.1">
 
   <Document>
+	  <name>Somebody's list of UNESCO sites</name>
 	  <Style id="GeoToursKMLStyle">
 		<IconStyle>
 		  <Icon>

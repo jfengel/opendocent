@@ -22,8 +22,9 @@ export default function SiteList({tour, current, onClick}:
             </div>
     }
 
+    const name = tour && (tour as any).name;
     return <div>
-        <h1>Places</h1>
+        <h3>{name || "Places"}</h3>
         {tour && tour.features && tour.features.map(displayFeature)}
     </div>
 }
