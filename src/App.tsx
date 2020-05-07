@@ -34,7 +34,9 @@ function App() {
         navigator.geolocation.watchPosition((position) => {
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
-                setPosition([latitude, longitude]);
+                if(!isNaN(longitude) && !isNaN(latitude)) {
+                    setPosition([latitude, longitude]);
+                }
             },
             function error(msg) {
                 console.error('Geolocation error', msg.message);
