@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Map, TileLayer, CircleMarker, Marker, Popup} from 'react-leaflet'
+import {Map, TileLayer, CircleMarker, Marker, Popup, AttributionControl} from 'react-leaflet'
 
 import SiteList from "./components/SiteList";
 import Description from "./components/Description";
@@ -12,7 +12,8 @@ import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import {FeatureCollection, Feature, Point} from "geojson";
-
+import Fab from "@material-ui/core/Fab";
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 const MAX_ZOOM = 18;
 
 let unesco : FeatureCollection;
@@ -72,6 +73,13 @@ function App() {
         setCurrentFeature(feature);
         setViewport({center : {lat : coordinates[1], lng: coordinates[0]}, zoom: MAX_ZOOM});
     }
+    const nextFeature = () => {
+        if(!tour || !tour.features) {
+            return;
+        }
+        const ix = currentFeature ? tour.features.indexOf(currentFeature) : -1;
+        goto(tour.features[ix+1 % tour.features.length])
+    }
 
     return <div className='App'>
         <AppBar style={{position:'unset'}}>
@@ -92,15 +100,21 @@ function App() {
                 attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
+            <AttributionControl position={'bottomleft'}/>
             {me}
             {siteMarkers}
             <div className="od-controls">
                 <SiteList current={currentFeature} tour={tour} onClick={goto}/>
             </div>
         </Map>
-        <div>
-            {currentFeature && <Description feature={currentFeature}/>}
-        </div>
+
+        <Fab color="primary" aria-label="next"
+             style={{position: 'absolute', bottom: 0, right: 15}}
+             onClick={nextFeature}>
+            <NavigateNextIcon />
+        </Fab>
+
+        {<Description feature={currentFeature}/>}
     </div>
 }
 

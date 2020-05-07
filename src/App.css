@@ -28,3 +28,8 @@ html, body {
   background-color: white;
   overflow: scroll;
 }
+
+.od-description {
+  height: 10em;
+  overflow: scroll;
+}
