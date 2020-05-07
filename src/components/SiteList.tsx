@@ -6,7 +6,7 @@ import {ButtonBase} from "@material-ui/core";
 export default function SiteList({tour, current, onClick}:
                                      {
                                          tour: FeatureCollection,
-                                         current: Feature,
+                                         current: Feature|null,
                                          onClick: any
                                      }) {
 

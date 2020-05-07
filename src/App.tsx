@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Map, TileLayer, CircleMarker, Marker, Popup} from 'react-leaflet'
 
 import SiteList from "./components/SiteList";
+import Description from "./components/Description";
 import './App.css';
 
 // @ts-ignore
@@ -27,7 +28,7 @@ function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [init, setInit] = useState(false);
-    const [currentFeature, setCurrentFeature] = useState();
+    const [currentFeature, setCurrentFeature] = useState<Feature|null>(null);
 
     if (navigator.geolocation && !init) {
         setInit(true);
@@ -95,6 +96,9 @@ function App() {
                 <SiteList current={currentFeature} tour={tour} onClick={goto}/>
             </div>
         </Map>
+        <div>
+            {currentFeature && <Description feature={currentFeature}/>}
+        </div>
     </div>
 }
 
