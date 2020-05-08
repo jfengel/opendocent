@@ -18,7 +18,7 @@ const MAX_ZOOM = 18;
 
 let unesco : FeatureCollection;
 
-fetch("/tours/UNESCO_WORLD_HERITAGE_SITES.kml")
+fetch("/tours/UNESCO_World_Heritage_Sites.kml")
     .then(async response => {
         const text = await response.text();
         const kml = new DOMParser().parseFromString(text, "text/xml");
