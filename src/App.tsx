@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Map, TileLayer, CircleMarker, Marker, Popup, AttributionControl} from 'react-leaflet'
 
 import SiteList from "./components/SiteList";
@@ -16,23 +16,29 @@ import Fab from "@material-ui/core/Fab";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 const MAX_ZOOM = 18;
 
-let unesco : FeatureCollection;
-
-fetch("/tours/UNESCO_World_Heritage_Sites.kml")
-    .then(async response => {
-        const text = await response.text();
-        const kml = new DOMParser().parseFromString(text, "text/xml");
-        unesco = tj.kml(kml, { styles: true });
-        const document = kml.getElementsByTagName("Document");
-        const name = document[0] && document[0].getElementsByTagName("name")[0];
-        (unesco as any).name = name && name.textContent;
-    })
 
 function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [init, setInit] = useState(false);
     const [currentFeature, setCurrentFeature] = useState<Feature|null>(null);
+    const [tour, setTour] = useState<FeatureCollection>();
+    const [fetchingTour, setFetchingTour] = useState(false);
+
+    function fetchTour()
+    {
+        fetch("/tours/UNESCO_World_Heritage_Sites.kml")
+            .then(async response => {
+                const text = await response.text();
+                const kml = new DOMParser().parseFromString(text, "text/xml");
+                const tour = tj.kml(kml, {styles: true});
+                const document = kml.getElementsByTagName("Document");
+                const name = document[0] && document[0].getElementsByTagName("name")[0];
+                (tour as any).name = name && name.textContent;
+                setTour(tour);
+            })
+    }
+
 
     if (navigator.geolocation && !init) {
         setInit(true);
@@ -50,12 +56,19 @@ function App() {
     } else {
         // alert("Geolocation API is not supported in your browser.");
     }
+
+    useEffect(() => {
+        if(!fetchingTour) {
+            fetchTour();
+        }
+        setFetchingTour(true);
+    }, [fetchingTour])
+
     const vp = viewport || (position && {center: position, zoom: MAX_ZOOM})
 
     const me = position &&
         <CircleMarker center={{lat: position[0], lng: position[1]}} radius={5}/>
 
-    const tour = unesco;
     const siteMarkers = tour && tour.features && tour.features
         .filter(feature => feature.geometry)
         .map((feature, i) =>
@@ -104,7 +117,7 @@ function App() {
             {me}
             {siteMarkers}
             <div className="od-controls">
-                <SiteList current={currentFeature} tour={tour} onClick={goto}/>
+                {tour && <SiteList current={currentFeature} tour={tour} onClick={goto}/>}
             </div>
         </Map>
 
