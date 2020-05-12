@@ -1,0 +1,1546 @@
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+  <Document id="sm4_1PC8yM1pqKCEv7NaUPP856eIir0KJVOReMgQ2jOYWiL0_656166114">
+    <name>Iconic Bookstores</name>
+    <snippet/>
+    <StyleMap id="sef_gcs_lightbox">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#sef_gcs_lightbox_n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#sef_gcs_lightbox_h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="sef_gcs_lightbox_h">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_yellow_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div class="ef-container ef-lightbox">
+			<main class="ef-lightbox__main">
+				<div class="ef-lightbox-image" data-component="EfLightboxImage">
+					<figure class="ef-lightbox-image__figure">
+						<div class="ef-lightbox-image__img-container">
+							<div data-background-image="$[image_large]" class="ef-lightbox-image__img"></div>
+						</div>
+						<figcaption data-hide-if-empty="$[attribution_text]" class="ef-lightbox-image__caption">
+							<span data-hide-if-empty="$[captionPrefix]">$[captionPrefix]</span>
+							<a href="$[attribution_link]" data-id="image-caption-link" target="_blank" aria-label="$[lightboxImage_captionLink_ariaLabel]" role="link">$[attribution_text]</a>
+						</figcaption>
+					</figure>
+				</div>
+			</main>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfLightbox>
+			    <EfLightboxImage imageUrl="$[image_large]" captionText="$[attribution_text]" captionLink="$[attribution_link]" />
+			  </EfLightbox>
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>fullscreen</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <Style id="sef_gcs_lightbox_n">
+      <IconStyle>
+        <scale>1.3</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_yellow_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div class="ef-container ef-lightbox">
+			<main class="ef-lightbox__main">
+				<div class="ef-lightbox-image" data-component="EfLightboxImage">
+					<figure class="ef-lightbox-image__figure">
+						<div class="ef-lightbox-image__img-container">
+							<div data-background-image="$[image_large]" class="ef-lightbox-image__img"></div>
+						</div>
+						<figcaption data-hide-if-empty="$[attribution_text]" class="ef-lightbox-image__caption">
+							<span data-hide-if-empty="$[captionPrefix]">$[captionPrefix]</span>
+							<a href="$[attribution_link]" data-id="image-caption-link" target="_blank" aria-label="$[lightboxImage_captionLink_ariaLabel]" role="link">$[attribution_text]</a>
+						</figcaption>
+					</figure>
+				</div>
+			</main>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfLightbox>
+			    <EfLightboxImage imageUrl="$[image_large]" captionText="$[attribution_text]" captionLink="$[attribution_link]" />
+			  </EfLightbox>
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>fullscreen</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="sef_gcs_panel">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#sef_gcs_panel_n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#sef_gcs_panel_h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="sef_gcs_panel_h">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_pink_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div data-component="EfPanel" class="ef-container ef-panel theme-dark">
+			<main class="ef-panel__main">
+				<figure class="ef-panel-image" data-component="EfPanelImage">
+					<div class="ef-panel-image__image-container">
+						<div data-background-image="$[image_url]" class="ef-panel-image__image "></div>
+						<a data-hide-if-empty="#$[id]_ilb;balloon" href="#$[id]_ilb;balloon" data-id="image-link" aria-label="$[panelImage_link_ariaLabel]" role="link" class="ef-panel-image__link"></a>
+					</div>
+					<a data-hide-if-empty="#$[id]_ilb;balloon" href="#$[id]_ilb;balloon" data-id="image-fullscreen" aria-label="$[panelImage_zoom_ariaLabel]" role="button" class="ef-panel-image__zoom-container">
+						<span class="ef-panel-image__zoom-button mdl-button mdl-button--icon mdl-js-button">
+							<i class="material-icons">&#xE5D0;</i>
+						</span>
+					</a>
+				</figure>
+				<div class="ef-panel-header ">
+					<h1 class="ef-panel-header__title">$[name]</h1>
+					<h2 class="ef-panel-header__subtitle">$[snippet]</h2>
+					<a href="#$[id];$[flyhere_action]" data-id="fab" aria-label="$[panelFab_link_ariaLabel]" role="button" class="ef-panel-fab ef-panel-fab--flyto mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect" style="background-color: ;">
+						<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+							<path class="ef-panel-fab__icon ef-panel-fab__icon--flyto" d="M42.506 8.25c.106-.027.21-.04.312-.04.78 0 1.39.78 1.115 1.574L36.81 37.502c-.172.5-.638.802-1.125.802-.194 0-.39-.048-.576-.15L25.1 32.7l-6.967 7.028c-.68.7-2.11-.018-2.11-.993v-10.74L4.61 21.75c-.932-.52-.76-1.91.272-2.186L42.506 8.25zM19.05 27.08v7.084l21.3-22.33v-.146L19.05 27.08z" fill="#FFF" fill-rule="evenodd"></path>
+							<path class="ef-panel-fab__icon ef-panel-fab__icon--streetview" d="M24,17 C28.9705615,17 33,13.194421 33,9 C33,3.80557896 28.9705615,0 24,0 C19.029436,0 15,3.80557896 15,9 C15,13.194421 19.029436,17 24,17 Z M14,35 C13.6861635,35.4002019 13.725866,35.539573 13,36 C12.3828832,35.539573 11.341473,34.94568 11,35 C11.341473,34.94568 10.8591204,34.5896324 11,34 C11.6348205,32.2985717 14.3610537,21.9991987 15,20 C15.5607564,17.9236744 17.2540068,18.000351 17,18 L19,18 L24,27 L29,18 L31,18 C31.285115,18.000351 32.0562602,18.0770969 33,19 C33.215413,19.380836 33.3396705,20.4815199 33,20 L37,33 C36.8085563,33.33718 37.0542064,34.2387355 37,35 C36.8987063,34.8671104 36.6510838,34.94568 37,35 C36.6510838,34.94568 35.6874261,35.2038795 35,35 C34.1374882,35.67648 33.9394282,34.7609927 34,35 L31,27 L30,48 L26,48 L25,36 C24.6925235,35.8339873 24.5350735,35.539573 24,36 C23.6633458,35.539573 23.5105133,35.8339873 24,36 L22,48 L18,48 L17,27 C17.4544694,26.5101552 14.7393587,33.566825 14,35 Z" style="transform: translateX(3px)" fill="#FFFFFF"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="ef-panel-content">
+					<p>$[description]</p>
+					<a href="$[cta_link]" data-id="panel-cta-button" data-hide-if-empty="$[cta_text]" aria-label="$[panel_ctaLink_ariaLabel]" role="button" class="ef-cta-button mdl-button mdl-js-button">$[cta_text]</a>
+				</div>
+				<div class="ef-footer " data-component="EfPanelFooter">
+					<div class="ef-footer__logo-container" data-has-pagination-link="$[paginationLink]">
+						<a href="$[logoLink]" data-id="logo-link" data-hide-if-empty="$[logoImageUrl]" aria-label="$[panelFooter_logoLink_ariaLabel]" role="link">
+							<img data-src="$[logoImageUrl]" class="ef-footer__logo" />
+						</a>
+					</div>
+					<div class="ef-footer__pagination">
+						<a data-hide-if-empty="#$[previousSiblingId];$[prev_action]" href="#$[previousSiblingId];$[prev_action]" data-id="navigation-prev" role="button" aria-label="$[panelFooter_previousLink_ariaLabel]" class="ef-footer__button ef-footer__button--prev mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" style="color: ;">
+							<i class="material-icons">&#xE408;</i>
+						</a>
+						<span data-hide-if-filled="$[paginationLink]" data-hide-if-empty="$[containerIndex] / $[containerLength]" class="ef-footer__page">$[containerIndex] / $[containerLength]</span>
+						<a data-hide-if-empty="$[paginationLink]" href="$[paginationLink]" data-id="pagination-link" aria-label="$[panelFooter_paginationLink_ariaLabel]" class="ef-footer__page">$[containerIndex] / $[containerLength]</a>
+						<a data-hide-if-empty="#$[nextSiblingId];$[next_action]" href="#$[nextSiblingId];$[next_action]" data-id="navigation-next" role="button" aria-label="$[panelFooter_nextLink_ariaLabel]" class="ef-footer__button ef-footer__button--next mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" style="color: ;">
+							<i class="material-icons">&#xE409;</i>
+						</a>
+					</div>
+				</div>
+			</main>
+			<script type="x-component/x-data">
+				{''''overlayIdsToHide'''':''''$[overlayIdsToHide]'''',''''overlayIdsToShow'''':''''$[overlayIdsToShow]'''',''''overlayHideTimeout'''':0}
+			</script>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfPanel>
+			    <EfPanelImage imageUrl="$[image_url]" zoom="#$[id]_ilb;balloon" link="#$[id]_ilb;balloon" />
+			    <EfPanelHeader>
+			      <EfPanelFab link="#$[id];$[flyhere_action]" />
+			    </EfPanelHeader>
+			    <EfPanelContent>
+			      <EfPanelDescription />
+			      <EfCtaButton ctaText="$[cta_text]" ctaLink="$[cta_link]" />
+			    </EfPanelContent>
+			    <EfPanelFooter previousLink="#$[previousSiblingId];$[prev_action]" nextLink="#$[nextSiblingId];$[next_action]" />
+			  </EfPanel>
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>panel</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <Style id="sef_gcs_panel_n">
+      <IconStyle>
+        <scale>1.3</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_pink_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div data-component="EfPanel" class="ef-container ef-panel theme-dark">
+			<main class="ef-panel__main">
+				<figure class="ef-panel-image" data-component="EfPanelImage">
+					<div class="ef-panel-image__image-container">
+						<div data-background-image="$[image_url]" class="ef-panel-image__image "></div>
+						<a data-hide-if-empty="#$[id]_ilb;balloon" href="#$[id]_ilb;balloon" data-id="image-link" aria-label="$[panelImage_link_ariaLabel]" role="link" class="ef-panel-image__link"></a>
+					</div>
+					<a data-hide-if-empty="#$[id]_ilb;balloon" href="#$[id]_ilb;balloon" data-id="image-fullscreen" aria-label="$[panelImage_zoom_ariaLabel]" role="button" class="ef-panel-image__zoom-container">
+						<span class="ef-panel-image__zoom-button mdl-button mdl-button--icon mdl-js-button">
+							<i class="material-icons">&#xE5D0;</i>
+						</span>
+					</a>
+				</figure>
+				<div class="ef-panel-header ">
+					<h1 class="ef-panel-header__title">$[name]</h1>
+					<h2 class="ef-panel-header__subtitle">$[snippet]</h2>
+					<a href="#$[id];$[flyhere_action]" data-id="fab" aria-label="$[panelFab_link_ariaLabel]" role="button" class="ef-panel-fab ef-panel-fab--flyto mdl-button mdl-js-button mdl-button--fab mdl-button--colored mdl-js-ripple-effect" style="background-color: ;">
+						<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+							<path class="ef-panel-fab__icon ef-panel-fab__icon--flyto" d="M42.506 8.25c.106-.027.21-.04.312-.04.78 0 1.39.78 1.115 1.574L36.81 37.502c-.172.5-.638.802-1.125.802-.194 0-.39-.048-.576-.15L25.1 32.7l-6.967 7.028c-.68.7-2.11-.018-2.11-.993v-10.74L4.61 21.75c-.932-.52-.76-1.91.272-2.186L42.506 8.25zM19.05 27.08v7.084l21.3-22.33v-.146L19.05 27.08z" fill="#FFF" fill-rule="evenodd"></path>
+							<path class="ef-panel-fab__icon ef-panel-fab__icon--streetview" d="M24,17 C28.9705615,17 33,13.194421 33,9 C33,3.80557896 28.9705615,0 24,0 C19.029436,0 15,3.80557896 15,9 C15,13.194421 19.029436,17 24,17 Z M14,35 C13.6861635,35.4002019 13.725866,35.539573 13,36 C12.3828832,35.539573 11.341473,34.94568 11,35 C11.341473,34.94568 10.8591204,34.5896324 11,34 C11.6348205,32.2985717 14.3610537,21.9991987 15,20 C15.5607564,17.9236744 17.2540068,18.000351 17,18 L19,18 L24,27 L29,18 L31,18 C31.285115,18.000351 32.0562602,18.0770969 33,19 C33.215413,19.380836 33.3396705,20.4815199 33,20 L37,33 C36.8085563,33.33718 37.0542064,34.2387355 37,35 C36.8987063,34.8671104 36.6510838,34.94568 37,35 C36.6510838,34.94568 35.6874261,35.2038795 35,35 C34.1374882,35.67648 33.9394282,34.7609927 34,35 L31,27 L30,48 L26,48 L25,36 C24.6925235,35.8339873 24.5350735,35.539573 24,36 C23.6633458,35.539573 23.5105133,35.8339873 24,36 L22,48 L18,48 L17,27 C17.4544694,26.5101552 14.7393587,33.566825 14,35 Z" style="transform: translateX(3px)" fill="#FFFFFF"></path>
+						</svg>
+					</a>
+				</div>
+				<div class="ef-panel-content">
+					<p>$[description]</p>
+					<a href="$[cta_link]" data-id="panel-cta-button" data-hide-if-empty="$[cta_text]" aria-label="$[panel_ctaLink_ariaLabel]" role="button" class="ef-cta-button mdl-button mdl-js-button">$[cta_text]</a>
+				</div>
+				<div class="ef-footer " data-component="EfPanelFooter">
+					<div class="ef-footer__logo-container" data-has-pagination-link="$[paginationLink]">
+						<a href="$[logoLink]" data-id="logo-link" data-hide-if-empty="$[logoImageUrl]" aria-label="$[panelFooter_logoLink_ariaLabel]" role="link">
+							<img data-src="$[logoImageUrl]" class="ef-footer__logo" />
+						</a>
+					</div>
+					<div class="ef-footer__pagination">
+						<a data-hide-if-empty="#$[previousSiblingId];$[prev_action]" href="#$[previousSiblingId];$[prev_action]" data-id="navigation-prev" role="button" aria-label="$[panelFooter_previousLink_ariaLabel]" class="ef-footer__button ef-footer__button--prev mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" style="color: ;">
+							<i class="material-icons">&#xE408;</i>
+						</a>
+						<span data-hide-if-filled="$[paginationLink]" data-hide-if-empty="$[containerIndex] / $[containerLength]" class="ef-footer__page">$[containerIndex] / $[containerLength]</span>
+						<a data-hide-if-empty="$[paginationLink]" href="$[paginationLink]" data-id="pagination-link" aria-label="$[panelFooter_paginationLink_ariaLabel]" class="ef-footer__page">$[containerIndex] / $[containerLength]</a>
+						<a data-hide-if-empty="#$[nextSiblingId];$[next_action]" href="#$[nextSiblingId];$[next_action]" data-id="navigation-next" role="button" aria-label="$[panelFooter_nextLink_ariaLabel]" class="ef-footer__button ef-footer__button--next mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" style="color: ;">
+							<i class="material-icons">&#xE409;</i>
+						</a>
+					</div>
+				</div>
+			</main>
+			<script type="x-component/x-data">
+				{''''overlayIdsToHide'''':''''$[overlayIdsToHide]'''',''''overlayIdsToShow'''':''''$[overlayIdsToShow]'''',''''overlayHideTimeout'''':0}
+			</script>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfPanel>
+			    <EfPanelImage imageUrl="$[image_url]" zoom="#$[id]_ilb;balloon" link="#$[id]_ilb;balloon" />
+			    <EfPanelHeader>
+			      <EfPanelFab link="#$[id];$[flyhere_action]" />
+			    </EfPanelHeader>
+			    <EfPanelContent>
+			      <EfPanelDescription />
+			      <EfCtaButton ctaText="$[cta_text]" ctaLink="$[cta_link]" />
+			    </EfPanelContent>
+			    <EfPanelFooter previousLink="#$[previousSiblingId];$[prev_action]" nextLink="#$[nextSiblingId];$[next_action]" />
+			  </EfPanel>
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>panel</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="sef_gcs_splash">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#sef_gcs_splash_n</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#sef_gcs_splash_h</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="sef_gcs_splash_h">
+      <IconStyle>
+        <scale>1.8</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_green_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div data-component="EfSplash" class="ef-container ef-splash">
+			<main class="ef-splash__main ef-splash__main--$[styleModifier]  " data-background-image="$[image_large]" data-background-image-portrait="$[imageUrlPortrait]">
+				<div class="ef-background-video" data-component="EfBackgroundVideo" data-hide-if-empty="$[videoUrl]">
+					<video class="ef-background-video__video" data-poster="$[image_large]" muted preload="auto" autoplay loop>
+						<source data-src="$[videoUrl]" type="video/mp4" />
+					</video>
+				</div>
+				<div data-hide-if-empty="$[logoImageUrl]" class="ef-splash__logo-container">
+					<a href="$[logoLink]" data-id="logo-link" role="link" aria-label="$[splash_logoLink_ariaLabel]">
+						<img data-src="$[logoImageUrl]" class="ef-splash__logo-image" />
+					</a>
+				</div>
+				<div class="ef-splash__content">
+					<h1 class="ef-splash__title" style="font-family: ">$[name]</h1>
+					<p class="ef-splash__description">$[description]</p>
+					<a href="$[cta_link]" data-id="cta-button" role="button" aria-label="$[splash_buttonLink_ariaLabel]" class="ef-splash__button mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">$[cta_text]</a>
+				</div>
+				<div class="ef-splash__credit" data-hide-if-empty="$[attribution_text]">
+					<a href="$[attribution_link]" data-id="caption-link" aria-label="$[splash_captionLink_ariaLabel]" role="link">$[attribution_text]</a>
+				</div>
+			</main>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfSplash imageUrl="$[image_large]" buttonText="$[cta_text]" buttonLink="$[cta_link]" captionText="$[attribution_text]" captionLink="$[attribution_link]" />
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>fullscreen</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <Style id="sef_gcs_splash_n">
+      <IconStyle>
+        <scale>1.5</scale>
+        <Icon>
+          <href>https://www.gstatic.com/earthfeed/icons/pinlet_green_ON_64.png</href>
+        </Icon>
+        <hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+        <gx:scalingMode>fixedScaling</gx:scalingMode>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <bgColor>ff383226</bgColor>
+        <text><![CDATA[<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8" />
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="version" content="23.17.1" />
+		<style>
+			body {overflow: hidden; visibility: hidden}
+		</style>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500|Roboto+Slab|Material+Icons" type="text/css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/mdl/1.1.3/material.blue_grey-blue.min.css" />
+		<link rel="stylesheet" href="https://www.gstatic.com/earth/earthfeed/css/earthfeed.v23.x.min.css" type="text/css" />
+		<script src="https://www.gstatic.com/earth/earthfeed/mdl/1.3.0/material.min.js"></script>
+	</head>
+	<body>
+		<div data-component="EfSplash" class="ef-container ef-splash">
+			<main class="ef-splash__main ef-splash__main--$[styleModifier]  " data-background-image="$[image_large]" data-background-image-portrait="$[imageUrlPortrait]">
+				<div class="ef-background-video" data-component="EfBackgroundVideo" data-hide-if-empty="$[videoUrl]">
+					<video class="ef-background-video__video" data-poster="$[image_large]" muted preload="auto" autoplay loop>
+						<source data-src="$[videoUrl]" type="video/mp4" />
+					</video>
+				</div>
+				<div data-hide-if-empty="$[logoImageUrl]" class="ef-splash__logo-container">
+					<a href="$[logoLink]" data-id="logo-link" role="link" aria-label="$[splash_logoLink_ariaLabel]">
+						<img data-src="$[logoImageUrl]" class="ef-splash__logo-image" />
+					</a>
+				</div>
+				<div class="ef-splash__content">
+					<h1 class="ef-splash__title" style="font-family: ">$[name]</h1>
+					<p class="ef-splash__description">$[description]</p>
+					<a href="$[cta_link]" data-id="cta-button" role="button" aria-label="$[splash_buttonLink_ariaLabel]" class="ef-splash__button mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect">$[cta_text]</a>
+				</div>
+				<div class="ef-splash__credit" data-hide-if-empty="$[attribution_text]">
+					<a href="$[attribution_link]" data-id="caption-link" aria-label="$[splash_captionLink_ariaLabel]" role="link">$[attribution_text]</a>
+				</div>
+			</main>
+		</div>
+		<script src="https://www.gstatic.com/earth/earthfeed/js/earthfeed.v23.x.min.js"></script>
+		<script>componentHandler.upgradeAllRegistered()</script>
+		<script type="x-component/x-template-string">
+			<EfTemplate>
+			  <EfSplash imageUrl="$[image_large]" buttonText="$[cta_text]" buttonLink="$[cta_link]" captionText="$[attribution_text]" captionLink="$[attribution_link]" />
+			</EfTemplate>
+		</script>
+	</body>
+</html><!-- From cache. -->]]></text>
+        <gx:displayMode>fullscreen</gx:displayMode>
+      </BalloonStyle>
+    </Style>
+    <Folder id="gcs_list_0">
+      <name>Iconic Bookstores</name>
+      <visibility>1</visibility>
+      <open>0</open>
+      <snippet/>
+      <description>Lose yourself in books and explore the world's most inspiring, beloved and iconic bookstores.</description>
+      <styleUrl>#sef_gcs_splash</styleUrl>
+      <ExtendedData>
+        <Data name="attribution_text">
+          <value>Jo&#227;o Carlos de Souza</value>
+        </Data>
+        <Data name="attribution_link">
+          <value>https://maps.google.com/maps/contrib/104143550277855454770/photos</value>
+        </Data>
+        <Data name="image_url">
+          <value>https://lh6.googleusercontent.com/-LiAT7m8WJZI/Wkg4ettRQQI/AAAAAAAAzhY/u4j_r9tQbRokhVIw208l4Am8hI520o43wCLIBGAYYCw/w480-h288-n/</value>
+        </Data>
+        <Data name="image_large">
+          <value>https://lh6.googleusercontent.com/-LiAT7m8WJZI/Wkg4ettRQQI/AAAAAAAAzhY/u4j_r9tQbRokhVIw208l4Am8hI520o43wCLIBGAYYCw/s1280/</value>
+        </Data>
+        <Data name="image_caption">
+          <value>&lt;a href="https://maps.google.com/maps/contrib/104143550277855454770/photos" target="_blank"&gt;Jo&#227;o Carlos de Souza&lt;/a&gt;</value>
+        </Data>
+        <Data name="cta_text">
+          <value>Start exploring</value>
+        </Data>
+        <Data name="cta_link">
+          <value>#gcs_list_1;balloonFlyto</value>
+        </Data>
+        <Data name="NO_TRANSLATE_FIELDS">
+          <value>image_url,image_large,image_caption,cta_link</value>
+        </Data>
+        <Data name="splash_captionLink_ariaLabel">
+          <value>Caption</value>
+        </Data>
+        <Data name="splash_logoLink_ariaLabel">
+          <value>Logo</value>
+        </Data>
+        <Data name="splash_buttonLink_ariaLabel">
+          <value>$[buttonText]</value>
+        </Data>
+      </ExtendedData>
+      <Placemark id="gcs_list_1">
+        <name>Shakespeare &amp; Company</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Left Bank, Paris</snippet>
+        <description>Since 1951, this Parisian treasure has been a gathering place for writers, artists and intellectuals. More than 30,000 have allegedly slept in the shop, in exchange for a few hours work and a one-page autobiography.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSLEFGMVFpcFBMelZXVHBITm8wcVRQSXZmY2VoM3lsR2l5eEZBXzVodHpXMXU5</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>2.34712</longitude>
+          <latitude>48.852547</latitude>
+          <altitude>51.2076099</altitude>
+          <heading>174.16382845</heading>
+          <tilt>96.04234188</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Peter Barklund</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/104786062436906215294/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh3.googleusercontent.com/-BG80CF3xAeg/WSieFxyQZgI/AAAAAAAAEXM/7C4oP9WqN5E6fJOgOHSSzg7hVlVptgdUQCLIB/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>2.3471197,48.852547,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_2">
+        <name>El Ateneo Grand Splendid</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Buenos Aires, Argentina</snippet>
+        <description>Having once been a theater, then later a cinema, this bookstore maintains a grand atmosphere. Visitors browse books to a backdrop of stage curtains, ornamental carvings and balconies lined with Hollywood-style lights.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSK0FGMVFpcE5NcllDOE9tWmxEMmdJTk9ob2RaRlBFNWtNejFISXpYN1VDVUU</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-58.3943476</longitude>
+          <latitude>-34.5964011</latitude>
+          <altitude>60.64618212</altitude>
+          <heading>190.93514162</heading>
+          <tilt>79.24112612</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Maru Sofia</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/113111317451457601745/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh6.googleusercontent.com/-DxQnIWgxEjs/WmbVN-5adAI/AAAAAAAAABw/Sm8xyMiWwfY3E1hWbXZKCdhUAnJB6AvpwCLIBGAYYCw/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-58.3942285,-34.5959833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_3">
+        <name>Powell's City of Books</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Portland, Oregon</snippet>
+        <description>Spanning an entire city block, this Portland icon has been run by the Powell family since 1971. To prevent customers getting lost in the 68,000-ft, multilevel maze, a color-coded map is provided at the entrance.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAISFkdvZ0ZGc3AyWldwRFJzVWs5VF9fUFE</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-122.68114569</longitude>
+          <latitude>45.52301497</latitude>
+          <altitude>20.3643051</altitude>
+          <heading>316.7125688</heading>
+          <tilt>92.30870391</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Sean Callahan</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/107222515926317111386/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh5.googleusercontent.com/-OEGZN50w03I/WsPILVE7yFI/AAAAAAABgUw/gCWCLMeX-foqLxkHWaaIdPjMLEPnzW0KACLIBGAYYCw/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-122.68164279999999,45.5233397,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_4">
+        <name>Acqua Alta Library</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Venice, Italy</snippet>
+        <description>Like something out of a fairytale, virtually every nook and cranny of this cozy shop is overflowing with books. They spill from bathtubs and hanging gondolas, while more have been fashioned into an outdoor staircase.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSLEFGMVFpcE5PNzY3ZUtlMVVUSjZXWjc0YU42R3VTX3d1RDliRXZ5LTV2cTBQ</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>12.3422448</longitude>
+          <latitude>45.437843</latitude>
+          <altitude>12.76996398</altitude>
+          <heading>261.3674825</heading>
+          <tilt>94.7298719</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Mariaifl Photography</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/108842092386013596677/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh6.googleusercontent.com/-94G02COb978/V8KhXWaDrNI/AAAAAAABQCQ/S5CV4UT2sVIVLiP2X8gy0TwtMrCtNpFRQCJkC/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>12.3422448,45.437843,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_5">
+        <name>Livraria Lello</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Porto, Portugal</snippet>
+        <description>This marvel of woodwork and stained glass is said to have inspired the fictional "Flourish and Blotts," bookstore in Harry Potter. Completed in 1906, it soon became a creative hub for intellectuals, and it is known for championing Portuguese literature.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSLEFGMVFpcE43R2lINXJCNEZGTmZGQ0g3cndzbk95dlowUG16QVo5ZEx5dDNt</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-8.6147928</longitude>
+          <latitude>41.14689414</latitude>
+          <altitude>98.279155</altitude>
+          <heading>42.2144252</heading>
+          <tilt>93.94757239</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Livraria Lello &amp; Irm&#227;o</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/117972736839699613265/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh3.googleusercontent.com/-d1GTO8NOLsI/WBHvih6sdZI/AAAAAAAAAEQ/MxBBLpzveh8Gv6TQaxznwZ4Isb-q7BDrACLIBGAYYCw/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-8.614774599999999,41.146905499999995,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_6">
+        <name>Boekhandel Dominicanen</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Maastricht, Netherlands</snippet>
+        <description>This 700-year-old former church with frescoed ceilings is now a bookstore housing thousands of books. It also has a cafe with a large cross-shaped communal table.</description>
+        <LookAt>
+          <longitude>5.68982627</longitude>
+          <latitude>50.85008718</latitude>
+          <altitude>68.56370153</altitude>
+          <heading>53.8345967</heading>
+          <tilt>44.07092681</tilt>
+          <range>100.85731203</range>
+          <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Sebastian Eriksson</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/101041519645630462562/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh4.googleusercontent.com/-o1sZmpaWJdw/WK76NBBmB0I/AAAAAAAAVck/681lLExRbFwat9cHa4J7KX4Xjk-t6oWTACLIB/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>5.689969,50.850117,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_7">
+        <name>Strand Bookstore</name>
+        <visibility>1</visibility>
+        <snippet>Book store in New York City, New York</snippet>
+        <description>Boasting &#8220;18 miles of books,&#8221; this bookstore is a NYC landmark that offers a diverse collection of more than 2.5 million new, used and rare reads. Passers by are lured into the literary world by the shelves of $1 books outside the store.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSLEFGMVFpcFAyck5vNmp1NksyaER0TGpyb2NtelUyRFNmbkExTjhzODVXOENs</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-73.9910066</longitude>
+          <latitude>40.7331408</latitude>
+          <altitude>13</altitude>
+          <heading>125</heading>
+          <tilt>88</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Eddie Sutton</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/113440405103488289173/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh5.googleusercontent.com/-kQxRKw8Hpt0/WIKgEmADo-I/AAAAAAAAL9s/ANn1K9PuIPAmBEqHfFY1fV5QB9RK-eTVwCLIB/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-73.9909639,40.73331700000001,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_8">
+        <name>London - Hatchards - Piccadilly</name>
+        <visibility>1</visibility>
+        <snippet>Book store in London, England</snippet>
+        <description>Claiming to be London&#8217;s oldest bookshop, Hatchards has been a fixture on the famous Piccadilly street since 1797. Artifacts from the last 200 years are displayed on the walls, including a receipt dating to 1815.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAISFmRGVVZrTDNtY3hyR3QwTXpTcjg4MUE</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-0.13815027</longitude>
+          <latitude>51.50858794</latitude>
+          <altitude>24.89925575</altitude>
+          <heading>135.72347863</heading>
+          <tilt>91.27727783</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>maria correa</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/106559550132816527763/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh6.googleusercontent.com/-S4x7c4H94O8/WxnrdlZLpWI/AAAAAAAAewU/jrCun5RJCdwIlHK86yoaTmQQsoSFu-c6ACLIBGAYYCw/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.1380702,51.508491899999996,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_9">
+        <name>City Lights Booksellers &amp; Publishers</name>
+        <visibility>1</visibility>
+        <snippet>Publishing company in San Francisco, California</snippet>
+        <description>This San Francisco icon with Beat-era history famously published Allen Ginsberg's provocative poem, "Howl" in 1956. It still holds onto the beat spirit, publishing progressive titles every year, and hosting regular events.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAISFk45TmZkRm9WM2lPNzMyVTNmeXlaQmc</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-122.40639291</longitude>
+          <latitude>37.79763313</latitude>
+          <altitude>22</altitude>
+          <heading>250</heading>
+          <tilt>100</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Travellight</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/116319441555118043737/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh3.googleusercontent.com/-kFOQp-YFDbk/V63b_etU99I/AAAAAAAACRc/yl-HbFpRKb4Kw0iNEg30aSMXOO_u2QxEgCLIB/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-122.4065603,37.7976073,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_10">
+        <name>Cafebrer&#237;a El P&#233;ndulo Polanco</name>
+        <visibility>1</visibility>
+        <snippet>Book store in Mexico City, Mexico</snippet>
+        <description>Part bookstore and part cafe, this light-filled building is accented with giant plants and curved railings. Its many nooks have seats, inviting visitors to get cozy and read.</description>
+        <Camera>
+          <gx:ViewerOptions>
+            <gx:streetViewPanoId>CAoSLEFGMVFpcE9IbmM2aTdoVTB4NW1xdFJEc2ZqZklkLWk2d29LM2xBSVh1bHF6</gx:streetViewPanoId>
+            <gx:option enabled="1" name="streetview"/>
+          </gx:ViewerOptions>
+          <longitude>-99.19571627</longitude>
+          <latitude>19.43041222</latitude>
+          <altitude>2266</altitude>
+          <heading>96</heading>
+          <tilt>70</tilt>
+          <roll>0</roll>
+          <altitudeMode>absolute</altitudeMode>
+        </Camera>
+        <styleUrl>#sef_gcs_panel</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Hugo Pedro-Martins</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/114264751410171088408/photos</value>
+          </Data>
+          <Data name="image_url">
+            <value>https://lh4.googleusercontent.com/-UnsPegGs474/WjEfpbTFRZI/AAAAAAAA550/EYGhDxXuLyspbK5kCQcpYXIxefeDylQwACLIBGAYYCw/w480-h288-n/</value>
+          </Data>
+          <Data name="logo_url">
+            <value>https://www.gstatic.com/earthfeed/images/googlelogo_light_color_188x64dp.png</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>image_url,logo_url,flyhere_action,prev_action,next_action</value>
+          </Data>
+          <Data name="flyhere_action">
+            <value>flyto</value>
+          </Data>
+          <Data name="prev_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="next_action">
+            <value>balloonFlyto</value>
+          </Data>
+          <Data name="panelImage_zoom_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFab_link_ariaLabel">
+            <value>Fly to view</value>
+          </Data>
+          <Data name="panel_ctaLink_ariaLabel">
+            <value>$[ctaText]</value>
+          </Data>
+          <Data name="panelFooter_nextLink_ariaLabel">
+            <value>Next</value>
+          </Data>
+          <Data name="panelFooter_previousLink_ariaLabel">
+            <value>Previous</value>
+          </Data>
+          <Data name="panelImage_link_ariaLabel">
+            <value>Expand image</value>
+          </Data>
+          <Data name="panelFooter_logoLink_ariaLabel">
+            <value>Logo</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-99.1956848,19.430424199999997,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>image lightboxes</name>
+      <Placemark id="gcs_list_1_ilb">
+        <name>Shakespeare &amp; Company</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Peter Barklund</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/104786062436906215294/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh3.googleusercontent.com/-BG80CF3xAeg/WSieFxyQZgI/AAAAAAAAEXM/7C4oP9WqN5E6fJOgOHSSzg7hVlVptgdUQCLIB/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/104786062436906215294/photos" target="_blank"&gt;Peter Barklund&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>2.3471197,48.852547,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_2_ilb">
+        <name>El Ateneo Grand Splendid</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Maru Sofia</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/113111317451457601745/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh6.googleusercontent.com/-DxQnIWgxEjs/WmbVN-5adAI/AAAAAAAAABw/Sm8xyMiWwfY3E1hWbXZKCdhUAnJB6AvpwCLIBGAYYCw/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/113111317451457601745/photos" target="_blank"&gt;Maru Sofia&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-58.3942285,-34.5959833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_3_ilb">
+        <name>Powell's City of Books</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Sean Callahan</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/107222515926317111386/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh5.googleusercontent.com/-OEGZN50w03I/WsPILVE7yFI/AAAAAAABgUw/gCWCLMeX-foqLxkHWaaIdPjMLEPnzW0KACLIBGAYYCw/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/107222515926317111386/photos" target="_blank"&gt;Sean Callahan&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-122.68164279999999,45.5233397,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_4_ilb">
+        <name>Acqua Alta Library</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Mariaifl Photography</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/108842092386013596677/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh6.googleusercontent.com/-94G02COb978/V8KhXWaDrNI/AAAAAAABQCQ/S5CV4UT2sVIVLiP2X8gy0TwtMrCtNpFRQCJkC/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/108842092386013596677/photos" target="_blank"&gt;Mariaifl Photography&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>12.3422448,45.437843,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_5_ilb">
+        <name>Livraria Lello</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Livraria Lello &amp; Irm&#227;o</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/117972736839699613265/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh3.googleusercontent.com/-d1GTO8NOLsI/WBHvih6sdZI/AAAAAAAAAEQ/MxBBLpzveh8Gv6TQaxznwZ4Isb-q7BDrACLIBGAYYCw/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/117972736839699613265/photos" target="_blank"&gt;Livraria Lello &amp; Irm&#227;o&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-8.614774599999999,41.146905499999995,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_6_ilb">
+        <name>Boekhandel Dominicanen</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Sebastian Eriksson</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/101041519645630462562/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh4.googleusercontent.com/-o1sZmpaWJdw/WK76NBBmB0I/AAAAAAAAVck/681lLExRbFwat9cHa4J7KX4Xjk-t6oWTACLIB/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/101041519645630462562/photos" target="_blank"&gt;Sebastian Eriksson&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>5.689969,50.850117,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_7_ilb">
+        <name>Strand Bookstore</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Eddie Sutton</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/113440405103488289173/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh5.googleusercontent.com/-kQxRKw8Hpt0/WIKgEmADo-I/AAAAAAAAL9s/ANn1K9PuIPAmBEqHfFY1fV5QB9RK-eTVwCLIB/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/113440405103488289173/photos" target="_blank"&gt;Eddie Sutton&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-73.9909639,40.73331700000001,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_8_ilb">
+        <name>London - Hatchards - Piccadilly</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>maria correa</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/106559550132816527763/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh6.googleusercontent.com/-S4x7c4H94O8/WxnrdlZLpWI/AAAAAAAAewU/jrCun5RJCdwIlHK86yoaTmQQsoSFu-c6ACLIBGAYYCw/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/106559550132816527763/photos" target="_blank"&gt;maria correa&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-0.1380702,51.508491899999996,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_9_ilb">
+        <name>City Lights Booksellers &amp; Publishers</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Travellight</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/116319441555118043737/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh3.googleusercontent.com/-kFOQp-YFDbk/V63b_etU99I/AAAAAAAACRc/yl-HbFpRKb4Kw0iNEg30aSMXOO_u2QxEgCLIB/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/116319441555118043737/photos" target="_blank"&gt;Travellight&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-122.4065603,37.7976073,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="gcs_list_10_ilb">
+        <name>Cafebrer&#237;a El P&#233;ndulo Polanco</name>
+        <visibility>0</visibility>
+        <snippet/>
+        <description/>
+        <styleUrl>#sef_gcs_lightbox</styleUrl>
+        <ExtendedData>
+          <Data name="attribution_text">
+            <value>Hugo Pedro-Martins</value>
+          </Data>
+          <Data name="attribution_link">
+            <value>https://maps.google.com/maps/contrib/114264751410171088408/photos</value>
+          </Data>
+          <Data name="image_large">
+            <value>https://lh4.googleusercontent.com/-UnsPegGs474/WjEfpbTFRZI/AAAAAAAA550/EYGhDxXuLyspbK5kCQcpYXIxefeDylQwACLIBGAYYCw/s1280/</value>
+          </Data>
+          <Data name="image_caption">
+            <value>&lt;a href="https://maps.google.com/maps/contrib/114264751410171088408/photos" target="_blank"&gt;Hugo Pedro-Martins&lt;/a&gt;</value>
+          </Data>
+          <Data name="NO_TRANSLATE_FIELDS">
+            <value>name,image_large,image_caption</value>
+          </Data>
+          <Data name="lightboxImage_captionLink_ariaLabel">
+            <value>Attribution</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <altitudeMode>clampToGround</altitudeMode>
+          <coordinates>-99.1956848,19.430424199999997,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

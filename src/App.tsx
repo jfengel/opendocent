@@ -14,8 +14,120 @@ import MenuIcon from "@material-ui/icons/Menu";
 import {FeatureCollection, Feature, Point} from "geojson";
 import Fab from "@material-ui/core/Fab";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-const MAX_ZOOM = 18;
+import xml2js from 'xml2js';
 
+const MAX_ZOOM = 18;
+export interface Kml {
+    kml: {
+        $: {
+            xmlns: string;
+            "xmlns:gx": string;
+        };
+        Document: {
+            $: {
+                id: string;
+            };
+            Folder: {
+                $: {
+                    id: string;
+                };
+                ExtendedData: {
+                    Data: {
+                        $: {
+                            name: string;
+                        };
+                        value: string[];
+                    }[];
+                }[];
+                Placemark: {
+                    $: {
+                        id: string;
+                    };
+                    Camera: {
+                        altitude: string[];
+                        altitudeMode: string[];
+                        "gx:ViewerOptions": {
+                            "gx:option": {
+                                $: {
+                                    enabled: string;
+                                    name: string;
+                                };
+                            }[];
+                            "gx:streetViewPanoId": string[];
+                        }[];
+                        heading: string[];
+                        latitude: string[];
+                        longitude: string[];
+                        roll: string[];
+                        tilt: string[];
+                    }[];
+                    ExtendedData: {
+                        Data: {
+                            $: {
+                                name: string;
+                            };
+                            value: string[];
+                        }[];
+                    }[];
+                    Point: {
+                        altitudeMode: string[];
+                        coordinates: string[];
+                    }[];
+                    description: string[];
+                    name: string[];
+                    snippet: string[];
+                    styleUrl: string[];
+                    visibility: string[];
+                }[];
+                description: string[];
+                name: string[];
+                open: string[];
+                snippet: string[];
+                styleUrl: string[];
+                visibility: string[];
+            }[];
+            Style: {
+                $: {
+                    id: string;
+                };
+                BalloonStyle: {
+                    bgColor: string[];
+                    "gx:displayMode": string[];
+                    text: string[];
+                }[];
+                IconStyle: {
+                    Icon: {
+                        href: string[];
+                    }[];
+                    "gx:scalingMode": string[];
+                    hotSpot: {
+                        $: {
+                            x: string;
+                            xunits: string;
+                            y: string;
+                            yunits: string;
+                        };
+                    }[];
+                    scale: string[];
+                }[];
+                LabelStyle: {
+                    scale: string[];
+                }[];
+            }[];
+            StyleMap: {
+                $: {
+                    id: string;
+                };
+                Pair: {
+                    key: string[];
+                    styleUrl: string[];
+                }[];
+            }[];
+            name: string[];
+            snippet: string[];
+        }[];
+    };
+}
 
 function App() {
     const [viewport, setViewport] = useState();
@@ -25,7 +137,7 @@ function App() {
     const [tour, setTour] = useState<FeatureCollection>();
     const [fetchingTour, setFetchingTour] = useState(false);
 
-    function fetchTour()
+    function fetchkml()
     {
         fetch("/tours/UNESCO_World_Heritage_Sites.kml")
             .then(async response => {
@@ -36,6 +148,16 @@ function App() {
                 const name = document[0] && document[0].getElementsByTagName("name")[0];
                 (tour as any).name = name && name.textContent;
                 setTour(tour);
+            })
+    }
+    function fetchTour()
+    {
+        fetch("/tours/libraries.kml")
+            .then(async response => {
+                const text = await response.text();
+                const tour : Kml = await xml2js.parseStringPromise(text);
+                // setTour(tour);
+                console.info(tour);
             })
     }
 
