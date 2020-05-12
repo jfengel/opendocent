@@ -43,8 +43,8 @@ function App() {
         fetch("/tours/libraries.kml")
             .then(async response => {
                 const text = await response.text();
-                const kml : Kml = await xml2js.parseStringPromise(text);
-                const tour = kml.kml.Document[0];
+                const kml : Kml = await xml2js.parseStringPromise(text, {explicitArray : false});
+                const tour = kml.kml.Document;
                 setTour(tour);
                 console.info(tour);
             })
@@ -101,7 +101,7 @@ function App() {
             return;
         }
         const ix = currentFeature ? features.indexOf(currentFeature) : -1;
-        goto(features[ix+1 % features.length])
+        goto(features[(ix+1) % features.length])
     }
 
     return <div className='App'>

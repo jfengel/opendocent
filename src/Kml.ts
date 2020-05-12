@@ -1,44 +1,43 @@
-export interface Placemark {
+export interface Placemark{
     $: {
         id: string;
     };
     Camera: {
-        altitude: string[];
-        altitudeMode: string[];
+        altitude: string;
+        altitudeMode: string;
         "gx:ViewerOptions": {
             "gx:option": {
                 $: {
                     enabled: string;
                     name: string;
                 };
-            }[];
-            "gx:streetViewPanoId": string[];
-        }[];
-        heading: string[];
-        latitude: string[];
-        longitude: string[];
-        roll: string[];
-        tilt: string[];
-    }[];
+            };
+            "gx:streetViewPanoId": string;
+        };
+        heading: string;
+        latitude: string;
+        longitude: string;
+        roll: string;
+        tilt: string;
+    };
     ExtendedData: {
         Data: {
             $: {
                 name: string;
             };
-            value: string[];
+            value: string;
         }[];
-    }[];
+    };
     Point: {
-        altitudeMode: string[];
-        coordinates: string[];
-    }[];
-    description: string[];
-    name: string[];
-    snippet: string[];
-    styleUrl: string[];
-    visibility: string[];
+        altitudeMode: string;
+        coordinates: string;
+    };
+    description: string;
+    name: string;
+    snippet: string;
+    styleUrl: string;
+    visibility: string;
 }
-
 export interface Document {
     $: {
         id: string;
@@ -52,31 +51,31 @@ export interface Document {
                 $: {
                     name: string;
                 };
-                value: string[];
+                value: string;
             }[];
-        }[];
+        };
         Placemark: Placemark[];
-        description: string[];
-        name: string[];
-        open: string[];
-        snippet: string[];
-        styleUrl: string[];
-        visibility: string[];
+        description: string;
+        name: string;
+        open: string;
+        snippet: string;
+        styleUrl: string;
+        visibility: string;
     }[];
     Style: {
         $: {
             id: string;
         };
         BalloonStyle: {
-            bgColor: string[];
-            "gx:displayMode": string[];
-            text: string[];
-        }[];
+            bgColor: string;
+            "gx:displayMode": string;
+            text: string;
+        };
         IconStyle: {
             Icon: {
-                href: string[];
-            }[];
-            "gx:scalingMode": string[];
+                href: string;
+            };
+            "gx:scalingMode": string;
             hotSpot: {
                 $: {
                     x: string;
@@ -84,24 +83,24 @@ export interface Document {
                     y: string;
                     yunits: string;
                 };
-            }[];
-            scale: string[];
-        }[];
+            };
+            scale: string;
+        };
         LabelStyle: {
-            scale: string[];
-        }[];
+            scale: string;
+        };
     }[];
     StyleMap: {
         $: {
             id: string;
         };
         Pair: {
-            key: string[];
-            styleUrl: string[];
+            key: string;
+            styleUrl: string;
         }[];
     }[];
-    name: string[];
-    snippet: string[];
+    name: string;
+    snippet: string;
 }
 
 export interface Kml {
@@ -110,12 +109,12 @@ export interface Kml {
             xmlns: string;
             "xmlns:gx": string;
         };
-        Document: Document[];
+        Document: Document;
     };
 }
 
 export function getPosition(feature: Placemark) {
-    const coordinates = feature.Point[0].coordinates[0].split(',')
+    const coordinates = feature.Point.coordinates.split(',')
     return {
         lat: parseFloat(coordinates[1]),
         lng: parseFloat(coordinates[0])

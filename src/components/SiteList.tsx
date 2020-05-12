@@ -16,7 +16,7 @@ export default function SiteList({tour, current, onClick}:
               <ButtonBase
                 style={{textAlign: 'left', textIndent: 0, backgroundColor }}
                 onClick={() => onClick(feature)}>
-                  {feature.name[0].trim()}
+                  {feature.name.trim()}
               </ButtonBase>
             </div>
     }
