@@ -1,140 +1,28 @@
 import React, {useEffect, useState} from 'react';
-import {Map, TileLayer, CircleMarker, Marker, Popup, AttributionControl} from 'react-leaflet'
+import {AttributionControl, CircleMarker, Map, Marker, Popup, TileLayer} from 'react-leaflet'
 
 import SiteList from "./components/SiteList";
 import Description from "./components/Description";
 import './App.css';
-
 // @ts-ignore
 import tj from "@mapbox/togeojson";
 import {AppBar} from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import {FeatureCollection, Feature, Point} from "geojson";
 import Fab from "@material-ui/core/Fab";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import xml2js from 'xml2js';
+import {Document, getPosition, Kml, Placemark} from "./Kml";
 
 const MAX_ZOOM = 18;
-export interface Kml {
-    kml: {
-        $: {
-            xmlns: string;
-            "xmlns:gx": string;
-        };
-        Document: {
-            $: {
-                id: string;
-            };
-            Folder: {
-                $: {
-                    id: string;
-                };
-                ExtendedData: {
-                    Data: {
-                        $: {
-                            name: string;
-                        };
-                        value: string[];
-                    }[];
-                }[];
-                Placemark: {
-                    $: {
-                        id: string;
-                    };
-                    Camera: {
-                        altitude: string[];
-                        altitudeMode: string[];
-                        "gx:ViewerOptions": {
-                            "gx:option": {
-                                $: {
-                                    enabled: string;
-                                    name: string;
-                                };
-                            }[];
-                            "gx:streetViewPanoId": string[];
-                        }[];
-                        heading: string[];
-                        latitude: string[];
-                        longitude: string[];
-                        roll: string[];
-                        tilt: string[];
-                    }[];
-                    ExtendedData: {
-                        Data: {
-                            $: {
-                                name: string;
-                            };
-                            value: string[];
-                        }[];
-                    }[];
-                    Point: {
-                        altitudeMode: string[];
-                        coordinates: string[];
-                    }[];
-                    description: string[];
-                    name: string[];
-                    snippet: string[];
-                    styleUrl: string[];
-                    visibility: string[];
-                }[];
-                description: string[];
-                name: string[];
-                open: string[];
-                snippet: string[];
-                styleUrl: string[];
-                visibility: string[];
-            }[];
-            Style: {
-                $: {
-                    id: string;
-                };
-                BalloonStyle: {
-                    bgColor: string[];
-                    "gx:displayMode": string[];
-                    text: string[];
-                }[];
-                IconStyle: {
-                    Icon: {
-                        href: string[];
-                    }[];
-                    "gx:scalingMode": string[];
-                    hotSpot: {
-                        $: {
-                            x: string;
-                            xunits: string;
-                            y: string;
-                            yunits: string;
-                        };
-                    }[];
-                    scale: string[];
-                }[];
-                LabelStyle: {
-                    scale: string[];
-                }[];
-            }[];
-            StyleMap: {
-                $: {
-                    id: string;
-                };
-                Pair: {
-                    key: string[];
-                    styleUrl: string[];
-                }[];
-            }[];
-            name: string[];
-            snippet: string[];
-        }[];
-    };
-}
 
 function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [init, setInit] = useState(false);
-    const [currentFeature, setCurrentFeature] = useState<Feature|null>(null);
-    const [tour, setTour] = useState<FeatureCollection>();
+    const [currentFeature, setCurrentFeature] = useState<Placemark|null>(null);
+    const [tour, setTour] = useState<Document>();
     const [fetchingTour, setFetchingTour] = useState(false);
 
     function fetchkml()
@@ -147,7 +35,7 @@ function App() {
                 const document = kml.getElementsByTagName("Document");
                 const name = document[0] && document[0].getElementsByTagName("name")[0];
                 (tour as any).name = name && name.textContent;
-                setTour(tour);
+                // setTour(tour);
             })
     }
     function fetchTour()
@@ -155,8 +43,9 @@ function App() {
         fetch("/tours/libraries.kml")
             .then(async response => {
                 const text = await response.text();
-                const tour : Kml = await xml2js.parseStringPromise(text);
-                // setTour(tour);
+                const kml : Kml = await xml2js.parseStringPromise(text);
+                const tour = kml.kml.Document[0];
+                setTour(tour);
                 console.info(tour);
             })
     }
@@ -191,29 +80,28 @@ function App() {
     const me = position &&
         <CircleMarker center={{lat: position[0], lng: position[1]}} radius={5}/>
 
-    const siteMarkers = tour && tour.features && tour.features
-        .filter(feature => feature.geometry)
+    const siteMarkers = tour && tour.Folder[0] && tour.Folder[0].Placemark
+        .filter(feature => feature.Point)
         .map((feature, i) =>
-            <Marker key={i} position={{
-                lat: (feature.geometry as Point).coordinates[1],
-                lng: (feature.geometry as Point).coordinates[0]}}>
+            <Marker key={i} position={getPosition(feature)}>
                 <Popup>
-                    {feature.properties && feature.properties.name}
-                    {JSON.stringify(feature)}
+                    <b>{feature.name}</b>
+                    {feature.description}
                 </Popup>
             </Marker>
     )
-    const goto = (feature : Feature) => {
-        const coordinates = (feature.geometry as Point).coordinates;
+    const goto = (feature : Placemark) => {
+        const center = getPosition(feature);
         setCurrentFeature(feature);
-        setViewport({center : {lat : coordinates[1], lng: coordinates[0]}, zoom: MAX_ZOOM});
+        setViewport({center, zoom: MAX_ZOOM});
     }
     const nextFeature = () => {
-        if(!tour || !tour.features) {
+        const features = tour && tour.Folder[0] && tour.Folder[0].Placemark;
+        if(!features) {
             return;
         }
-        const ix = currentFeature ? tour.features.indexOf(currentFeature) : -1;
-        goto(tour.features[ix+1 % tour.features.length])
+        const ix = currentFeature ? features.indexOf(currentFeature) : -1;
+        goto(features[ix+1 % features.length])
     }
 
     return <div className='App'>

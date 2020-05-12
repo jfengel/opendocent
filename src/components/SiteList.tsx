@@ -1,30 +1,28 @@
 import * as React from "react";
-import {FeatureCollection, Feature, Geometry, GeoJsonProperties} from 'geojson';
+import {Document, Placemark} from "../Kml";
 import {ButtonBase} from "@material-ui/core";
 
 
 export default function SiteList({tour, current, onClick}:
                                      {
-                                         tour: FeatureCollection,
-                                         current: Feature|null,
+                                         tour: Document,
+                                         current: Placemark|null,
                                          onClick: any
                                      }) {
 
-    function displayFeature(feature: Feature<Geometry, GeoJsonProperties>, i: number) {
+    function displayFeature(feature : Placemark, i: number) {
         const backgroundColor = feature === current ? 'lightblue' : undefined;
-        return feature.properties && feature.properties.name &&
-            <div key={i}>
+        return <div key={i}>
               <ButtonBase
                 style={{textAlign: 'left', textIndent: 0, backgroundColor }}
                 onClick={() => onClick(feature)}>
-                  {feature.properties.name.trim()}
+                  {feature.name[0].trim()}
               </ButtonBase>
             </div>
     }
 
-    const name = tour && (tour as any).name;
     return <div>
-        <h3>{name || "Places"}</h3>
-        {tour && tour.features && tour.features.map(displayFeature)}
+        <h3>{tour.name || "Places"}</h3>
+        {tour.Folder[0].Placemark.map(displayFeature)}
     </div>
 }
