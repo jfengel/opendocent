@@ -38,7 +38,7 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature, 
         {me}
         {siteMarkers}
         <div className="od-controls">
-            {tour && <SiteList current={currentFeature} tour={tour} onClick={goto}/>}
+            <SiteList current={currentFeature} tour={tour} onClick={goto}/>
         </div>
     </Map>;
 };

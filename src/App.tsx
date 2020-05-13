@@ -10,6 +10,7 @@ import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import xml2js from 'xml2js';
 import {Document, getFolder, getPosition, Kml, Placemark} from "./Kml";
 import {MAX_ZOOM, TourMap} from "./components/TourMap";
+import {TourList} from "./components/TourList";
 
 function fetchTour(url : string)
 {
@@ -26,7 +27,7 @@ function App() {
     const [position, setPosition] = useState();
     const [init, setInit] = useState(false);
     const [currentFeature, setCurrentFeature] = useState<Placemark|null>(null);
-    // const [tour, setTour] = useState<Document>();
+    const [tour, setTour] = useState<Document>();
     const [availableTours, setAvailableTours] = useState<Document[]>([]);
 
     if (navigator.geolocation && !init) {
@@ -48,12 +49,11 @@ function App() {
 
     useEffect(() => {
         fetchTour("/tours/UNESCO_World_Heritage_Sites.kml")
+            .then(x => setAvailableTours(prev => [...prev, x]))
         fetchTour("/tours/libraries.kml")
             .then(x => setAvailableTours(prev => [...prev, x]))
     }, [])
 
-    const tour = availableTours[0];
-    const folder = getFolder(tour);
 
     const goto = (feature : Placemark) => {
         const center = getPosition(feature);
@@ -61,6 +61,7 @@ function App() {
         setViewport({center, zoom: MAX_ZOOM});
     }
     const nextFeature = () => {
+        const folder = getFolder(tour!);
         const features = folder && folder.Placemark;
         if(!features) {
             return;
@@ -68,8 +69,13 @@ function App() {
         const ix = currentFeature ? features.indexOf(currentFeature) : -1;
         goto(features[(ix+1) % features.length])
     }
-    const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
-    const map = <TourMap {...tourProps}/>
+    let display;
+    if(tour) {
+        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
+        display = tour && <TourMap {...tourProps}/>
+    } else {
+        display = <TourList availableTours={availableTours} setTour={setTour}/>
+    }
     return <div className='App'>
         <AppBar style={{position: 'unset'}}>
             <Toolbar>
@@ -84,7 +90,7 @@ function App() {
                 OpenDocent
             </Toolbar>
         </AppBar>
-        {map}
+        {display}
 
         <Fab color="primary" aria-label="next"
              style={{position: 'absolute', bottom: 0, right: 15}}
