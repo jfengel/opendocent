@@ -120,3 +120,7 @@ export function getPosition(feature: Placemark) {
         lng: parseFloat(coordinates[0])
     };
 }
+
+export function getFolder(tour: Document) {
+    return tour && ((tour.Folder && tour.Folder[0]) || tour);
+}

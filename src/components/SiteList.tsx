@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Document, Placemark} from "../Kml";
+import {Document, getFolder, Placemark} from "../Kml";
 import {ButtonBase} from "@material-ui/core";
 
 
@@ -20,9 +20,10 @@ export default function SiteList({tour, current, onClick}:
               </ButtonBase>
             </div>
     }
+    const folder = getFolder(tour);
 
     return <div>
         <h3>{tour.name || "Places"}</h3>
-        {tour.Folder[0].Placemark.map(displayFeature)}
+        {folder && folder.Placemark.map(displayFeature)}
     </div>
 }
