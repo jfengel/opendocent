@@ -1,0 +1,1198 @@
+{
+  "layers": [
+    {
+      "featureSet": {
+        "features": [
+          {
+            "geometry": {
+              "x": -8556455.57271455,
+              "y": 4737151.8234311845,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 27,
+              "name": "The Phelps House -<br>1110 Montgomery Street",
+              "description": "1110 Montgomery Phelps Mansion Known as the Phelps House because it was the residence of Mayor Edward Phelps, this large Victorian house looks much as it did when it was built in 1888. The 16 inch thick foundation is made of local stone.  Original features inside include the ornamental wood fretwork, fireplaces, original pine floors, and cast brass and cast iron hardware on the doors and windows.  The original grounds included lawns, vegetable gardens, orchards and cornfields and extended east to the corner of Sandy Spring Road and Montgomery Street, south to Ivy Hill Cemetery and west to Walkers Branch and the north side of Patuxent Road.  The carriage house in the back is quite old.  Since purchasing the property in 2011, Lisa and Dave Everett have worked toward preserving the house for future generations, including restoring the built-in gutters, replacing the 70-year-old wiring, and various other major renovations.",
+              "pic_url": "https://farm8.staticflickr.com/7327/13446084525_427552912e_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7327/13446084525_427552912e_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555953.058969984,
+              "y": 4737074.789238598,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 28,
+              "name": "915 Montgomery Street",
+              "description": "This house, built in 1928 by Charles and Edna Scott, is commonly called a “Sears” house. Built from a complete house package purchased from Sears, Roebuck and Company, this is the Uriel/Conway Model. From the 1880s through the 1930s, suburban growth, prompted first by the railroad and trolley and later by the automobile, transformed the land around American cities. In response to the national demand for reasonably priced, well-built and comfortable single-family dwellings, the practice developed of offering inexpensive architectural designs through the mail. The success of these pattern-book house plans led to the development in the first decade of the 20th century of companies selling complete house packages (plans and materials) through the mail. Sears, Roebuck and Company was the leading company in this market. Four generations of the Scott family have lived in this house, and while there have been improvements inside, the exterior has not been altered.",
+              "pic_url": "http://farm3.static.flickr.com/2651/3762497407_f0c870c975_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2651/3762497407_f0c870c975_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555017.601119746,
+              "y": 4736936.597025822,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 33,
+              "name": "507 Prince George Street",
+              "description": "Built in 1890, and informally known as the Wellford house, this home is located on the first all-residential street in Laurel and is one of four shotgun-style frame houses built side by side on the block. The ornamental fretwork on the house is typical of buildings of the period. Like many houses in Laurel, it backs up to an alley, in this case, Wellford Alley. Four generations of Wellfords occupied 507 Prince George starting in 1915 when. Joshua T. Wellford moved his family to Laurel from Savage. In 1998, the house was completely restored by their granddaughter and her husband, Fred Snyder and Gayle Wellford Snyder, who sold the property in 2010.",
+              "pic_url": "http://farm3.static.flickr.com/2440/3763296828_d2fe2efd3c_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2440/3763296828_d2fe2efd3c_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554925.637820171,
+              "y": 4736855.084101087,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 36,
+              "name": "423 Prince George Street",
+              "description": "Originally identical in style, 421 and 423 Prince George were built between 1900 and 1903, on property that formerly had a single dwelling. The well (now filled in) from that earlier house is at 423 Prince George. These homes demonstrate changes that typically occur over time in similar houses as owners change and neighborhoods grow and evolve. It’s believed 423 Prince George was constructed first. Today this lovingly restored home features original gingerbread, painted clapboard, porch and a tin roof. Most of the original plaster as well as radiators remain.",
+              "pic_url": "http://farm4.static.flickr.com/3577/3695950054_00ce0e083c_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3577/3695950054_00ce0e083c_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554900.258338308,
+              "y": 4736845.347524201,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 38,
+              "name": "421 Prince George Street",
+              "description": "Originally identical in style, 421 and 423 Prince George were built between 1900 and 1903, on property that formerly had a single dwelling.  An outhouse from this original home remains at 421 Prince George. These homes demonstrate changes that typically occur over time in similar houses as owners change and neighborhoods grow and evolve. At 421 Prince George, the original side sun porch was enclosed in a house expansion sometime after 1913 by long-time owners, the Bealls, who operated a general store on Main Street, near the post office. The current owners have since restored, expanded and painted the original front porch, which had been enclosed in the 1960s, and restored the original front door. The updated interior features original fireplace mantles, trim, a chestnut staircase, heart pine floors and pocket doors.",
+              "pic_url": "https://farm4.staticflickr.com/3760/13848273554_6c4578fcab_b.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3760/13848273554_6c4578fcab_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554654.823817644,
+              "y": 4736701.015716063,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 34,
+              "name": "331 Prince George Street",
+              "description": "This house was built as mill worker housing in the mid-1900s by Armand Jardin, Jr. It is not known if the Jardins ever lived in the house, but Armand Jardin, Sr., who supplied the flowers for Abraham Lincoln’s funeral in 1865, lived nearby in a mansion (known locally as the Gude Mansion, in Laurel Lakes). Armand Jardin, Jr. and his wife are buried in St. Mary of the Mills Cemetery. An addition was put on the house in 1911. Thereafter, the house had a succession of owners and was divided up during WWII for military housing. In the 1970s, the house was restored by the present owners, who lavished attention not only on the structure but on the gardens around it. ",
+              "pic_url": "http://farm4.static.flickr.com/3443/3762499455_2218be6a37_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3443/3762499455_2218be6a37_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554509.115732573,
+              "y": 4736498.875606101,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 37,
+              "name": "Talbott Mansion -<br>12 Prince George Street",
+              "description": "Thomas Jefferson Talbott (1804-1869) lived in this house on a plantation encompassing 800 acres. The property around the home extended from Baltimore Boulevard up the south side of Main Street to St. Philip’s Church and St. Mary’s Place. The Talbott family attended St. Philip’s and members of the family are buried there. In 1869, President Ulysses S. Grant made an offer to buy the estate but his bid was refused. In the early 1900s, the house became Ellerslie Seminary. The front of the house was originally on the left, facing Stanley Place. It is now a multi-family dwelling.",
+              "pic_url": "http://farm4.static.flickr.com/3494/3695139399_2bddde8279_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3494/3695139399_2bddde8279_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554708.270021176,
+              "y": 4736494.0189809995,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 42,
+              "name": "324 Montgomery Street",
+              "description": "Built in 1895 by Lawrence Ellis, this four-square home is one of a group that Ellis built on Montgomery Street (316 to 324 Montgomery) at that time. The homes were designed by Albert Gottschalk, who lived at 316 Montgomery. The first known owner of 324 Montgomery was the Phelps family, relatives of Mayor Edward G. Phelps. During the Depression, when Mr. Phelps lost his business, he sold his large Queen Anne-style house at the top of Montgomery Street and moved into the “family” home at 324 Montgomery. In the 1920s and 1930s the backyard of the house was filled with flowers. The Waters family, displaced by the building of Fort Meade and NSA, bought the home in 1940. They installed the red oak flooring on the first floor and the stone front steps. They also made changes to the first floor, opening up doorways between rooms. The Hayes family, owners since 1987, added a kitchen and master bedroom.",
+              "pic_url": "http://farm4.static.flickr.com/3573/3695949512_661bcd00b1_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3573/3695949512_661bcd00b1_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554699.909721209,
+              "y": 4736571.948919969,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 41,
+              "name": "327 Montgomery Street",
+              "description": "Built in 1879, this Victorian cottage is thought to be the second oldest home on the block (preceded by 333 Montgomery, which was built about 1860). Previous owners reported that the house was once known as Mrs. Ray’s Boarding House. After WWI, (President) Dwight D. Eisenhower, then a major serving as a tank commander at Ft. Meade, lived in the house with his wife Mamie during the summer of 1919. Mrs. Eisenhower reportedly returned for a visit in 1976.",
+              "pic_url": "http://farm3.static.flickr.com/2505/3695949660_aa84189de4_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2505/3695949660_aa84189de4_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554765.896374522,
+              "y": 4736531.290429906,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 40,
+              "name": "332 Montgomery Street",
+              "description": "Built in 1889, this house was first owned by William Gilbert, later Mayor of Laurel. It was next owned by the Valk family, whose children’s names are etched on one of the original windows. William Valk is listed in the 1894 Ross &amp; Fairall City Directory as a clerk in the U.S. Land Office, illustrating Laurel’s transition from factory town to a residential commuter community. The Dezendorfs (1902-1909) were followed by the Scott family. Henry Scott was a Justice of the Peace for Laurel and the 10th district, and served as a City Councilman, as did his son, Henry, born in the house. The Shipe family, who owned the house during World War II, converted the garage into a small house for their returning soldier son-in-law and daughter. (332A Montgomery). The main house was subsequently converted into apartments, and reconverted into a single-family home after the Frazier family purchased it in 1977.",
+              "pic_url": "http://farm4.static.flickr.com/3473/3695139891_55b6a75d28_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3473/3695139891_55b6a75d28_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554792.171602985,
+              "y": 4736564.134465487,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 39,
+              "name": "336 Montgomery Street",
+              "description": "This large Victorian house, owned for 90 years by the Shaffer/Fulton families, was built in 1911 by William C. and Susie Shaffer. It started out as a small grocery and meat store and was originally located closer to Fourth Street. Circular pickle barrel stains were found in that part of the house when the heart pine floors were refinished. Shaffer’s daughter, Lily “Mae” (Shaffer) Fulton and her husband William are said to have rented rooms to jockeys from the Laurel Race Course.  The Anastasi family purchased the house in 2002, and returned the property, which had been divided into apartments during WWII, to a single family residence. Original features include pocket doors, bulls-eye moldings, a claw foot tub, and front and back staircases. Exterior features include metal shingles (applied over cedar shake) on the upper roof and standing seam metal roofing on the lower roof. Three functional lightning rods with intact glass balls and a weathervane remain on the roof. ",
+              "pic_url": "http://farm3.static.flickr.com/2433/3695949904_bd9bced8a6_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2433/3695949904_bd9bced8a6_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554839.048999114,
+              "y": 4736485.32277606,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "b",
+              "__OBJECTID": 35,
+              "name": "310 4th Street",
+              "description": "Built around the turn of the century, this simple farmhouse-style structure is typical of the residential housing of the period. Initially lacking inside plumbing, residents used a backyard outhouse, behind which was an alley. The “honey dipper” wagon passed down the alley periodically, providing sanitation services to the neighborhood. In 1927, a small house was built next to the original house for the grandparents, and in 1992, the current owners built an addition connecting the two houses. The small house is now used as a combination study and art studio.",
+              "pic_url": "https://farm8.staticflickr.com/7165/13848301434_dc4d9b1c38_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7165/13848301434_dc4d9b1c38_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555584.01144268,
+              "y": 4736331.618287751,
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            },
+            "attributes": {
+              "name": "Site of African American baseball team field<br> - Seventh Street",
+              "description": "Community baseball was played in the Grove as early as 1878.  In 1928 a group of African American men formed the Laurel Stars (also called the All-Stars). They, and their predecessor, the Laurel White Sox, played on this site perhaps as early as 1911.  From home plate here, left field cut through the present day Stanley Memorial Library, 2nd Base was on 7th Street, and the first base line cut through 7th Street. The Laurel Stars played on the Grove field until 1959, when construction of Rt. 198 eliminated their home field.  <a href=\"https://farm8.staticflickr.com/7086/13994893122_4a6569f192_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "icon_color": null,
+              "pic_url": "https://farm8.staticflickr.com/7200/13901705323_7e59c2e9e5.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7200/13901705323_7e59c2e9e5.jpg",
+              "is_video": "false",
+              "__OBJECTID": 73
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555589.68450339,
+              "y": 4736482.700851506,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "r",
+              "__OBJECTID": 24,
+              "name": "Laurel Branch, Prince George's County Public Library -<br>507 Seventh Street",
+              "description": "The Laurel branch of the Prince George's County Memorial Library System is located at the intersection of Seventh Street and Talbott Avenue. Organized in 1910, the library operated for many years at 384 Main Street. The Stanley Memorial Library Branch opened in 1967, and closed in February 2014 in preparation for construction of a new library on the site. See the <a href=\"http://www.prge.lib.md.us/Lib/Branches/la.html\"> Prince George's County Public Library website</a> for more information. ",
+              "pic_url": "http://www.nardiconstruction.com/images/LaurelLibraryRendering.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3834/13914936575_f72a039889_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555652.983917434,
+              "y": 4736579.441465421,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "r",
+              "__OBJECTID": 25,
+              "name": "Emancipation Community Park -<br> 518 Eighth Street",
+              "description": "Census records and local directories indicate that after the Civil War African Americans living in Laurel were concentrated in the Grove area.  St. Marks, founded in 1890, along with the schools, became the center of Grove community life. Laurel schools were segregated until the 1960s. The Laurel Colored School (School No. 2), opened in 1884.  The Laurel Colored School, which served Laurel’s African American students until 1962, was moved to a building on what is now Emancipation Park and renamed the Laurel Grove School.  For more than 100 years the Grove has been home to the African American community’s Emancipation Day celebration, which commemorates the freeing of the slaves in the 1860s. September 7, 1991 the site of the former Laurel Grove School and oak grove was dedicated and named Emancipation Community Park. <a href=\"https://farm8.staticflickr.com/7066/14008307294_dd9caf4f03_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "http://farm3.static.flickr.com/2433/3763295446_45ef7bb105_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2433/3763295446_45ef7bb105_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555790.033120316,
+              "y": 4736467.491823803,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "Colored School House # 2 -<br>803 West Street",
+              "description": "Until the late 1950s and early 1960s, Laurel’s public schools were segregated.  Laurel Colored School #2 , constructed in 1884, was located on this site.  A larger colored public school was eventually located across the street, next to what is now the library and Emancipation park.  Colored School # 2 is currently a private residence.",
+              "icon_color": "r",
+              "pic_url": "https://farm3.staticflickr.com/2925/14019062733_09faa5d582_b.jpg",
+              "thumb_url": "https://farm3.staticflickr.com/2925/14019062733_09faa5d582_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 79
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555767.04229557,
+              "y": 4736414.624123191,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "r",
+              "__OBJECTID": 26,
+              "name": "St. Mark's United Methodist Church<br> - 601 Eigth Street",
+              "description": "Built in 1921 on land purchased from Elizabeth and Mary Jenkins, St. Mark’s United Methodist Church is an important part of the history of the African-American community in Laurel. The church is located in an area known as “The Grove” (because of the former abundance of oak trees), which has long been the focus of African-American life and activities in Laurel. The Emancipation Day Parade takes place in The Grove each September. St. Mark’s was constructed from unique hand-molded cement blocks and one of Laurel’s oldest bells hangs in its belfry. Some of the surrounding parishioner’s homes date back to the nineteenth century. St. Mark’s was founded in 1890 by Frank and Sarah (Hebron) Carter when they opened their home at 618 Eighth Street (then known as Church Street) as a mission. The mission was part of the Bladensburg Circuit of the Potomac District within the Washington Annual Conference.",
+              "pic_url": "http://farm3.static.flickr.com/2612/3763295162_1da779666e_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2612/3763295162_1da779666e_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8556607.551024687,
+              "y": 4736802.780907461,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 29,
+              "name": "Ivy Hill Cemetery -<br>Sandy Spring Road",
+              "description": "In the 1850s the Laurel Cotton Mill set aside three acres of land for the burial of mill employees. In the early years, the cemetery was known both as the Laurel Mill Cemetery and as the Greenwood Cemetery. In 1890, a stock company called the “Laurel Cemetery Company of Prince George’s County” acquired the three acres plus five more adjacent acres and began operation. By the second half of the 20th century, however, conditions at the cemetery deteriorated substantially, drawing the attention of members of the Laurel Volunteer Fire Department and friends and relatives of those buried in the cemetery. Together they formed a group called the “Friends Interested in Ivy Hill Cemetery,” chaired by Mayor Meryl Harrison, and in 1973 the non-profit Ivy Hill Cemetery Association was established. Many names familiar in Laurel history are buried in the cemetery, which is still active. ",
+              "pic_url": "https://farm4.staticflickr.com/3700/13888572821_23118ff91b_b.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3700/13888572821_23118ff91b.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555807.052302487,
+              "y": 4737198.8501185365,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 62,
+              "name": "Methodist Meeting House -<br>123 Ninth Street",
+              "description": "Methodism was established in Laurel in the “Upper Room” of this building (southeast corner on the second floor) in 1840. The building served as the meeting place for Laurel’s Methodist congregation until construction of the “Old Stone Methodist Church” in 1842.",
+              "pic_url": "http://farm3.static.flickr.com/2474/3695141021_36302001d2_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2474/3695141021_36302001d2_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555789.137373973,
+              "y": 4737220.464666387,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 63,
+              "name": "\"Yellow Row\" -<br>117 Ninth Street",
+              "description": "At one time called the “Yellow Row,” these 12 attached units, each measuring 13 x 40 feet, were built about 1840 as rental tenements (one up/one down apartments) for mill workers. They are the oldest row houses still standing in Prince George’s County. The mill sold the houses to individual owners in 1863. While several units were extensively renovated into single family homes beginning in the 1970s, many others in the block retain their original 2 apartment configuration.",
+              "pic_url": "https://farm4.staticflickr.com/3820/13848306364_eb21f7691d_b.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3820/13848306364_eb21f7691d_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555972.466808999,
+              "y": 4737520.619029754,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 60,
+              "name": "Laurel Cotton Mill Dam",
+              "description": "These ruins are all that’s left of a massive dam built in 1850 to control the Patuxent River’s flow and supply water to the Laurel Cotton Mill, located where the Laurel Pool is today. The mill was the Laurel’s largest employer throughout the 19th century and the driving economic force in the city’s development. In 1855 the dam measured 222 feet wide and was 27 feet tall. This structure is part of the mill race, a canal that ran about 600 feet and directed water into the mill.   Wooden doors created a large gate across the channel that controlled the water flow. Water flowed from the race or canal to the mill where it powered two overshot wheels and later a large Boyden Turbine before flowing back into the river. The dam’s remnants were blown up in the 1940s. <a href=\"https://farm8.staticflickr.com/7380/14060413392_098641180b_o.jpg \" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm4.staticflickr.com/3787/13848243094_4cc5d7bc13.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3787/13848243094_4cc5d7bc13.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555806.156556122,
+              "y": 4737453.092812034,
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            },
+            "attributes": {
+              "name": "Laurel Municipal Pool/Laurel Cotton Mill.<br> - 901 Main Street",
+              "description": "Nicholas Snowden built a grist mill on this site in 1811.  In 1824 the building was converted into a cotton mill, and expanded in the 1830s by the Patuxent Manufacturing Company, headed by Horace Capron, Snowden’s son-in-law. The mill produced canvas duck for Baltimore clipper ship sails and Conestoga wagons.  It burned in 1855 and was rebuilt, and a mill operated on the site until 1929.  After the mill buildings were demolished, a private, segregated swim club was built on the site and opened in 1952. In 1967 the pool was purchased by the City of Laurel, integrated and designated the Laurel Municipal Pool. Now the site of Laurel's municipal pool. <a href=\"https://farm6.staticflickr.com/5094/14040471406_85bd08f219_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "icon_color": "p",
+              "pic_url": "https://farm8.staticflickr.com/7205/13890512001_47057ece19_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7205/13890512001_47057ece19_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 72
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555711.99823613,
+              "y": 4737477.439038379,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 0,
+              "name": "Mill Bridge at Casula Point <br> - 901 Main Street",
+              "description": "This site, named for Frank Casula, a former mayor of Laurel, is located at the south end of the former Ninth Street Bridge, which connected the City of Laurel and Prince George’s County to Howard County. It was an important crossing point between Howard County and Laurel until the opening of the C. Phillilp Nichols/216 bridge. The Ninth Street Bridge was built in 1889 as a replacement for a bridge that was destroyed by flooding the same year as the Johnstown Flood. During construction of the bridge, a rope suspension bridge was put in place to accommodate mill workers commuting from Howard County. The 1889 bridge was destroyed by flooding from Hurricane Agnes in 1972 and not rebuilt. The 1889 identifying metal plates were retrieved from the Patuxent River and are part of the Laurel Historical Society collection. <a href=\"https://farm3.staticflickr.com/2911/14028630873_c116b8d6cc_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "https://farm8.staticflickr.com/7151/13890491652_47a0ed2792_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7151/13890491652_47a0ed2792_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555694.486835223,
+              "y": 4737400.542355229,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 30,
+              "name": "Laurel Museum<br> - 817 Main Street",
+              "description": "The Laurel Museum occupies a building constructed between 1836 and 1840 by Horace Capron, owner of the Patuxent Manufacturing Company, a cotton duck mill  operating next door. The building was one of many duplexes built in the area to house mill workers and their families. It is believed that for some period of time the west half of the building was used as a company store. After the mill closed for good in 1929, the building was used as rental property until the City of Laurel purchased it in 1985. Officially designated the Laurel Museum in 1991, it opened in 1996 after extensive renovation. The Laurel Historical Society, (LHS) operates the Museum, mounts annual exhibits and undertakes extensive community educational outreach.  The LHS also oversees the John C. Brennan Memorial Research Library, an extensive collection of Laurel-related materials and artifacts, administrative offices, and a museum shop. ",
+              "pic_url": "https://farm8.staticflickr.com/7081/13995358264_e4cc9d6e15_o.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7081/13995358264_277d67af7d_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555610.585253196,
+              "y": 4737372.624925052,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 61,
+              "name": "Laurel Mill Worker Home<br> - 811 Main Street",
+              "description": "The brick and stone mill worker’s houses at 811 and 809 Main Street are typical of the rental housing provided by the Laurel Cotton Mill for its workers. Built about 1840, two families lived in the west half of the duplex (811) and two families lived in the east half (809). Each featured six fireplaces and separate kitchens for each family. The current resident reports seeing the ghost of a young woman standing in the side doorway looking anxiously toward the mill. The four large iron stars attach to rods that anchor the walls to the joists supporting the second and third floors. Joists in the basement are secured with wooden pegs. The two dormers were added at a later date, as was the small window cut into the west side.",
+              "pic_url": "http://farm3.static.flickr.com/2447/3695141447_d0219871e5_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2447/3695141447_d0219871e5_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555573.262485689,
+              "y": 4737178.994406068,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 31,
+              "name": "St. Mary of the Mills Catholic Church - <br>114 St. Mary’s Place ",
+              "description": "First a Jesuit Mission from Georgetown University, the original St. Mary’s Chapel was built by Dr. Theodore Jenkins in 1843. St. Mary’s is the oldest church in continuous use in Laurel. It was enlarged in 1890, and the Parish School was established in 1893. The current St. Mary’s School was built in 1953 to the north of the chapel. Architect John Walton designed the large 1959 church addition, and a new rectory was built in 1965 connecting to the church. The bell in St. Mary’s stone tower was acquired in 1890 from the Laurel Cotton Mill, where it once rang. It is reported that the ringing of the bell at the mill was so loud that workers wrapped the clappers in cloth to dampen the sound. An unknown Union soldier’s grave, and many Laurel citizens including Dr. Theodore Jenkins and his family are buried in the adjoining cemetery.<a href=\"https://farm6.staticflickr.com/5225/14008626285_6c26108f10_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "http://farm3.static.flickr.com/2633/3695141557_263faf7c68_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2633/3695141557_263faf7c68_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555623.424285233,
+              "y": 4737164.503841586,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "The Nicholas Snowden Mansion / Pallotti High School  -<br>113 St. Mary's Place",
+              "description": "The Nicholas Snowden Mansion, built in the early 19th century on the current site of Pallotti High School, was later the home of Louisa Capron, Nicholas’ daughter, and her husband Horace Capron, an important figure in the establishment of the Laurel Cotton Mill. The mansion served as the home of succeeding mill superintendents and, from 1917 to 1957, was a convent and school (St. Mildred’s Academy). The 18th century mansion was razed and St. Vincent Pallotti High School was constructed on the site. Pallotti High School was enlarged in 2002. Just north of the Snowden-Capron house was the Assembly Hall built by the mill in 1840. For much of the town’s early years it was a center of Laurel community life. President Zachary Taylor was entertained there by Horace Capron.<a href=\"https://farm3.staticflickr.com/2935/13998529074_fa5c760b4e_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "icon_color": "p",
+              "pic_url": "https://farm3.staticflickr.com/2940/13975969146_1721b41c45_b.jpg",
+              "thumb_url": "https://farm3.staticflickr.com/2940/13975969146_1721b41c45_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 75
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555526.982253503,
+              "y": 4737030.84167967,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 59,
+              "name": "Historic Laurel High School -<br>116 St. Mary's Place",
+              "description": "Built in 1899, it was the first high school in Prince George’s County. Mayor Edward Phelps initiated construction of the high school by raising subscriptions of $2,000 to match the $6,363 that had been appropriated. When funding proved inadequate, Phelps himself assumed financial responsibility for completing work on the school. The cupola on top of the building was used during World War II as a Civil Defense Aircraft Spotting Station for identifying aircraft flying in the Laurel area. Observers watched 24 hours, with adults covering the class times and night hours, and high school students on watch from 3 PM until dark. The left wing previously housed the Laurel Senior Center and is now owned by the Laurel Boys and Girls Club.<a href=\"https://farm6.staticflickr.com/5471/14008357024_bfdf4f6d77_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here.</i></a>",
+              "pic_url": "http://farm4.static.flickr.com/3531/3762498529_f7b8e58344_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3531/3762498529_f7b8e58344_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555449.649478853,
+              "y": 4737255.730016542,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 21,
+              "name": "St. Mary of the Mills Catholic Church <br> - 114 St. Mary’s Place ",
+              "description": "First a Jesuit Mission from Georgetown University, the original St. Mary’s Chapel was built by Dr. Theodore Jenkins in 1843. St. Mary’s is the oldest church in continuous use in Laurel. It was enlarged in 1890, and the Parish School was established in 1893. The current St. Mary’s School was built in 1953 to the north of the chapel. Architect John Walton designed the large 1959 church addition, and a new rectory was built in 1965 connecting to the church. The bell in St. Mary’s stone tower was acquired in 1890 from the Laurel Cotton Mill, where it once rang. It is reported that the ringing of the bell at the mill was so loud that workers wrapped the clappers in cloth to dampen the sound. An unknown Union soldier’s grave, and many Laurel citizens including Dr. Theodore Jenkins and his family are buried in the adjoining cemetery.<a href=\"https://farm6.staticflickr.com/5225/14008626285_6c26108f10_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "https://farm8.staticflickr.com/7034/13913616135_ae0bc4f198_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7034/13913616135_ae0bc4f198_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555288.713704424,
+              "y": 4737186.179038869,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 64,
+              "name": "Stone Machine Shop -<br>612 Main Street",
+              "description": "Built in 1895, this building has 26-inch stone walls made of fieldstone from an earlier machine shop demolished nearby. It is an example of adaptive reuse of an industrial building during this period. Initially serving as a machine shop for the repair and manufacture of machines for the Laurel Cotton Mill, it later became a rug factory and warehouse. In 1940 the building was purchased by Clyde L. Miles, Sr., who remodeled it to accommodate a grocery store and an ice cream shop on the first floor and apartments on the second floor. In the 1950s, the Clyde L. Miles Real Estate office took over the space occupied by the ice cream shop. Miles’ son-in-law, J. Richard Compton, M.D., remodeled the building in 1958 and maintained his medical practice there until 1978 when the building was purchased by the present owner.",
+              "pic_url": "https://farm8.staticflickr.com/7268/13913595775_69de71b025_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7268/13913595775_69de71b025_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554447.906393312,
+              "y": 4737017.004263529,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 57,
+              "name": "Avondale Mill - <br>Avondale Street",
+              "description": "The Avondale Mill was built on this site between 1845-1848 by Horace Capron and the Snowden family. Initially a flour mill, it later produced cotton cloth and a special type of lace-print cloth. George Wheeler owned the Avondale Mill in the 1860s and 1870s. In the last quarter of the nineteenth century, B.F. Crabbs owned the mill and it was referred to as “Crabbs Mill.” The dam for the Avondale Mill was at the foot of Post Office Avenue. From 1915 to 1917, the Southern Embroidery Company used the mill to produce lace-print cloth and, among other things, turned out chevrons for WWI uniforms. During WWII, the building was used to manufacture tractors. In 1961, the City of Laurel purchased the Avondale Mill and approximately 17 acres of riverside property. The mill burned in 1991. The site is now part of Laurel's Riverfront Park. <a href=\"https://farm3.staticflickr.com/2902/14060413752_e4269f7744_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm8.staticflickr.com/7135/13975953766_0045c64535_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7135/13975953766_0045c64535_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554411.77795409,
+              "y": 4737039.556545879,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "p",
+              "__OBJECTID": 22,
+              "name": "Riverfront Park - <br> 22 Avondale Street",
+              "description": "Laurel owes its very existence to the river — which in pre-Colonial times provided Native Americans food and transportation.  It later provided the power to operate the mills which were the center of the town’s early economic life.  During the 19th and early 20th centuries, the riverfront was a bustling, basically industrial site.  Today, with the mills just a memory, it has reverted to its earlier, more restful, natural state. Riverfront Park offers visitors the chance to experience the heritage and nature of Laurel Maryland though a paved path extending slightly more than one mile from the ruins of the former Laurel Mill Dam at the upper end of Main Street, past the former Avondale Mill to Route 1.  Along the way a series of markers identify both the history and the eco-system rich in flowers, trees, plant and animal life.  There is a picnic area, and playground for children. ",
+              "pic_url": "https://farm8.staticflickr.com/7345/14060384321_9d389793d7_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7345/14060384321_9d389793d7_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554613.320899801,
+              "y": 4736847.605551553,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 50,
+              "name": "P.S. Hance Store -<br>383 Main Street",
+              "description": "Hance’s Store was built before 1900 by Mary and Jesse Hance. The family farm on Bowie Road seven miles from Laurel supplied the produce for the store. Several times a week, Mrs. Hance would send their daughter Priscilla to the farm, which was managed by their son, Frank. The family would load the buggy with vegetables, beef, poultry, and pork products to sell in the store. In later years, most of the groceries were discontinued, and sundries, candy and school supplies were the main items sold. The property remained in the Hance family until 1978. For many years it was the site of Laurel Travels and today remains a commercial business. <a href=\"https://farm3.staticflickr.com/2488/3695954920_791f495ce4.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm4.staticflickr.com/3817/13847913215_300a316947_b.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3817/13847913215_300a316947_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554836.361759601,
+              "y": 4736982.308085582,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "Odd Fellows Hall - <br>419 Main Street",
+              "description": "The unusual architecture of this pre-Civil War building includes a façade of projected brick pilaster supporting paired brackets under a low hip roof. Used today as a treatment center, the structure was constructed for the International Order of Odd Fellows, a secret, benevolent society founded in England and established in Maryland in 1821.  The Odd Fellows were active in Laurel early on, and their building can be seen on the earliest map of Laurel, which dates from 1861. ",
+              "icon_color": "g",
+              "pic_url": "https://farm8.staticflickr.com/7236/13847931073_7065fc29fd_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7236/13847931073_7065fc29fd_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 77
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554870.400123881,
+              "y": 4736997.078570924,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 46,
+              "name": "Tapscott House - <br>429 Main Street",
+              "description": "This pre-Civil War brick building, named for long-time resident and mill worker, Thomas Tapscott, has many unusual architectural features. The windows are highlighted by elliptical arches and the round head window in the gable is formed with decorative brick. In its early years, the building was both a bakery and a family residence. The original brick ovens, built into the walls, are still in place in the northwest corner of the basement. The site is currently home to Hope House Treatment Center.",
+              "pic_url": "https://farm8.staticflickr.com/7051/13913642645_c9c3876b0e_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7051/13913642645_c9c3876b0e_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555120.910540793,
+              "y": 4737142.07285817,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 43,
+              "name": "Laurel Streetcar Station - <br>533 Main Street",
+              "description": "This building, originally the Washington and Berwyn Electric Railroad Station, was the northern terminus of an electric trolley system that ran from Laurel to Washington, D.C. (The southern terminus of the trolley was G Street near the U.S. Treasury Building.) The railroad operated from 1902 to 1925 and many “Laurelites” used the trolley to commute to work in Washington. Service was on the half hour, with the trolley making several stops on the one-hour trip to D.C. The fare one way was 20 cents. In 1937, the building was rotated 90 degrees to make the longer side parallel with Main Street. It has been a popular tavern for many years. <a href=\"https://farm8.staticflickr.com/7168/13991744861_b036497880_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "http://farm4.static.flickr.com/3587/3695946712_59ca72f73e_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3587/3695946712_59ca72f73e_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555116.028281273,
+              "y": 4737084.206357736,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 4,
+              "name": "St. Philip’s Episcopal Church - <br> 532 Main Street",
+              "description": "Built in 1848 through the efforts of Horace and Louisa (Snowden) Capron and parishioners. It was probably the first building in Laurel designed by a professional architect. It houses a bell from St. Paul’s Church in Baltimore that rang to warn of the approaching British in 1814. An old cemetery can be seen behind the church. The newest addition, the Ministry Center, was added to the east side of the church in 1999, and won a Masonry Institute award the same year.  ",
+              "pic_url": "http://farm4.static.flickr.com/3555/3695946522_59943ba4cc_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3555/3695946522_59943ba4cc_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555074.63030885,
+              "y": 4737038.282906501,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 47,
+              "name": "Sunday School, St. Phillips Church<br> - 522 Main Street",
+              "description": "Built by L.A. Ellis in 1886, this one-room frame Sunday school moved to its present site southwest of the church in 1927 to make room for the Parish Hall, which was added to the west side of the church. ",
+              "pic_url": "http://farm3.static.flickr.com/2557/3762499849_4ddd64f5cc_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2557/3762499849_4ddd64f5cc_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554979.08402344,
+              "y": 4737015.590663705,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 44,
+              "name": "Historic Main Street Storefronts - <br> 504-512 Main Street",
+              "description": "Olive on Main (504), Laurel Mill Playhouse (508) &amp; Sean Patrick’s Pet Spa (512). This group of buildings on the south side of Main Street date from just after the largest fire in Laurel’s history, in December, 1899. Beginning in Mengerts Bakery in the alley behind Main Street, the fire eventually engulfed 12 buildings and the Presbyterian Church. The event led to establishment of the Laurel Volunteer Fire Department in1902. 504 Main was first home to the Laurel Steam Bakery and later the Cordelia Bakery. Their ovens are still in the basement. 508 Main started as John O’Brien’s Store, and later housed a photography shop, antique store, dance and meeting hall, and an artist’s studio. 512 Main was Dr. Shaffer’s Drug Store and a variety of businesses, including L&amp;L Gifts and Antiques.  A portrait of its proprietor, the late Louise Eldridge hangs on the side outside wall. <a href=\"https://farm5.staticflickr.com/4068/4438936066_66fb003944.jpg\" target=\"_blank\"><i>View historic image here. </i></a>",
+              "pic_url": "https://farm3.staticflickr.com/2909/13914060064_59d26dcb62_b.jpg",
+              "thumb_url": "https://farm3.staticflickr.com/2909/13914060064_59d26dcb62_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554880.551916715,
+              "y": 4736916.49871541,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 55,
+              "name": "First United Methodist Church of Laurel<br> - 424 Main Street",
+              "description": "Methodists, who organized as a congregation in Laurel in 1840, established the first Methodist church in Laurel in 1842 and occupied two other locations before construction of the First United Methodist Church of Laurel on this site in 1884. The building was enlarged in 1909, 1950, 1962 and 2001. The church lost its original wooden steeple in 1977 due to deterioration, and a new steeple was erected in 1979. <a href=\"https://farm8.staticflickr.com/7440/14064045144_879686cf1c_o.jpg \" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "http://farm3.static.flickr.com/2533/3695947406_4331f47997_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2533/3695947406_4331f47997_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554232.031504774,
+              "y": 4736635.350971496,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 56,
+              "name": "Athey-Harrison Feed Store -<br>309 A Street",
+              "description": "This building, part of the original properties of Millard Schooley, was a hardware store in the early 1900s. It became the Athey and Harrison Feed Store when Snowden Athey and Frank Harrison became partners. His other daughter was the wife of Frank Harrison. At Frank’s death, Martha became Mr. Athey’s partner. When Mr. Athey retired, Martha asked her son (by a second marriage), Turner Ashby to join her in the business. In 1945, the building became the Ashby and Harrison Feed Store, supplying feed and hay to the Laurel Race Course. In 1969, it was purchased by Lawrence Gayer for Gayer’s Saddlery, a leather and equestrian supply business. Ronald Sargent, an employee of Gayer’s, was sent to England for a course in saddlery and returned a Master Saddler. He purchased the business from Mr. Gayer in 1999 and renamed it “Outback Leather.”  ",
+              "pic_url": "http://farm4.static.flickr.com/3464/3695138769_96d3730613_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3464/3695138769_96d3730613_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554476.570278924,
+              "y": 4736773.557180424,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 51,
+              "name": "News Leader Building -<br>  357 Main Street",
+              "description": "Bowie McCeney ran the News Leader from his law office at 357 Main Street after taking over the newspaper in 1938 from James Curley, who had founded the paper in 1897 and served as editor for 41 years. The newspaper’s publisher for 40 years, McCeney served as editor for only six months, giving the job to Gertrude Poe, who served as editor for 41 years. The News Leader eventually became the Laurel Leader and moved to 615 Main Street in 1985. The Chesapeake and Potomac Telephone Company also occupied 357 Main Street. During WWII, it played a major role in local communications and some of the equipment can still be seen in the basement of the building. In 2000, Delaney Properties Inc. purchased the building and carried out a careful historical renovation of the building’s offices and apartments. Sold in 2008, the property continues to demonstrate the continued vitality of Main Street.",
+              "pic_url": "http://farm4.static.flickr.com/3580/3695948306_a9a74cba16_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3580/3695948306_a9a74cba16_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554437.456018236,
+              "y": 4736738.725707428,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 52,
+              "name": "Laurel Meat Market -<br>347 Main Street",
+              "description": "Originally the site of the Laurel Foundry, operated by the Diven family, this Laurel landmark was originally built to house an A&amp;P grocery store.  After later serving as the home to the popular Vogue Dress Shop, which operated on Main Street from 1938 until the 1950s, it reverted to its earlier purpose first under a Mr. Harvey, and, since January, 1970, as the Laurel Meat Market operated by the Miles family. According to Mrs. Miles, the original A&amp;P was built with a set-back, which today provides space for the well-known bull to stand in front of the building.",
+              "pic_url": "http://farm3.static.flickr.com/2531/3695138525_f94b1a9eab_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2531/3695138525_f94b1a9eab_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554543.751260746,
+              "y": 4736806.751116927,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 53,
+              "name": "Block's Department Store -<br>377 Main Street",
+              "description": "This building, shown on the 1861 Simon J. Martinet Map of Prince George’s County as “Peter Bogert’s store,” was used as a Union Army Hospital during the Civil War.  In 1897, Harry A. Block opened a clothing store at the site and the well-known local business continued in operation under his son Albert Block until 1974. Thereafter, Antonio Gatto purchased the property for his tailor and men’s retail business. Following his death in 1978, his wife, Melina, operated a women’s tailoring business until 2002. The building is now occupied by other businesses. <a href=\" https://farm3.staticflickr.com/2668/3695954482_979f1bd343.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "http://farm4.static.flickr.com/3578/3762498637_be0f348d17_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3578/3762498637_be0f348d17_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554661.989788912,
+              "y": 4736823.900928702,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 49,
+              "name": "Citizens National Bank -<br>390 Main Street",
+              "description": "Built in 1890, Citizens National Bank at the corner of Fourth and Main Streets was the first National Bank (i.e., Federal bank) in Prince George’s County. While the bank was built at a cost of only $3,000, the bank vault cost an additional $2,750. Building a National Bank in Laurel at this time was a logical development because Laurel was the largest town in Prince George’s County and it had a strong industrial base (the Laurel Cotton Mill). Citizens National Bank survived the Depression and the bank closings of 1933. The bank reopened immediately after the bank closings and not one customer lost a deposit. The bank was enlarged in 1910, 1948, and 1960. Citizens National Bank became an affiliate of the Mercantile Bankshares Corporation in 1973. In 2007 the bank was acquired by PNC and changed its name. <a href=\"https://farm6.staticflickr.com/5552/14028630943_a1ddd5258d_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "http://farm3.static.flickr.com/2431/3695948038_1fd05d6771_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2431/3695948038_1fd05d6771_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554731.260845805,
+              "y": 4736854.356307164,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 48,
+              "name": "400 Main Street",
+              "description": "This large residence built in 1866 is a Main Street landmark. Five generations of the McCeney family have enjoyed the home. It was built on part of the former Talbott estate. The frame house, which features joists secured with wooden pegs (a construction technique of the time), was purchased by George Patterson McCeney and his wife Margaret Sadler McCeney in 1929. Mrs. McCeney was the daughter of Robert H. Sadler, Sr., who operated a pharmacy at 420 Main Street.  The kitchen wing was added prior to 1879 and the east porch with a “Jibb” door  in 1905.  In 1930, the street-level entrance was added to provide public access to the medical offices of Dr. Robert S. McCeney, who practiced there until 1987. In 2000, Mr. and Mrs. James B. McCeney, the current residents, began a detailed restoration project that lasted 21 months, and included extensive interior and exterior renovations, and a new garden featuring a number of rare azalea plants. ",
+              "pic_url": "http://farm3.static.flickr.com/2520/3695947978_429ec63285_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2520/3695947978_429ec63285_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554839.64616329,
+              "y": 4736925.71743907,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 45,
+              "name": "Sadler's Pharmacy - <br>420 Main Street",
+              "description": "Built in 1871, this classic example of Victorian architecture was the pharmacy and family home of Dr. Robert H. Sadler, Sr. His son, Robert “Bert” Sadler, Jr., was a talented photographer who recorded images of people and places in Laurel in the early 1900s. A unique collection of 1,300 of Bert’s glass negatives, as well as many of his black and white photographs, is preserved at the Laurel Museum. These provide a valuable source of information about life in Laurel at the turn of the century. The home is currently a private residence.",
+              "pic_url": "http://farm3.static.flickr.com/2616/3695947546_e6d36d9418_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2616/3695947546_e6d36d9418_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555861.095670106,
+              "y": 4737001.062776363,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 54,
+              "name": "Phelps and Shaffer Store -<br> 900 Ninth Street",
+              "description": "Built in 1891 by Edward Phelps and Charles F. Shaffer, Jr., this building was the city’s first department store. Its many interesting architectural features include Laurel’s most elaborate Italianate cornice. Over the years, the building served a variety of purposes, and it is an excellent example of adaptive reuse. In 1935, it became the headquarters of the Laurel Volunteer Fire Department, which later moved across the street and then to Cherry Lane. From 1954 to 1972, it served as Laurel’s City Hall, police headquarters and jail. The City restored the exterior of the building after a tornado in 2003, and in 2005 it was purchased from the City for private use, and additional restoration work was undertaken, bringing the building back to its original 1890s look.",
+              "pic_url": "https://farm3.staticflickr.com/2903/13987345036_08b9db7478_b.jpg",
+              "thumb_url": "https://farm3.staticflickr.com/2903/13987345036_08b9db7478_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555019.094030255,
+              "y": 4736695.608580047,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "Laurel Armory - <br>422 Fifth Street",
+              "description": "The Anderson-Murphy Armory was built in 1928 by the Maryland National Guard.  It is named for Captain Julian B. Anderson, former Mayor of Laurel, and Lt. Colonel Thomas F. Murphy.  whose efforts were instrumental in getting the structure built. Laurel’s first National Guard Company was authorized in 1912. On May 22, 1923 Headquarters Company, 2nd Battalion, 1st Infantry was organized, with Lt. J.B. Anderson commanding. From 1925 to 1928, prior to moving to the Montgomery Street site, it occupied a two-story frame building on Main Street near the railroad station. The Armory building is currently used by the Laurel Department of Parks and Recreation as a community center.",
+              "icon_color": "g",
+              "pic_url": "https://farm8.staticflickr.com/7080/13607374435_25610542c4_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7080/13607374435_25610542c4_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 78
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554258.605315445,
+              "y": 4736109.31455264,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 58,
+              "name": "Fairall Foundry -<br>307 First Street",
+              "description": "Named for original owner Thomas Fairall, The Fairall Foundry Building on First Street near the railroad station was built about 1866 and is the only commercial stone building left from Laurel’s early development. The foundry and associated machine shop provided equipment for the Laurel Cotton Mill and other local businesses and also produced cast iron stoves and other utilitarian items. They continued in operation until 1892. In 1908, Thomas’s son, William A. Fairall, converted the building into a flour and feed warehouse. A number of businesses subsequently operated on the site, including a shirt factory and the J.R. Jones Feed Store. The City of Laurel purchased the Fairall Foundry building in 1999 and after a vigorous community effort to ensure its preservation, incorporated it into the new public works facility being constructed at that location. ",
+              "pic_url": "http://farm3.static.flickr.com/2486/3695139111_46bac28c46_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2486/3695139111_46bac28c46_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554082.740433987,
+              "y": 4736379.829973162,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "Civil War Encampment <br> - Main Street",
+              "description": "Located 20 miles outside of the nation’s capital, Laurel sat on the extremely important rail road line that linked Washington, D.C., and the north  From 1861 to 1865, 200-400, and sometimes up to 1000 Union soldiers were encamped in the areas known to the military as Laurel Station, charged with guarding the line, and the bridge crossing the river. The train station at the time was on the east side of the tracks and there was only a single track. Laurel soldiers were housed in tents or log structures near the railroad bridge, in an area bounded by what are currently Rt. 1 southbound, from Main Street to Montgomery Street, on both east and west sides of the rail line.  A hand drawn map created in 1862 gives us an idea of how the camp was laid out. <a href=\"https://farm6.staticflickr.com/5347/14014916793_ddb4b25ed9_c.jpg\" target=\"”\" _blank”=\"\"> <i>View historic map here. </i></a> ",
+              "icon_color": "g",
+              "pic_url": "https://farm8.staticflickr.com/7132/14004037572_b516038986_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7132/14004037572_b516038986_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 76
+            }
+          },
+          {
+            "geometry": {
+              "x": -8553978.43032126,
+              "y": 4736351.485781913,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 19,
+              "name": "Baltimore &amp; Ohio Railroad Station <br> - 22 Main Street",
+              "description": "Laurel figures prominently in the early history of railroads in Maryland. The Washington Branch of the B&amp;O Railroad, which connected Baltimore and Washington DC,was laid through Laurel in 1835. A small railroad station constructed on the east side of the tracks in Laurel greatly facilitated commercial development in the region, particularly the early cotton mill.  In 1884 the station was demolished and the present Queen Anne-style station, designed by well-known architect Francis Baldwin, was built on the west side of the tracks. The B &amp; O railroad station has been in continuous use ever since, serving commuters and travelers between Baltimore and Washington, D.C. The station is on the National Register of Historic Places. <a href=\"https://farm4.staticflickr.com/3585/3695143543_17fcbffcfd.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "http://farm3.static.flickr.com/2448/3695948902_99a2d4c7f5_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2448/3695948902_99a2d4c7f5_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554144.546937294,
+              "y": 4736663.235744375,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 68,
+              "name": "Baublitz Garage -<br>43 Washington Blvd",
+              "description": "Baublitz Garage, built in 1905 by Samuel T. Baublitz, was the first garage built between Baltimore and Washington on Route 1 (then called the Washington &amp; Baltimore Turnpike). On one occasion, George Herman “Babe” Ruth stopped at the garage to have his car repaired. The garage was later purchased by Fred Frederick and expanded into a car dealership. <a href=\"https://farm6.staticflickr.com/5009/13991714082_caa1ae5e0f_b.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm8.staticflickr.com/7450/13914047904_20904255ce_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7450/13914047904_20904255ce_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554183.959780008,
+              "y": 4736579.502115014,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 70,
+              "name": "Patuxent Bank -<br>214 Washington Blvd",
+              "description": "The intersection of Route 1 and Main Street has long been a crossroads for travelers between Baltimore and Washington, D.C. As early as 1808, four stagecoach lines stopped daily at an inn called the “Half-Way House” on the NE corner (now the site of the Patuxent Bank Building). The 40-mile trip between Baltimore and Washington took six hours. The inn later expanded to become Harrison’s Hotel and then the landmark Milstead’s Hotel, which included undertaking among its services. Milsteads’s burned in 1898 in one of several major fires in the city prior to the establishment of the Laurel Volunteer Fire Department in 1902. In the twentieth century, the intersection of Route 1 and Main Street continued to serve as a travel hub, becoming the site of the Greyhound and Trailways bus stations. Route 1 remained unpaved until 1932. <a href=\"https://farm3.staticflickr.com/2899/14064044574_ce7d6a0b55_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm8.staticflickr.com/7389/13890489862_ce4444a827_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7389/13890489862_ce4444a827_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554272.340093935,
+              "y": 4736505.948270522,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 67,
+              "name": "Laurel Tavern Donuts - <br> 115 Washington Blvd",
+              "description": "The Little Tavern restaurant opened in 1940, as the Laurel location of the Little Tavern chain of restaurants. The business continued until 2006 and reopened in 2008 as Laurel Tavern Donuts. The building is included on the Maryland Historical Trust’s inventory of historic sites as ‘‘an excellent example of mid-twentieth century roadside commercial architecture.”",
+              "pic_url": "http://farm3.static.flickr.com/2591/3695139241_5bc902995b_b.jpg",
+              "thumb_url": "http://farm3.static.flickr.com/2591/3695139241_5bc902995b_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554223.372622732,
+              "y": 4736457.619951703,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 23,
+              "name": "Laurel Tastee Diner -<br> 118 Washington Blvd",
+              "description": "Built in 1951 by Comac , a diner manufacturer in business from 1947 through approximately 1951, this property is said to be one of only two surviving Comac diners, the other in Albany, New York. Look for the manufacturer's tag above the door.The Tastee Diner building replaced an earlier diner at the same location. The business opened as the Laurel Diner, before being purchased by the local Tastee Diner chain, in 1982 which also continues to operate diners in Silver Spring and Bethesda. <a href=\"https://farm8.staticflickr.com/7342/14064045124_51b56f6d51_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a>",
+              "pic_url": "https://farm8.staticflickr.com/7337/14040470566_a2a28877f8_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7337/14040470566_a2a28877f8_b.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554338.774469376,
+              "y": 4736455.9557844335,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 66,
+              "name": "Academy of Music / US Post Office -<br>Washington Blvd/Prince George St",
+              "description": "The Academy of Music was built on this site in 1879 and for 38 years was the cultural center of Laurel. A tour de force of Victorian architecture, the frame building was the site of theater productions, concerts, and dances. Civic meetings, high school commencement exercises, and religious services were also held there. The building burned in 1917. At the time of the fire, the basement was being used by the Academy Ford Garage. The Ford dealer rebuilt and remained on the site until 1969. It is now occupied by the United States Regional Postal Facility. <a href=\"https://farm3.staticflickr.com/2489/3695952712_fb0ceb779b_o.jpg\" target=\"”\" _blank”=\"\"> <i>View historic image here. </i></a> ",
+              "pic_url": "https://farm8.staticflickr.com/7348/14005531912_6b618450bf_o.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7348/14005531912_ea9c215dd6_t.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8554416.256686268,
+              "y": 4736357.123734278,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "icon_color": "g",
+              "__OBJECTID": 69,
+              "name": "Laurel Wreath Masonic Lodge No. 149 -<br>207 Washington Blvd",
+              "description": "The property on which the Masonic Hall stands was acquired in 1893. The cornerstone was laid in 1894 and the Temple was dedicated in 1895. The entire records of the Lodge are preserved in the hall, and wall plaques list past masters of the local Lodge. Many members of the Masonic Hall have been active in civic activities in the City of Laurel.",
+              "pic_url": "http://farm4.static.flickr.com/3655/3695949426_d81de3acb9_b.jpg",
+              "thumb_url": "http://farm4.static.flickr.com/3655/3695949426_d81de3acb9_m.jpg",
+              "is_video": "false"
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555409.639471738,
+              "y": 4735440.018245264,
+              "spatialReference": {
+                "wkid": 102100
+              }
+            },
+            "attributes": {
+              "name": "Laurel Shopping Center -<br>Domer Ave/Baltimore Ave",
+              "description": "Opened in 1956 The Laurel Shopping Center was the site of one of Laurel’s most notorious events:  On May 15, 1972, Alabama Governor George Wallace, who was running for President, was shot by Arthur Bremer during a political rally in the middle of the shopping center, near what is today the Bank of America. Wallace was paralyzed from the waist down for the rest of his life. An ardent segregationist and populist, the Governor was particularly known for his opposition to the integration of Alabama public schools and particularly the University of Alabama in Tuscaloosa. He won the Maryland primary, but left the presidential race as a result of his injuries. <a href=\"https://farm3.staticflickr.com/2897/13985058206_968803c1d8_o.png\" target=\"”\" _blank”=\"\"> <i>View News Leader article here. </i></a> ",
+              "icon_color": "g",
+              "pic_url": "https://farm8.staticflickr.com/7167/14004969291_b4a7b36242_b.jpg",
+              "thumb_url": "https://farm8.staticflickr.com/7167/14004969291_b4a7b36242_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 80
+            }
+          },
+          {
+            "geometry": {
+              "x": -8555744.05147065,
+              "y": 4735123.554942128,
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            },
+            "attributes": {
+              "name": "Towne Centre at Laurel -<br>Baltimore Ave",
+              "description": "Today undergoing major renovation and rejuvenation, this shopping area was the site of Laurel’s enclosed shopping center, Laurel Center Mall from 1979-2012.  In February 1980 the Olympic Torch Relay Team visited the then new mall and passed the Olympic Torch from runner to runner.  Earlier the area was part of what was once a large complex called the Laurel Sanitarium, treating “nervous and mental diseases, alcoholic and drug cases.” From 1905 to 1950 it treated more than 20,000 patients. FBI Director J. Edgar Hoover’s father was among them.  It closed in 1963. <a href=\"https://farm8.staticflickr.com/7445/13971815576_365bb719e5_o.jpg\" target=\"”\" _blank”&gt;=\"\" <i=\"\">View historic image here. </a>",
+              "icon_color": "g",
+              "pic_url": "http://www.ggcommercial.com/wp-content/uploads/2012/06/properties_LTC_02.jpg",
+              "thumb_url": "http://www.ggcommercial.com/wp-content/uploads/2012/06/properties_LTC_02.jpg",
+              "is_video": null,
+              "__OBJECTID": 71
+            }
+          },
+          {
+            "geometry": {
+              "x": -8556713.484017111,
+              "y": 4733388.202120149,
+              "spatialReference": {
+                "wkid": 102100,
+                "latestWkid": 3857
+              }
+            },
+            "attributes": {
+              "name": "Gude House -<br>13910 Laurel Lakes Ave",
+              "description": "The Gude Mansion is a rare 3 story brick house in the Greek Revival style, and the county's only one with a full-lighted third story. Originally part of Snowden lands, around 1865 John D. McPherson constructed the main building. Armand Jardin, a French horticulturist who supplied the rosebuds &amp; other white flowers for President Lincoln's funeral, purchased the house in 1875, and is believed to have built the structure's north wing, which includes the one-story semi-octagonal bay and 5-pane bull's-eye window. The Jardin family occupied the house until 1904. William Gude acquired the property in 1926 and extensively renovated it. It remained the Gude family home until 1980. Since 1988, the Gude Mansion, which is in the heart of the Laurel Lakes development, has been a commercial property.  The structure features a distinctive side stair hall and double parlors. Its beautiful interior open-string stair rises along the north (and originally exterior) side.",
+              "icon_color": "b",
+              "pic_url": "https://farm4.staticflickr.com/3747/13890509646_281849130f_b.jpg",
+              "thumb_url": "https://farm4.staticflickr.com/3747/13890509646_281849130f_t.jpg",
+              "is_video": "false",
+              "__OBJECTID": 74
+            }
+          }
+        ],
+        "geometryType": "esriGeometryPoint"
+      },
+      "layerDefinition": {
+        "geometryType": "esriGeometryPoint",
+        "objectIdField": "__OBJECTID",
+        "name": "Map-Tour-layer",
+        "type": "Feature Layer",
+        "typeIdField": "",
+        "drawingInfo": {
+          "renderer": {
+            "type": "simple",
+            "symbol": {
+              "type": "esriPMS",
+              "url": "http://static.arcgis.com/images/Symbols/Basic/RedSphere.png",
+              "imageData": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQBQYWludC5ORVQgdjMuNS4xTuc4+QAAB3VJREFUeF7tmPlTlEcexnve94U5mANQbgQSbgiHXHINlxpRIBpRI6wHorLERUmIisKCQWM8cqigESVQS1Kx1piNi4mW2YpbcZONrilE140RCTcy3DDAcL/zbJP8CYPDL+9Ufau7uqb7eZ7P+/a8PS8hwkcgIBAQCAgEBAICAYGAQEAgIBAQCAgEBAICAYGAQEAgIBAQCDx/AoowKXFMUhD3lQrioZaQRVRS+fxl51eBTZUTdZ41U1Rox13/0JF9csGJ05Qv4jSz/YPWohtvLmSKN5iTGGqTm1+rc6weICOBRbZs1UVnrv87T1PUeovxyNsUP9P6n5cpHtCxu24cbrmwKLdj+osWiqrVKhI0xzbmZ7m1SpJ+1pFpvE2DPvGTomOxAoNLLKGLscZYvB10cbYYjrJCb7A5mrxleOBqim+cWJRakZY0JfnD/LieI9V1MrKtwokbrAtU4Vm0A3TJnphJD4B+RxD0u0LA7w7FTE4oprOCMbklEGNrfdGf4IqnQTb4wc0MFTYibZqM7JgjO8ZdJkpMln/sKu16pHZGb7IfptIWg389DPp9kcChWODoMuDdBOhL1JgpisbUvghM7AqFbtNiaFP80RLnhbuBdqi0N+1dbUpWGde9gWpuhFi95yL7sS7BA93JAb+Fn8mh4QujgPeTgb9kAZf3Apd2A+fXQ38yHjOHozB1IAJjOSEY2RSIwVUv4dd4X9wJccGHNrJ7CYQ4GGjLeNNfM+dyvgpzQstKf3pbB2A6m97uBRE0/Ergcxr8hyqg7hrwn0vAtRIKIRX6Y2pMl0RhIj8co9nBGFrvh55l3ngU7YObng7IVnFvGS+BYUpmHziY/Ls2zgP9SX50by/G9N5w6I+ogYvpwK1SoOlHQNsGfWcd9Peqof88B/rTyzF9hAIopAByQzC0JQB9ST5oVnvhnt+LOGsprvUhxNIwa0aY7cGR6Cp7tr8+whkjawIxkRWC6YJI6N+lAKq3Qf/Tx+B77oGfaQc/8hB8w2Xwtw9Bf3kzZspXY/JIDEbfpAB2BKLvVV90Jvjgoac9vpRxE8kciTVCBMMkNirJ7k/tRHyjtxwjKV4Yp3t/6s+R4E+/DH3N6+BrS8E314Dvvg2+/Sb4hxfBf5sP/up2TF3ZhonK1zD6dhwGdwail26DzqgX8MRKiq9ZBpkSkmeYOyPM3m9Jjl+1Z9D8AgNtlAq6bZ70qsZi+q+bwV/7I/hbB8D/dAr8Axq89iz474p/G5++koHJy1sx/lkGdBc2YjA3HF0rHNHuboomuQj/5DgclIvOGCGCYRKFFuTMV7YUAD3VDQaLMfyqBcZORGPy01QKYSNm/rYV/Nd/Av9NHvgbueBrsjDzRQamKKDxT9Kgq1iLkbIUDOSHoiNcgnYHgnYZi+9ZExSbiSoMc2eE2flKcuJLa4KGRQz6/U0wlGaP0feiMH4uFpMXEjBVlYjp6lWY+SSZtim0kulYMiYuJEJXuhTDJ9UYPByOvoIwdCxfgE4bAo0Jh39xLAoVpMwIEQyTyFCQvGpLon9sJ0K3J4OBDDcMH1dj9FQsxkrjMPFRPCbOx2GyfLal9VEcxstioTulxjAFNfROJPqLl6Bnfyg6V7ugz5yBhuHwrZjBdiU5YJg7I8wOpifAKoVIW7uQ3rpOBH2b3ekVjYT2WCRG3o+mIGKgO0OrlIaebU/HYOQDNbQnojB4NJyGD0NPfjA0bwTRE6Q7hsUcWhkWN8yZqSQlWWGECAZLmJfJmbrvVSI8taK37xpbdB/wQW8xPee/8xIGjvlj8IQ/hk4G0JbWcX8MHPVDX4kveoq8ocn3xLM33NCZRcPHOGJYZIKfpQyq7JjHS6yJjcHujLHADgkpuC7h8F8zEVqXSNC2awE69lqhs8AamkO26HrbDt2H7dBVQov2NcW26CiwQtu+BWjdY4n2nZboTbfCmKcCnRyDO/YmyLPnDlHvjDH8G6zhS9/wlEnYR7X00fWrFYuWdVI0ZpuhcbcczW/R2qdAcz6t/bRov4mONeaaoYl+p22rHF0bVNAmKtBvweIXGxNcfFH8eNlC4m6wMWMusEnKpn5hyo48pj9gLe4SNG9QoGGLAk8z5XiaJUd99u8122/IpBA2K9BGg2vWWKAvRYVeLzEa7E1R422m2+MsSTem97nSYnfKyN6/mzATv7AUgqcMrUnmaFlLX3ysM0fj+t/b5lQLtK22QEfyAmiSLKFZpUJ7kBRPXKW4HqCYynWVHKSG2LkyZex1uO1mZM9lKem9Tx9jjY5iNEYo0bKMhn7ZAu0r6H5PpLXCAq0rKJClSjSGynE/QIkrQYqBPe6S2X+AJsY2Ped6iWZk6RlL0c2r5szofRsO9R5S1IfQLRCpQL1aifoYFerpsbkuTImaUJXuXIDiH6/Ys8vm3Mg8L2i20YqsO7fItKLcSXyn0kXccclVqv3MS6at9JU/Ox+ouns+SF6Z4cSupz7l8+z1ucs7LF1AQjOdxfGZzmx8Iu1TRcfnrioICAQEAgIBgYBAQCAgEBAICAQEAgIBgYBAQCAgEBAICAQEAv8H44b/6ZiGvGAAAAAASUVORK5CYII=",
+              "contentType": "image/png",
+              "width": 15,
+              "height": 15
+            }
+          }
+        },
+        "fields": [
+          {
+            "name": "__OBJECTID",
+            "alias": "__OBJECTID",
+            "type": "esriFieldTypeOID",
+            "editable": false,
+            "domain": null
+          },
+          {
+            "name": "name",
+            "alias": "Name",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          },
+          {
+            "name": "description",
+            "alias": "Description",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          },
+          {
+            "name": "icon_color",
+            "alias": "Icon color",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          },
+          {
+            "name": "pic_url",
+            "alias": "Picture URL",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          },
+          {
+            "name": "thumb_url",
+            "alias": "Thumbnail URL",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          },
+          {
+            "name": "is_video",
+            "alias": "Is Video",
+            "type": "esriFieldTypeString",
+            "editable": true,
+            "domain": null
+          }
+        ],
+        "types": [],
+        "capabilities": "Query,Editing",
+        "extent": {
+          "type": "extent",
+          "xmin": -8556713.484117111,
+          "ymin": 4733388.202020149,
+          "xmax": -8553978.43022126,
+          "ymax": 4737520.619129754,
+          "spatialReference": {
+            "wkid": 102100
+          }
+        }
+      },
+      "nextObjectId": 81
+    }
+  ],
+  "showLegend": true
+}

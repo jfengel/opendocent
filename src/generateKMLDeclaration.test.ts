@@ -10,7 +10,7 @@ test('generate typescript declaration for kml', async () => {
 
     const tsg = require('dts-gen');
     const declaration = tsg.generateModuleDeclarationFile("Kml", kml)
-    console.info(declaration);
+    console.log(declaration);
 
 })
 

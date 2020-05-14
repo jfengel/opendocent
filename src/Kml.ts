@@ -1,8 +1,8 @@
 export interface Placemark{
-    $: {
+    $?: {
         id: string;
     };
-    Camera: {
+    Camera?: {
         altitude: string;
         altitudeMode: string;
         "gx:ViewerOptions": {
@@ -20,7 +20,7 @@ export interface Placemark{
         roll: string;
         tilt: string;
     };
-    ExtendedData: {
+    ExtendedData?: {
         Data: {
             $: {
                 name: string;
@@ -29,40 +29,43 @@ export interface Placemark{
         }[];
     };
     Point: {
-        altitudeMode: string;
+        altitudeMode?: string;
         coordinates: string;
     };
     description: string;
     name: string;
-    snippet: string;
-    styleUrl: string;
-    visibility: string;
+    snippet?: string;
+    styleUrl?: string;
+    visibility?: string;
 }
-export interface Document {
-    $: {
+
+export interface Folder {
+    $?: {
         id: string;
     };
-    Folder: {
-        $: {
-            id: string;
-        };
-        ExtendedData: {
-            Data: {
-                $: {
-                    name: string;
-                };
-                value: string;
-            }[];
-        };
-        Placemark: Placemark[];
-        description: string;
-        name: string;
-        open: string;
-        snippet: string;
-        styleUrl: string;
-        visibility: string;
-    }[];
-    Style: {
+    ExtendedData?: {
+        Data: {
+            $: {
+                name: string;
+            };
+            value: string;
+        }[];
+    };
+    Placemark: Placemark[];
+    description: string;
+    name?: string;
+    open?: string;
+    snippet?: string;
+    styleUrl?: string;
+    visibility?: string;
+}
+
+export interface Document {
+    $?: {
+        id: string;
+    };
+    Folder: Folder[];
+    Style?: {
         $: {
             id: string;
         };
@@ -90,7 +93,7 @@ export interface Document {
             scale: string;
         };
     }[];
-    StyleMap: {
+    StyleMap?: {
         $: {
             id: string;
         };
@@ -100,7 +103,7 @@ export interface Document {
         }[];
     }[];
     name: string;
-    snippet: string;
+    snippet?: string;
 }
 
 export interface Kml {

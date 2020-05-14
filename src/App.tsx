@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Description from "./components/Description";
 import './App.css';
 import {AppBar} from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -7,20 +6,12 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import Fab from "@material-ui/core/Fab";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import xml2js from 'xml2js';
-import {Document, getFolder, getPosition, Kml, Placemark} from "./Kml";
-import {MAX_ZOOM, TourMap} from "./components/TourMap";
-import {TourList} from "./components/TourList";
 
-function fetchTour(url : string)
-{
-    return fetch(url)
-        .then(async response => {
-            const text = await response.text();
-            const kml : Kml = await xml2js.parseStringPromise(text, {explicitArray : false});
-            return kml.kml.Document
-        })
-}
+import {Document, getFolder, getPosition, Placemark} from "./Kml";
+import {MAX_ZOOM, TourMap} from "./components/TourMap";
+import Description from "./components/Description";
+import {TourList} from "./components/TourList";
+import {fetchJsonTour, fetchTour} from "./services/fetchTour";
 
 function App() {
     const [viewport, setViewport] = useState();
@@ -51,6 +42,8 @@ function App() {
         fetchTour("/tours/UNESCO_World_Heritage_Sites.kml")
             .then(x => setAvailableTours(prev => [...prev, x]))
         fetchTour("/tours/libraries.kml")
+            .then(x => setAvailableTours(prev => [...prev, x]))
+        fetchJsonTour("/tours/laureltour.json")
             .then(x => setAvailableTours(prev => [...prev, x]))
     }, [])
 
