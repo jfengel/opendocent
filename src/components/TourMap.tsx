@@ -1,7 +1,27 @@
 import {AttributionControl, CircleMarker, Map, Marker, Popup, TileLayer, Viewport} from "react-leaflet";
 import {Document, getFolder, getPosition, Placemark} from "../Kml";
+import L from 'leaflet';
 import SiteList from "./SiteList";
 import React from "react";
+import goldIcon from '../img/marker-icon-2x-gold.png'
+import blueIcon from '../img/marker-icon-2x-blue.png'
+
+var regularIcon = new L.Icon({
+    iconUrl: goldIcon,//'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+var currentIcon = new L.Icon({
+    iconUrl: blueIcon,
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
 
 export const MAX_ZOOM = 18;
 export const TourMap = ({viewport, position, setViewport, tour, currentFeature, goto}: {
@@ -21,7 +41,9 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature, 
     const siteMarkers = folder && folder.Placemark
         .filter(feature => feature.Point)
         .map((feature, i) =>
-            <Marker key={i} position={getPosition(feature)}>
+            <Marker key={i}
+                    position={getPosition(feature)}
+                    icon={feature === currentFeature ? currentIcon : regularIcon}>
                 <Popup>
                     <b>{feature.name}</b>
                     {feature.description}
