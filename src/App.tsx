@@ -13,6 +13,18 @@ import Description from "./components/Description";
 import {TourList} from "./components/TourList";
 import {fetchJsonTour, fetchTour} from "./services/fetchTour";
 
+function getNextFeature(tour: Document, currentFeature: Placemark | null) {
+    const folder = getFolder(tour!);
+    const features = folder && folder.Placemark;
+    if (!features) {
+        return;
+    }
+    const ix = currentFeature ? features.indexOf(currentFeature) : -1;
+    return features[(ix + 1) % features.length];
+}
+
+const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
+
 function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
@@ -23,11 +35,16 @@ function App() {
 
     if (navigator.geolocation && !init) {
         setInit(true);
+        let lastUpdate = 0;
         navigator.geolocation.watchPosition((position) => {
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
                 if(!isNaN(longitude) && !isNaN(latitude)) {
-                    setPosition([latitude, longitude]);
+                    const now = new Date().valueOf()
+                    if(now - lastUpdate > GEOLOCATION_UPDATE_FREQUENCY_MSEC) {
+                        setPosition([latitude, longitude]);
+                        lastUpdate = now;
+                    }
                 }
             },
             function error(msg) {
@@ -54,20 +71,25 @@ function App() {
         setViewport({center, zoom: MAX_ZOOM});
     }
     const nextFeature = () => {
-        const folder = getFolder(tour!);
-        const features = folder && folder.Placemark;
-        if(!features) {
-            return;
+        if(!tour) {
+            return null;
         }
-        const ix = currentFeature ? features.indexOf(currentFeature) : -1;
-        goto(features[(ix+1) % features.length])
+        const feature = getNextFeature(tour, currentFeature);
+        feature && goto(feature)
     }
     let display;
     if(tour) {
         const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
         display = tour && <TourMap {...tourProps}/>
     } else {
-        display = <TourList availableTours={availableTours} setTour={setTour}/>
+        display = <TourList
+            availableTours={availableTours}
+            setTour={(tour) => {
+                setTour(tour);
+                const feature = getNextFeature(tour, currentFeature);
+                feature && goto(feature);
+            }
+            }/>
     }
     return <div className='App'>
         <AppBar style={{position: 'unset'}}>
