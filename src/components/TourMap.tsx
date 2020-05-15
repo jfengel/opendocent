@@ -5,6 +5,8 @@ import SiteList from "./SiteList";
 import React from "react";
 import goldIcon from '../img/marker-icon-2x-gold.png'
 import blueIcon from '../img/marker-icon-2x-blue.png'
+import Fab from "@material-ui/core/Fab";
+import MyLocationIcon from "@material-ui/icons/MyLocation";
 
 var regularIcon = new L.Icon({
     iconUrl: goldIcon,//'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -26,13 +28,14 @@ var currentIcon = new L.Icon({
 export const MAX_ZOOM = 18;
 export const TourMap = ({viewport, position, setViewport, tour, currentFeature, goto}: {
     viewport: Viewport,
-    position: number[],
+    position: [number, number],
     setViewport: (viewport: Viewport) => void,
     tour: Document,
     currentFeature: Placemark | null,
     goto: (feature: Placemark) => void
 }) => {
-    const vp = viewport || (position && {center: position, zoom: MAX_ZOOM})
+    const myLocationViewport : Viewport|null = position && {center: position, zoom: MAX_ZOOM};
+    const vp = viewport || myLocationViewport
     const folder = getFolder(tour);
 
     const me = position &&
@@ -51,12 +54,21 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature, 
             </Marker>
         )
 
+    const showMeButton = position &&
+      <Fab color="primary"
+           aria-label="go to my location"
+           style={{position: 'absolute', top: 0, right: 15, zIndex: 999999999999}}
+           onClick={() => setViewport(myLocationViewport)}>
+        <MyLocationIcon/>
+    </Fab>;
     return <Map viewport={vp} onViewportChanged={setViewport}>
         <TileLayer
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <AttributionControl position={'bottomleft'}/>
+        {showMeButton}
+
         {me}
         {siteMarkers}
         <div className="od-controls">
