@@ -47,7 +47,9 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature, 
             <Marker key={i}
                     position={getPosition(feature)}
                     icon={feature === currentFeature ? currentIcon : regularIcon}>
-                <Popup>
+                <Popup
+                    autoPan={false /* https://github.com/PaulLeCam/react-leaflet/issues/647 */}
+                >
                     <b>{feature.name}</b>
                     {feature.description}
                 </Popup>
