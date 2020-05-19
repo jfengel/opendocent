@@ -2,6 +2,7 @@
   <dictionary name="engel">
     <words>
       <w>bottomleft</w>
+      <w>faunadb</w>
       <w>openstreetmap</w>
     </words>
   </dictionary>

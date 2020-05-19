@@ -18,6 +18,7 @@
     "@types/xml2js": "*",
     "dompurify": "^2.0.11",
     "dts-gen": "^0.6.0",
+    "faunadb": "^2.14.1",
     "leaflet": "*",
     "mapbox": "*",
     "node-fetch": "^2.6.0",
