@@ -14,4 +14,4 @@
 #  command = "echo 'default context'"
 
   # Directory with the serverless Lambda functions to deploy to AWS.
-  functions = "src/functions/"
+  functions = "src/lambdas/"
