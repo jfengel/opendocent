@@ -12,6 +12,7 @@ import {MAX_ZOOM, TourMap} from "./components/TourMap";
 import Description from "./components/Description";
 import {TourList} from "./components/TourList";
 import {fetchJsonTour, fetchTour} from "./services/fetchTour";
+import UploadFile from "./components/UploadFile";
 
 function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     const folder = getFolder(tour!);
@@ -21,6 +22,14 @@ function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     }
     const ix = currentFeature ? features.indexOf(currentFeature) : -1;
     return features[(ix + 1) % features.length];
+}
+
+function uploadFile(_ : object[]) : Promise<object> {
+    return new Promise<object>((success, failure) => {
+
+        setTimeout(() =>
+            failure({result: 'Womp womp'}), 3000);
+    });
 }
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
@@ -82,7 +91,8 @@ function App() {
         const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
         display = tour && <TourMap {...tourProps}/>
     } else {
-        display = <TourList
+        display = <div>
+            <TourList
             availableTours={availableTours}
             setTour={(tour) => {
                 setTour(tour);
@@ -90,6 +100,11 @@ function App() {
                 feature && goto(feature);
             }
             }/>
+            <div>
+                <h2>Upload a tour</h2>
+                <UploadFile submit={uploadFile}/>
+            </div>
+        </div>
     }
     return <div className='App'>
         <AppBar style={{position: 'unset'}}>

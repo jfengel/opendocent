@@ -1,0 +1,194 @@
+.od-uploadFile h1
+{
+    font-size: 42px;
+    font-weight: 300;
+    color: #0f3c4b;
+    margin-bottom: 40px;
+}
+.od-uploadFile h1 a:hover,
+.od-uploadFile h1 a:focus
+{
+    color: #39bfd3;
+}
+
+.od-uploadFile nav
+{
+    margin-bottom: 40px;
+}
+.od-uploadFile nav a
+{
+    border-bottom: 2px solid #c8dadf;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 5px;
+}
+.od-uploadFile nav a.is-selected
+{
+    font-weight: 700;
+    color: #39bfd3;
+    border-bottom-color: currentColor;
+}
+.od-uploadFile nav a:not( .is-selected ):hover,
+.od-uploadFile nav a:not( .is-selected ):focus
+{
+    border-bottom-color: #0f3c4b;
+}
+
+.od-uploadFile footer
+{
+    color: #92b0b3;
+    margin-top: 40px;
+}
+.od-uploadFile footer p + p
+{
+    margin-top: 1em;
+}
+.od-uploadFile footer a:hover,
+.od-uploadFile footer a:focus
+{
+    color: #39bfd3;
+}
+
+.box
+{
+    font-size: 1.25rem; /* 20 */
+    background-color: #c8dadf;
+    position: relative;
+    padding: 100px 20px;
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+}
+.box.is-dragover
+{
+    outline-offset: -20px;
+    outline-color: #c8dadf;
+    background-color: #fff;
+}
+.box__dragndrop,
+.box__icon
+{
+    display: none;
+}
+.box .box__dragndrop
+{
+    display: inline;
+}
+.box .box__icon
+{
+    width: 100%;
+    height: 80px;
+    fill: #92b0b3;
+    display: block;
+    margin-bottom: 40px;
+}
+
+.box.is-uploading .box__input
+{
+    visibility: hidden;
+}
+
+.box__uploading,
+.box__success,
+.box__error
+{
+    display: none;
+}
+.box.is-uploading .box__uploading,
+.box.is-success .box__success,
+.box.is-error .box__error
+{
+    display: block;
+    text-align: center;
+}
+.box__uploading
+{
+    font-style: italic;
+}
+.box__success
+{
+    -webkit-animation: appear-from-inside .25s ease-in-out;
+    animation: appear-from-inside .25s ease-in-out;
+}
+@-webkit-keyframes appear-from-inside
+{
+    from	{ -webkit-transform: translateY( -50% ) scale( 0 ); }
+    75%		{ -webkit-transform: translateY( -50% ) scale( 1.1 ); }
+    to		{ -webkit-transform: translateY( -50% ) scale( 1 ); }
+}
+@keyframes appear-from-inside
+{
+    from	{ transform: translateY( -50% ) scale( 0 ); }
+    75%		{ transform: translateY( -50% ) scale( 1.1 ); }
+    to		{ transform: translateY( -50% ) scale( 1 ); }
+}
+
+.box__restart
+{
+    font-weight: 700;
+}
+.box__restart:focus,
+.box__restart:hover
+{
+    color: #39bfd3;
+}
+
+.box__file
+{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.box__file + label
+{
+    display: block !important;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+.box__file + label:hover strong,
+.box__file:focus + label strong,
+.box__file.has-focus + label strong
+{
+    color: #39bfd3;
+}
+.box__file:focus + label,
+.box__file.has-focus + label
+{
+    outline: 1px dotted #000;
+}
+.box__file + label *
+{
+    /* pointer-events: none; */ /* in case of FastClick lib use */
+}
+
+.no-js .box__file + label
+{
+    display: none;
+}
+
+.no-js .box__button
+{
+    display: block;
+}
+.box__button
+{
+    font-weight: 700;
+    color: #e5edf1;
+    background-color: #39bfd3;
+    display: none;
+    padding: 8px 16px;
+    margin: 40px auto 0;
+}
+.box__button:hover,
+.box__button:focus
+{
+    background-color: #0f3c4b;
+}
