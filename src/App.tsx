@@ -11,7 +11,7 @@ import {Document, getFolder, getPosition, Placemark} from "./Kml";
 import {MAX_ZOOM, TourMap} from "./components/TourMap";
 import Description from "./components/Description";
 import {TourList} from "./components/TourList";
-import {fetchJsonTour, fetchTour} from "./services/fetchTour";
+import {fetchJsonTour, fetchTour, uploadTour} from "./services/tourServer";
 import UploadFile from "./components/UploadFile";
 
 function getNextFeature(tour: Document, currentFeature: Placemark | null) {
@@ -24,12 +24,8 @@ function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     return features[(ix + 1) % features.length];
 }
 
-function uploadFile(_ : object[]) : Promise<object> {
-    return new Promise<object>((success, failure) => {
-
-        setTimeout(() =>
-            failure({result: 'Womp womp'}), 3000);
-    });
+function uploadFile(files : File[]) : Promise<object> {
+    return uploadTour(files);
 }
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
