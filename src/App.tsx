@@ -1,9 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import {AppBar} from "@material-ui/core";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
 import Fab from "@material-ui/core/Fab";
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -13,6 +9,13 @@ import Description from "./components/Description";
 import {TourList} from "./components/TourList";
 import {fetchJsonTour, fetchTour, uploadTour} from "./services/tourServer";
 import UploadFile from "./components/UploadFile";
+import {Header} from "./components/Header";
+import {Auth0Provider} from "./components/Auth0Provider.js";
+
+const config = {
+    "domain": "opendocent.auth0.com",
+    "clientId": "yn6KnajdhLIBMB5WntouwYpDDilC5E5l"
+}
 
 function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     const folder = getFolder(tour!);
@@ -29,6 +32,10 @@ function uploadFile(files : File[]) : Promise<object> {
 }
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
+
+const onRedirectCallback = () => {
+    console.info('Redirecting...');
+}
 
 function App() {
     const [viewport, setViewport] = useState();
@@ -102,20 +109,16 @@ function App() {
             </div>
         </div>
     }
-    return <div className='App'>
-        <AppBar style={{position: 'unset'}}>
-            <Toolbar>
-                <IconButton
-                    edge="start"
-                    color="inherit"
-                    aria-label="open drawer"
-                >
-                    <MenuIcon/>
-                </IconButton>
-                <img src={'/OpenDocent.svg'} height={40} title='OpenDocent' alt='OpenDocent logo'/>
-                OpenDocent
-            </Toolbar>
-        </AppBar>
+    return (
+    <Auth0Provider
+        domain={config.domain}
+        client_id={config.clientId}
+        redirect_uri={window.location.origin}
+        return_to={window.location.origin}
+        onRedirectCallback={onRedirectCallback}
+    >
+        <div className='App'>
+        <Header/>
         {display}
 
         <Fab color="primary" aria-label="next"
@@ -125,7 +128,8 @@ function App() {
         </Fab>
 
         {<Description feature={currentFeature}/>}
-    </div>
+        </div>
+    </Auth0Provider>)
 }
 
 export default App;

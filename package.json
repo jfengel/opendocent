@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-spa-js": "^1.8.1",
     "@mapbox/togeojson": "^0.16.0",
     "@material-ui/core": "*",
     "@material-ui/icons": "^4.9.1",
