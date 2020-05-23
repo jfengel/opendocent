@@ -21,7 +21,11 @@ export default function UploadFile ({submit}) {
 
     submit(files)
       .then((_) => {setUploading(false); setSuccess(true);})
-      .catch((e) => {setUploading(false); setError(e)});
+      .catch(async (response) => {
+        console.error('caught', response);
+        setUploading(false);
+        setError(await response.json())
+      });
   }
 
   const onDrop = function (e) {

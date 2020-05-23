@@ -11,6 +11,7 @@ import {fetchJsonTour, fetchTour, uploadTour} from "./services/tourServer";
 import UploadFile from "./components/UploadFile";
 import {Header} from "./components/Header";
 import {Auth0Provider, useAuth0} from "./components/Auth0Provider";
+import {IdToken} from "@auth0/auth0-spa-js";
 
 const config = {
     "domain": "opendocent.auth0.com",
@@ -27,20 +28,19 @@ function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     return features[(ix + 1) % features.length];
 }
 
-function uploadFile(files: File[], token: Promise<string>) : Promise<object> {
+function uploadFile(files: File[], token: Promise<IdToken>) : Promise<object> {
     return uploadTour(files, token);
 }
 
 const Upload = () => {
     const auth0 = useAuth0();
     if(auth0 && auth0.user) {
-        const {getTokenSilently} = auth0;
         return <div>
             <h2>Upload a tour</h2>
             <UploadFile submit={
-                (files : File[]) => uploadFile(files, getTokenSilently())
+                (files : File[]) => uploadFile(files, auth0.getIdTokenClaims())
                 /* I hope that it's auto-refreshing. That could lead to infrequent bugs that are hard to track.
-                * Also try getIdTokenClaims().__raw */
+                * Also try getTokenSilently() */
             }/>
         </div>;
 

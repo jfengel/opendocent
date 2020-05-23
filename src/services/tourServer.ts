@@ -1,5 +1,6 @@
 import {Kml, Document, Folder} from "../Kml";
 import xml2js from "xml2js";
+import {IdToken} from "@auth0/auth0-spa-js";
 
 export const fetchTour = (url: string): Promise<Document> => fetch(url)
     .then(async response => {
@@ -40,7 +41,7 @@ export function fetchJsonTour(url: string): Promise<Document> {
         })
 }
 
-export const uploadTour = (files: Blob[], token: Promise<string>) : Promise<object> => {
+export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Response> => {
 
     const file = files[0]; // Need to loop over them but we need to coalesce the promises together.
     return new Promise((success, failure) => {
@@ -60,10 +61,11 @@ export const uploadTour = (files: Blob[], token: Promise<string>) : Promise<obje
                 method: 'POST',
                 headers: {
                     "Content-Type": 'application/json',
-                    "Authorization": 'Bearer ' + auth,
+                    "Authorization": 'Bearer ' + auth.__raw,
                 },
                 body: JSON.stringify(data)
             })
+                .then(response => {if(response.status === 200) return response; else throw response})
                 .then(success)
                 .catch(failure);
         };
