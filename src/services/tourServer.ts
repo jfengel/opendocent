@@ -40,11 +40,13 @@ export function fetchJsonTour(url: string): Promise<Document> {
         })
 }
 
-export const uploadTour = (files: Blob[]) : Promise<object> => {
+export const uploadTour = (files: Blob[], token: Promise<string>) : Promise<object> => {
+
     const file = files[0]; // Need to loop over them but we need to coalesce the promises together.
     return new Promise((success, failure) => {
         const reader = new FileReader();
         reader.onload = async () => {
+            const auth = await token;
             const text = reader.result;
             if(!text) {
                 failure({message: 'Could not read file'});
@@ -53,10 +55,12 @@ export const uploadTour = (files: Blob[]) : Promise<object> => {
             const parse = await xml2js.parseStringPromise(text, {explicitArray: false});
             const data = parse.kml.Document;
             data.text = text;
+
             fetch('/.netlify/functions/upload', {
                 method: 'POST',
                 headers: {
                     "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + auth,
                 },
                 body: JSON.stringify(data)
             })

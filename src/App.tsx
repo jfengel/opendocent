@@ -10,7 +10,7 @@ import {TourList} from "./components/TourList";
 import {fetchJsonTour, fetchTour, uploadTour} from "./services/tourServer";
 import UploadFile from "./components/UploadFile";
 import {Header} from "./components/Header";
-import {Auth0Provider} from "./components/Auth0Provider.js";
+import {Auth0Provider, useAuth0} from "./components/Auth0Provider";
 
 const config = {
     "domain": "opendocent.auth0.com",
@@ -27,8 +27,25 @@ function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     return features[(ix + 1) % features.length];
 }
 
-function uploadFile(files : File[]) : Promise<object> {
-    return uploadTour(files);
+function uploadFile(files: File[], token: Promise<string>) : Promise<object> {
+    return uploadTour(files, token);
+}
+
+const Upload = () => {
+    const auth0 = useAuth0();
+    if(auth0 && auth0.user) {
+        const {getTokenSilently} = auth0;
+        return <div>
+            <h2>Upload a tour</h2>
+            <UploadFile submit={
+                (files : File[]) => uploadFile(files, getTokenSilently())
+                /* I hope that it's auto-refreshing. That could lead to infrequent bugs that are hard to track.
+                * Also try getIdTokenClaims().__raw */
+            }/>
+        </div>;
+
+    }
+    return null
 }
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
@@ -96,17 +113,14 @@ function App() {
     } else {
         display = <div>
             <TourList
-            availableTours={availableTours}
-            setTour={(tour) => {
-                setTour(tour);
-                const feature = getNextFeature(tour, currentFeature);
-                feature && goto(feature);
-            }
-            }/>
-            <div>
-                <h2>Upload a tour</h2>
-                <UploadFile submit={uploadFile}/>
-            </div>
+                availableTours={availableTours}
+                setTour={(tour) => {
+                    setTour(tour);
+                    const feature = getNextFeature(tour, currentFeature);
+                    feature && goto(feature);
+                }
+                }/>
+            <Upload/>
         </div>
     }
     return (

@@ -1,11 +1,40 @@
 const faunadb = require('faunadb')
+const fetch = require('node-fetch')
 
 const q = faunadb.query
 const client = new faunadb.Client({
   secret: process.env.FAUNA_SERVER_SECRET
 })
 
-exports.handler = (event, context, callback) => {
+exports.handler = async (event, context, callback) => {
+  let user;
+  console.info('authorization', event.headers.authorization)
+  try {
+    user = await fetch('https://opendocent.auth0.com/userinfo', {
+      method: 'GET',
+      headers: {
+        'Authorization': event.headers.authorization
+      }
+    });
+  } catch(e) {
+    console.error('error', e);
+    callback(null, {
+      statusCode: 403,
+      body: JSON.stringify(e, null, 4),
+    })
+    return;
+  }
+  // console.info('user', user, user.headers);
+  console.info('body', JSON.stringify(await user.json(), null, 4));
+  if(!user) {
+    console.error('User not found');
+    callback(null, {
+      statusCode: 403,
+      body: 'User not found',
+    })
+    return;
+  }
+
   const data = JSON.parse(event.body)
 
   const tour = { data }

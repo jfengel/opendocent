@@ -8,7 +8,6 @@ import {useAuth0} from "./Auth0Provider";
 
 export function Header() {
     const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
-    console.info('authentication', user)
 
     const right = {marginLeft: "auto"};
     return <AppBar style={{position: 'unset'}}>
@@ -27,7 +26,7 @@ export function Header() {
                 : <span style={right} >
                     {user && user.name}
                     &nbsp;
-                    {user && user.picture && <img src={user.picture} height={20} alt="User pic"/>}
+                    {user && user.picture && <img src={user.picture} height={20} alt=""/>}
                     &nbsp;
                     <ButtonBase onClick={() => logout()}>Log out</ButtonBase>
                 </span>}
