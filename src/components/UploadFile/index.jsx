@@ -13,6 +13,7 @@ export default function UploadFile ({submit}) {
   function onSubmit(e) {
     const files = Array.from(e.target.files)
     setDroppedFiles(files);
+    setError(null);
     // preventing the duplicate submissions if the current one is in progress
     if(isUploading) {
       return false;
