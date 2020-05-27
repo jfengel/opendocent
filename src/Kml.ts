@@ -103,6 +103,7 @@ export interface Document {
         }[];
     }[];
     name: string;
+    description?: string;
     snippet?: string;
 }
 

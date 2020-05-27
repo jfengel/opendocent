@@ -2,6 +2,21 @@ import {Kml, Document, Folder} from "../Kml";
 import xml2js from "xml2js";
 import {IdToken} from "@auth0/auth0-spa-js";
 
+export const fetchTourList = () : Promise<any> => {
+    return new Promise(async (success, failure) => {
+        try {
+            const response = await fetch('/.netlify/functions/listTours')
+            if(response.ok) {
+                success(await response.json());
+            } else {
+                failure(response);
+            }
+        } catch(e) {
+            failure(e);
+        }
+    })
+}
+
 export const fetchTour = (url: string): Promise<Document> => fetch(url)
     .then(async response => {
         const text = await response.text();

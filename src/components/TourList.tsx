@@ -1,5 +1,5 @@
 import {Document} from "../Kml";
-import {ButtonBase} from "@material-ui/core";
+import {Link} from "@material-ui/core";
 import React from "react";
 
 export function TourList({availableTours, setTour}: {
@@ -11,11 +11,13 @@ export function TourList({availableTours, setTour}: {
         <div>
             {availableTours.map((tour, i) =>
                 <div key={i}>
-                    <ButtonBase
+                    <Link
+                        href="#"
                         style={{textAlign: 'left', textIndent: 0}}
                         onClick={() => setTour(tour)}>
                         {tour.name.trim()}
-                    </ButtonBase>
+                    </Link>
+                    {tour.description}
                 </div>
             )}
         </div>

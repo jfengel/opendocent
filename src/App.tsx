@@ -7,7 +7,7 @@ import {Document, getFolder, getPosition, Placemark} from "./Kml";
 import {MAX_ZOOM, TourMap} from "./components/TourMap";
 import Description from "./components/Description";
 import {TourList} from "./components/TourList";
-import {fetchJsonTour, fetchTour, uploadTour} from "./services/tourServer";
+import {uploadTour, fetchTourList} from "./services/tourServer";
 import UploadFile from "./components/UploadFile";
 import {Header} from "./components/Header";
 import {Auth0Provider, useAuth0} from "./components/Auth0Provider";
@@ -85,12 +85,13 @@ function App() {
     }
 
     useEffect(() => {
-        fetchTour("/tours/UNESCO_World_Heritage_Sites.kml")
-            .then(x => setAvailableTours(prev => [...prev, x]))
-        fetchTour("/tours/libraries.kml")
-            .then(x => setAvailableTours(prev => [...prev, x]))
-        fetchJsonTour("/tours/laureltour.json")
-            .then(x => setAvailableTours(prev => [...prev, x]))
+        fetchTourList().then(setAvailableTours);
+        // fetchTour("/tours/UNESCO_World_Heritage_Sites.kml")
+        //     .then(x => setAvailableTours(prev => [...prev, x]))
+        // fetchTour("/tours/libraries.kml")
+        //     .then(x => setAvailableTours(prev => [...prev, x]))
+        // fetchJsonTour("/tours/laureltour.json")
+        //     .then(x => setAvailableTours(prev => [...prev, x]))
     }, [])
 
 
@@ -106,6 +107,17 @@ function App() {
         const feature = getNextFeature(tour, currentFeature);
         feature && goto(feature)
     }
+
+    const loadTour = async (tour : Document) => {
+        const ref = (tour as any).ref;
+        if(ref) {
+            tour = await (await fetch('/.netlify/functions/tourById/'+ref)).json();
+        }
+        setTour(tour);
+        const feature = getNextFeature(tour, currentFeature);
+        feature && goto(feature);
+    };
+
     let display;
     if(tour) {
         const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
@@ -114,12 +126,7 @@ function App() {
         display = <div>
             <TourList
                 availableTours={availableTours}
-                setTour={(tour) => {
-                    setTour(tour);
-                    const feature = getNextFeature(tour, currentFeature);
-                    feature && goto(feature);
-                }
-                }/>
+                setTour={loadTour}/>
             <Upload/>
         </div>
     }
