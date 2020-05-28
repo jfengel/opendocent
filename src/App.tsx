@@ -37,6 +37,9 @@ const Upload = () => {
     if(auth0 && auth0.user) {
         return <div>
             <h2>Upload a tour</h2>
+            <p>The easiest way to make a tour is with <a href="https://tourbuilder.withgoogle.com/" target="_blank" rel="noopener noreferrer">Google Tour Builder</a>.
+                Download your tour and then drag it here.
+            </p>
             <UploadFile submit={
                 (files : File[]) => uploadFile(files, auth0.getIdTokenClaims())
                 /* I hope that it's auto-refreshing. That could lead to infrequent bugs that are hard to track.

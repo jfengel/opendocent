@@ -1,6 +1,7 @@
 import {Kml, Document, Folder} from "../Kml";
 import xml2js from "xml2js";
 import {IdToken} from "@auth0/auth0-spa-js";
+import JSZip from 'jszip'
 
 export const fetchTourList = () : Promise<any> => {
     return new Promise(async (success, failure) => {
@@ -59,31 +60,28 @@ export function fetchJsonTour(url: string): Promise<Document> {
 export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Response> => {
 
     const file = files[0]; // Need to loop over them but we need to coalesce the promises together.
-    return new Promise((success, failure) => {
-        const reader = new FileReader();
-        reader.onload = async () => {
-            const auth = await token;
-            const text = reader.result;
-            if(!text) {
-                failure({message: 'Could not read file'});
-                return;
-            }
-            const parse = await xml2js.parseStringPromise(text, {explicitArray: false});
-            const data = parse.kml.Document;
-            data.text = text;
+    return new Promise(async (success, failure) => {
+        // kmz files are zip files with "doc.kml" as the actual kml
+        let text = await JSZip.loadAsync(file)
+            .then(x => x.files["doc.kml"].async("text"))
+            .catch(_ => null);
+        if(!text) {
+            text = await new Response(file).text();
+        }
+        const parse = await xml2js.parseStringPromise(text, {explicitArray: false});
+        const data = parse.kml.Document;
+        data.text = text;
 
-            fetch('/.netlify/functions/upload', {
-                method: 'POST',
-                headers: {
-                    "Content-Type": 'application/json',
-                    "Authorization": 'Bearer ' + auth.__raw,
-                },
-                body: JSON.stringify(data)
-            })
-                .then(response => {if(response.status === 200) return response; else throw response})
-                .then(success)
-                .catch(failure);
-        };
-        reader.readAsText(file);
+        fetch('/.netlify/functions/upload', {
+            method: 'POST',
+            headers: {
+                "Content-Type": 'application/json',
+                "Authorization": 'Bearer ' + (await token).__raw,
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => {if(response.status === 200) return response; else throw response})
+            .then(success)
+            .catch(failure);
     })
 }
