@@ -80,7 +80,7 @@ export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Res
             },
             body: JSON.stringify(data)
         })
-            .then(response => {if(response.status === 200) return response; else throw response})
+            .then(response => {if(response.ok) return response; else throw response})
             .then(success)
             .catch(failure);
     })

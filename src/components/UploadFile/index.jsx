@@ -14,6 +14,7 @@ export default function UploadFile ({submit}) {
     const files = Array.from(e.target.files)
     setDroppedFiles(files);
     setError(null);
+    setSuccess(null);
     // preventing the duplicate submissions if the current one is in progress
     if(isUploading) {
       return false;
@@ -75,8 +76,8 @@ export default function UploadFile ({submit}) {
         <button type="submit" className="box__button">Upload</button>
       </div>
       <div className="box__uploading">Uploading {JSON.stringify(droppedFiles.map(x=>x.name))}</div>
-      <div className="box__success">{success.message}</div>
-      <div className="box__error">Error: {JSON.stringify(error)}</div>
+      <div className="box__success">{success && success.message}</div>
+      <div className="box__error">Error: {(error && error.message) || JSON.stringify(error)}</div>
     </form>
   </div>
 }
