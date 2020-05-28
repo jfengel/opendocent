@@ -21,7 +21,9 @@ export default function UploadFile ({submit}) {
     setUploading(true);
 
     submit(files)
-      .then((_) => {setUploading(false); setSuccess(true);})
+      .then(async (response) => {
+        setUploading(false);
+        setSuccess(await response.json());})
       .catch(async (response) => {
         console.error('caught', response);
         setUploading(false);
@@ -73,7 +75,7 @@ export default function UploadFile ({submit}) {
         <button type="submit" className="box__button">Upload</button>
       </div>
       <div className="box__uploading">Uploading {JSON.stringify(droppedFiles.map(x=>x.name))}</div>
-      <div className="box__success">Done!</div>
+      <div className="box__success">{success.message}</div>
       <div className="box__error">Error: {JSON.stringify(error)}</div>
     </form>
   </div>
