@@ -1,17 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
-import Fab from "@material-ui/core/Fab";
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 import {Document, getFolder, getPosition, Placemark} from "./Kml";
-import {MAX_ZOOM, TourMap} from "./components/TourMap";
-import Description from "./components/Description";
-import {TourList} from "./components/TourList";
-import {uploadTour, fetchTourList} from "./services/tourServer";
-import UploadFile from "./components/UploadFile";
+import {MAX_ZOOM} from "./components/TourMap";
+import {fetchTourList} from "./services/tourServer";
 import {Header} from "./components/Header";
-import {Auth0Provider, useAuth0} from "./components/Auth0Provider";
-import {IdToken} from "@auth0/auth0-spa-js";
+import {Auth0Provider} from "./components/Auth0Provider";
+import TourPage from "./pages/TourPage";
+import FrontPage from "./pages/FrontPage";
 
 const config = {
     "domain": "opendocent.auth0.com",
@@ -26,29 +22,6 @@ function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     }
     const ix = currentFeature ? features.indexOf(currentFeature) : -1;
     return features[(ix + 1) % features.length];
-}
-
-function uploadFile(files: File[], token: Promise<IdToken>) : Promise<object> {
-    return uploadTour(files, token);
-}
-
-const Upload = () => {
-    const auth0 = useAuth0();
-    if(auth0 && auth0.user) {
-        return <div>
-            <h2>Upload a tour</h2>
-            <p>The easiest way to make a tour is with <a href="https://tourbuilder.withgoogle.com/" target="_blank" rel="noopener noreferrer">Google Tour Builder</a>.
-                Download your tour and then drag it here.
-            </p>
-            <UploadFile submit={
-                (files : File[]) => uploadFile(files, auth0.getIdTokenClaims())
-                /* I hope that it's auto-refreshing. That could lead to infrequent bugs that are hard to track.
-                * Also try getTokenSilently() */
-            }/>
-        </div>;
-
-    }
-    return null
 }
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
@@ -123,15 +96,10 @@ function App() {
 
     let display;
     if(tour) {
-        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto};
-        display = tour && <TourMap {...tourProps}/>
+        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto, nextFeature};
+        display = <TourPage {...tourProps}/>
     } else {
-        display = <div>
-            <TourList
-                availableTours={availableTours}
-                setTour={loadTour}/>
-            <Upload/>
-        </div>
+        display = <FrontPage loadTour={loadTour} availableTours={availableTours}/>
     }
     return (
     <Auth0Provider
@@ -142,16 +110,11 @@ function App() {
         onRedirectCallback={onRedirectCallback}
     >
         <div className='App'>
-        <Header/>
-        {display}
+            <Header/>
+            <div style={{flex: "1 1 auto", display: "flex"}}>
+                {display}
+            </div>
 
-        <Fab color="primary" aria-label="next"
-             style={{position: 'absolute', bottom: 0, right: 15}}
-             onClick={nextFeature}>
-            <NavigateNextIcon/>
-        </Fab>
-
-        {<Description feature={currentFeature}/>}
         </div>
     </Auth0Provider>)
 }
