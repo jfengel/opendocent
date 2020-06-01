@@ -5,8 +5,22 @@ import MenuIcon from "@material-ui/icons/Menu";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import React from "react";
 import {useAuth0} from "./Auth0Provider";
+import {makeStyles} from "@material-ui/core/styles";
 
-export function Header() {
+const useStyles = makeStyles((theme) => ({
+    menuButton: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            display: 'none',
+        },
+    },
+}));
+
+
+export function Header({setMobileOpen} : {
+    setMobileOpen: any
+}) {
+    const classes = useStyles();
     const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
 
     const right = {marginLeft: "auto"};
@@ -16,6 +30,8 @@ export function Header() {
                 edge="start"
                 color="inherit"
                 aria-label="open drawer"
+                className={classes.menuButton}
+                onClick={setMobileOpen}
             >
                 <MenuIcon/>
             </IconButton>

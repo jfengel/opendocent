@@ -1,7 +1,6 @@
 import {AttributionControl, CircleMarker, Map, Marker, Popup, TileLayer, Viewport} from "react-leaflet";
 import {Document, getFolder, getPosition, Placemark} from "../Kml";
 import L from 'leaflet';
-import SiteList from "./SiteList";
 import React from "react";
 import goldIcon from '../img/marker-icon-2x-gold.png'
 import blueIcon from '../img/marker-icon-2x-blue.png'
@@ -26,13 +25,12 @@ var currentIcon = new L.Icon({
 
 
 export const MAX_ZOOM = 18;
-export const TourMap = ({viewport, position, setViewport, tour, currentFeature, goto}: {
+export const TourMap = ({viewport, position, setViewport, tour, currentFeature}: {
     viewport: Viewport,
     position: [number, number],
     setViewport: (viewport: Viewport) => void,
     tour: Document,
     currentFeature: Placemark | null,
-    goto: (feature: Placemark) => void
 }) => {
     const myLocationViewport : Viewport|null = position && {center: position, zoom: MAX_ZOOM};
     const vp = viewport || myLocationViewport
@@ -73,8 +71,5 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature, 
 
         {me}
         {siteMarkers}
-        <div className="od-controls">
-            <SiteList current={currentFeature} tour={tour} onClick={goto}/>
-        </div>
     </Map>;
 };

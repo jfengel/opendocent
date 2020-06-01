@@ -8,11 +8,21 @@ import {Header} from "./components/Header";
 import {Auth0Provider} from "./components/Auth0Provider";
 import TourPage from "./pages/TourPage";
 import FrontPage from "./pages/FrontPage";
+import {makeStyles} from "@material-ui/core/styles";
 
 const config = {
     "domain": "opendocent.auth0.com",
     "clientId": "yn6KnajdhLIBMB5WntouwYpDDilC5E5l"
 }
+
+const useStyles = makeStyles((theme) => ({
+    App: {
+        [theme.breakpoints.up('sm')]: {
+            marginLeft: '240px',
+        },
+    },
+}));
+
 
 function getNextFeature(tour: Document, currentFeature: Placemark | null) {
     const folder = getFolder(tour!);
@@ -31,11 +41,13 @@ const onRedirectCallback = () => {
 }
 
 function App() {
+    const classes = useStyles();
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [currentFeature, setCurrentFeature] = useState<Placemark|null>(null);
     const [tour, setTour] = useState<Document>();
     const [availableTours, setAvailableTours] = useState<Document[]>([]);
+    const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -95,9 +107,12 @@ function App() {
     };
 
     let display;
+    let showDrawer = false;
     if(tour) {
-        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto, nextFeature};
+        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto, nextFeature,
+            mobileOpen, setMobileOpen};
         display = <TourPage {...tourProps}/>
+        showDrawer = true;
     } else {
         display = <FrontPage loadTour={loadTour} availableTours={availableTours}/>
     }
@@ -109,8 +124,8 @@ function App() {
         return_to={window.location.origin}
         onRedirectCallback={onRedirectCallback}
     >
-        <div className='App'>
-            <Header/>
+        <div className={'App ' + (showDrawer ? classes.App : '')}>
+            <Header setMobileOpen={setMobileOpen}/>
             <div style={{flex: "1 1 auto", display: "flex"}}>
                 {display}
             </div>
