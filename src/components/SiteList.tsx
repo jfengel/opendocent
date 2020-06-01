@@ -1,6 +1,7 @@
 import * as React from "react";
 import {Document, getFolder, Placemark} from "../Kml";
 import {ButtonBase} from "@material-ui/core";
+import Link from "@material-ui/core/Link";
 
 
 export default function SiteList({tour, current, onClick}:
@@ -13,11 +14,13 @@ export default function SiteList({tour, current, onClick}:
     function displayFeature(feature : Placemark, i: number) {
         const backgroundColor = feature === current ? 'lightblue' : undefined;
         return <div key={i}>
-              <ButtonBase
-                style={{textAlign: 'left', textIndent: 0, backgroundColor }}
+              <Link
+                  href={"#"}
+                  tabIndex={0}
+                style={{backgroundColor }}
                 onClick={() => onClick(feature)}>
                   {feature.name.trim()}
-              </ButtonBase>
+              </Link>
             </div>
     }
     const folder = getFolder(tour);
