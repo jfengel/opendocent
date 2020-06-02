@@ -17,6 +17,7 @@ export function TourList({availableTours, setTour}: {
                         onClick={() => setTour(tour)}>
                         {tour.name.trim()}
                     </Link>
+                    &nbsp;
                     {tour.description}
                 </div>
             )}

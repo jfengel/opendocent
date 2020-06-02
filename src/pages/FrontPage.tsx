@@ -33,7 +33,7 @@ export default ({availableTours, loadTour} : {
     availableTours: Document[],
     loadTour: (tour : Document) => void
 }) => {
-    return <div>
+    return <div style={{width: "100%"}}>
         <TourList
             availableTours={availableTours}
             setTour={loadTour}/>
