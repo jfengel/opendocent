@@ -2,7 +2,7 @@ import {AppBar} from "@material-ui/core";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import ButtonBase from "@material-ui/core/ButtonBase";
+import Button from "@material-ui/core/Button";
 import React from "react";
 import {useAuth0} from "./Auth0Provider";
 import {makeStyles} from "@material-ui/core/styles";
@@ -38,13 +38,13 @@ export function Header({setMobileOpen} : {
             <img src={'/OpenDocent.svg'} height={40} title='OpenDocent' alt='OpenDocent logo'/>
             OpenDocent
             {!isAuthenticated
-                ? <ButtonBase style={right} onClick={() => loginWithRedirect({})}>Log in</ButtonBase>
+                ? <Button color={"inherit"} style={right} onClick={() => loginWithRedirect({})}>Log in</Button>
                 : <span style={right} >
                     {user && user.name}
                     &nbsp;
                     {user && user.picture && <img src={user.picture} height={20} alt=""/>}
                     &nbsp;
-                    <ButtonBase onClick={() => logout()}>Log out</ButtonBase>
+                    <Button color={"inherit"} onClick={() => logout()}>Log out</Button>
                 </span>}
         </Toolbar>
     </AppBar>;
