@@ -1,32 +1,35 @@
 import * as React from "react";
 import {Document, getFolder, Placemark} from "../Kml";
-import {ButtonBase} from "@material-ui/core";
-import Link from "@material-ui/core/Link";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
+import ListItemText from "@material-ui/core/ListItemText";
 
 
 export default function SiteList({tour, current, onClick}:
                                      {
                                          tour: Document,
-                                         current: Placemark|null,
+                                         current: Placemark | null,
                                          onClick: any
                                      }) {
 
-    function displayFeature(feature : Placemark, i: number) {
-        const backgroundColor = feature === current ? 'lightblue' : undefined;
-        return <div key={i}>
-              <Link
-                  href={"#"}
-                  tabIndex={0}
-                style={{backgroundColor }}
-                onClick={() => onClick(feature)}>
-                  {feature.name.trim()}
-              </Link>
-            </div>
+    function displayFeature(feature: Placemark, i: number) {
+        return <ListItem
+            button
+            key={i}
+            dense
+            tabIndex={0}
+            selected={feature === current}
+            onClick={() => onClick(feature)}>
+            <ListItemText primary={feature.name.trim()}/>
+        </ListItem>
     }
+
     const folder = getFolder(tour);
 
     return <div>
         <h3>{tour.name || "Places"}</h3>
-        {folder && folder.Placemark.map(displayFeature)}
+        <List dense>
+            {folder && folder.Placemark.map(displayFeature)}
+        </List>
     </div>
 }
