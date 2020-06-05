@@ -5,6 +5,7 @@ import {IdToken} from "@auth0/auth0-spa-js";
 import {uploadTour} from "../services/tourServer";
 import {useAuth0} from "../components/Auth0Provider";
 import UploadFile from "../components/UploadFile";
+import ResponsiveDrawer from "../components/ResponsiveDrawer";
 
 function uploadFile(files: File[], token: Promise<IdToken>) : Promise<object> {
     return uploadTour(files, token);
@@ -29,14 +30,17 @@ const Upload = () => {
     return null
 }
 
-export default ({availableTours, loadTour} : {
+export default ({availableTours} : {
     availableTours: Document[],
-    loadTour: (tour : Document) => void
 }) => {
     return <div style={{width: "100%"}}>
         <TourList
-            availableTours={availableTours}
-            setTour={loadTour}/>
+            availableTours={availableTours}/>
         <Upload/>
+        <ResponsiveDrawer
+            mobileOpen={false}
+            setMobileOpen={()=>{}}>
+            About OpenDocent...
+        </ResponsiveDrawer>
     </div>
 }

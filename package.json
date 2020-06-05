@@ -6,8 +6,8 @@
     "@auth0/auth0-spa-js": "^1.8.1",
     "@mapbox/togeojson": "^0.16.0",
     "@material-ui/core": "*",
-    "@material-ui/lab": "^4.0.0-alpha.55",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.55",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -30,6 +30,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.6.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2",
     "xml2js": "^0.4.23"
@@ -57,6 +59,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react-router": "^5.1.7",
+    "@types/react-router-dom": "^5.1.5",
     "@typescript-eslint/eslint-plugin": "^2.31.0",
     "@typescript-eslint/parser": "^2.31.0",
     "standardx": "^5.0.0"

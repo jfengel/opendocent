@@ -1,11 +1,11 @@
 import {Document} from "../Kml";
 import {Link} from "@material-ui/core";
 import Skeleton from '@material-ui/lab/Skeleton';
+import {Link as RouterLink} from 'react-router-dom';
 import React from "react";
 
-export function TourList({availableTours, setTour}: {
+export function TourList({availableTours}: {
     availableTours: Document[],
-    setTour: (value: Document) => void
 }) {
     if(availableTours.length === 0) {
         return <div style={{width: "75%"}}>{
@@ -19,9 +19,8 @@ export function TourList({availableTours, setTour}: {
             {availableTours.map((tour, i) =>
                 <div key={i}>
                     <Link
-                        href="#"
-                        style={{textAlign: 'left', textIndent: 0}}
-                        onClick={() => setTour(tour)}>
+                        to={`/tour/${(tour as any).ref}`}
+                        component={RouterLink}>
                         {tour.name.trim()}
                     </Link>
                     &nbsp;

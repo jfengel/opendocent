@@ -39,7 +39,7 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature}:
     const me = position &&
       <CircleMarker center={{lat: position[0], lng: position[1]}} radius={5}/>
 
-    const siteMarkers = folder && folder.Placemark
+    const siteMarkers = folder && folder.Placemark && folder.Placemark
         .filter(feature => feature.Point)
         .map((feature, i) =>
             <Marker key={i}

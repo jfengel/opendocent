@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 
-import {Document, getFolder, getPosition, Placemark} from "./Kml";
+import {Document, getPosition, Placemark} from "./Kml";
 import {MAX_ZOOM} from "./components/TourMap";
 import {fetchTourList} from "./services/tourServer";
 import {Header} from "./components/Header";
@@ -9,6 +9,7 @@ import {Auth0Provider} from "./components/Auth0Provider";
 import TourPage from "./pages/TourPage";
 import FrontPage from "./pages/FrontPage";
 import {makeStyles} from "@material-ui/core/styles";
+import {BrowserRouter,Route,Switch} from 'react-router-dom';
 
 const config = {
     "domain": "opendocent.auth0.com",
@@ -24,16 +25,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function getNextFeature(tour: Document, currentFeature: Placemark | null) {
-    const folder = getFolder(tour!);
-    const features = folder && folder.Placemark;
-    if (!features) {
-        return;
-    }
-    const ix = currentFeature ? features.indexOf(currentFeature) : -1;
-    return features[(ix + 1) % features.length];
-}
-
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
 
 const onRedirectCallback = () => {
@@ -45,7 +36,6 @@ function App() {
     const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
     const [currentFeature, setCurrentFeature] = useState<Placemark|null>(null);
-    const [tour, setTour] = useState<Document>();
     const [availableTours, setAvailableTours] = useState<Document[]>([]);
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
@@ -89,33 +79,17 @@ function App() {
         setViewport({center, zoom: MAX_ZOOM});
     }
     const nextFeature = () => {
-        if(!tour) {
-            return null;
-        }
-        const feature = getNextFeature(tour, currentFeature);
-        feature && goto(feature)
+        // TODO implement nextFeature
+        // if(!tour) {
+        //     return null;
+        // }
+        // const feature = getNextFeature(tour, currentFeature);
+        // feature && goto(feature)
     }
 
-    const loadTour = async (tour : Document) => {
-        const ref = (tour as any).ref;
-        if(ref) {
-            tour = await (await fetch('/.netlify/functions/tourById/'+ref)).json();
-        }
-        setTour(tour);
-        const feature = getNextFeature(tour, currentFeature);
-        feature && goto(feature);
-    };
-
-    let display;
-    let showDrawer = false;
-    if(tour) {
-        const tourProps = {viewport, position, setViewport, tour, currentFeature, goto, nextFeature,
-            mobileOpen, setMobileOpen};
-        display = <TourPage {...tourProps}/>
-        showDrawer = true;
-    } else {
-        display = <FrontPage loadTour={loadTour} availableTours={availableTours}/>
-    }
+    let showDrawer = true;
+    const tourProps = {viewport, position, setViewport, currentFeature, goto, nextFeature,
+        mobileOpen, setMobileOpen};
     return (
     <Auth0Provider
         domain={config.domain}
@@ -127,7 +101,15 @@ function App() {
         <div className={'App ' + (showDrawer ? classes.App : '')}>
             <Header setMobileOpen={setMobileOpen}/>
             <div style={{flex: "1 1 auto", display: "flex"}}>
-                {display}
+                <BrowserRouter>
+                    <Switch>
+                        <Route path="/tour/:tourId">
+                            <TourPage {...tourProps}/>
+                        </Route>
+                        <Route path="/" render={()=><FrontPage availableTours={availableTours}/>}>
+                        </Route>
+                    </Switch>
+                </BrowserRouter>
             </div>
 
         </div>
