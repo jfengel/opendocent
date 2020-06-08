@@ -44,7 +44,10 @@ export const Auth0Provider = ({
 
       setLoading(false);
     };
-    initAuth0();
+    initAuth0()
+      .catch((e) => {
+        console.error('Authorization not available', e.message)
+      })
     // eslint-disable-next-line
   }, []);
 
