@@ -19,7 +19,7 @@ export default function SiteList({tour, current, onClick}:
             dense
             tabIndex={0}
             selected={feature === current}
-            onClick={() => onClick(feature)}>
+            onClick={() => onClick(i)}>
             <ListItemText primary={feature.name.trim()}/>
         </ListItem>
     }

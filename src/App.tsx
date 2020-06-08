@@ -1,8 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import './App.css';
 
-import {Document, getPosition, Placemark} from "./Kml";
-import {MAX_ZOOM} from "./components/TourMap";
+import {Document} from "./Kml";
 import {fetchTourList} from "./services/tourServer";
 import {Header} from "./components/Header";
 import {Auth0Provider} from "./components/Auth0Provider";
@@ -33,9 +32,7 @@ const onRedirectCallback = () => {
 
 function App() {
     const classes = useStyles();
-    const [viewport, setViewport] = useState();
     const [position, setPosition] = useState();
-    const [currentFeature, setCurrentFeature] = useState<Placemark|null>(null);
     const [availableTours, setAvailableTours] = useState<Document[]>([]);
     const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
@@ -73,23 +70,8 @@ function App() {
     }, [])
 
 
-    const goto = (feature : Placemark) => {
-        const center = getPosition(feature);
-        setCurrentFeature(feature);
-        setViewport({center, zoom: MAX_ZOOM});
-    }
-    const nextFeature = () => {
-        // TODO implement nextFeature
-        // if(!tour) {
-        //     return null;
-        // }
-        // const feature = getNextFeature(tour, currentFeature);
-        // feature && goto(feature)
-    }
-
     let showDrawer = true;
-    const tourProps = {viewport, position, setViewport, currentFeature, goto, nextFeature,
-        mobileOpen, setMobileOpen};
+    const tourProps = {position, mobileOpen, setMobileOpen};
     return (
     <Auth0Provider
         domain={config.domain}
