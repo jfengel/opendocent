@@ -38,7 +38,11 @@ export function Header({setMobileOpen} : {
             <img src={'/OpenDocent.svg'} height={40} title='OpenDocent' alt='OpenDocent logo'/>
             OpenDocent
             {!isAuthenticated
-                ? <Button color={"inherit"} style={right} onClick={() => loginWithRedirect({})}>Log in</Button>
+                ? <Button color={"inherit"}
+                          style={right}
+                              onClick={() => loginWithRedirect({appState: {targetURL: window.location.href}})}>
+                    Log in
+                  </Button>
                 : <span style={right} >
                     {user && user.name}
                     &nbsp;

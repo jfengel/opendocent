@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
 
 const GEOLOCATION_UPDATE_FREQUENCY_MSEC = 1000;
 
-const onRedirectCallback = () => {
-    console.info('Redirecting...');
+const onRedirectCallback = (state : any) => {
+    state.targetURL && window.location.assign(state.targetURL);
 }
 
 function App() {
