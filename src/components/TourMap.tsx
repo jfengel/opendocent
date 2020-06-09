@@ -1,4 +1,4 @@
-import {AttributionControl, CircleMarker, Map, Marker, Popup, TileLayer, Viewport} from "react-leaflet";
+import {AttributionControl, CircleMarker, Map, Marker, Popup, TileLayer, Tooltip, Viewport} from "react-leaflet";
 import {Document, getFolder, getPosition, Placemark} from "../Kml";
 import L from 'leaflet';
 import React from "react";
@@ -6,6 +6,7 @@ import goldIcon from '../img/marker-icon-2x-gold.png'
 import blueIcon from '../img/marker-icon-2x-blue.png'
 import Fab from "@material-ui/core/Fab";
 import MyLocationIcon from "@material-ui/icons/MyLocation";
+import getDistance from "geolib/es/getDistance";
 
 var regularIcon = new L.Icon({
     iconUrl: goldIcon,//'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
@@ -23,6 +24,24 @@ var currentIcon = new L.Icon({
     shadowSize: [41, 41]
 });
 
+const readableDistance = (dM : number) => {
+    if(navigator.language === 'en-US') {
+        const dF = dM * 3.28084;
+        if(dF < 1000) {
+            return dF + 'feet';
+        } else {
+            return new Intl.NumberFormat(navigator.language, { maximumSignificantDigits: 3 })
+                .format(dF / 5280) + "mi";
+        }
+    } else {
+        if(dM < 1000) {
+            return dM + 'm';
+        } else {
+            return new Intl.NumberFormat(navigator.language, { maximumSignificantDigits: 3 })
+                .format(dM / 1000) + "km";
+        }
+    }
+}
 
 export const MAX_ZOOM = 18;
 export const TourMap = ({viewport, position, setViewport, tour, currentFeature}: {
@@ -41,10 +60,17 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature}:
 
     const siteMarkers = folder && folder.Placemark && folder.Placemark
         .filter(feature => feature.Point)
-        .map((feature, i) =>
-            <Marker key={i}
+        .map((feature, i) => {
+            const isCurrent = feature === currentFeature;
+            const icon = isCurrent ? currentIcon : regularIcon;
+            return <Marker key={i}
                     position={getPosition(feature)}
-                    icon={feature === currentFeature ? currentIcon : regularIcon}>
+                    icon={icon}>
+                {isCurrent && position
+                    ? <Tooltip permanent>
+                        {readableDistance(getDistance([position[1], position[0]], getPosition(feature)))}
+                        </Tooltip>
+                    : null}
                 <Popup
                     autoPan={false /* https://github.com/PaulLeCam/react-leaflet/issues/647 */}
                 >
@@ -52,6 +78,8 @@ export const TourMap = ({viewport, position, setViewport, tour, currentFeature}:
                     {feature.description}
                 </Popup>
             </Marker>
+
+        }
         )
 
     const showMeButton = position &&
