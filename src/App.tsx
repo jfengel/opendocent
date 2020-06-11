@@ -9,6 +9,7 @@ import TourPage from "./pages/TourPage";
 import FrontPage from "./pages/FrontPage";
 import {makeStyles} from "@material-ui/core/styles";
 import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import AdminPage from "./pages/AdminPage";
 
 const config = {
     "domain": "opendocent.auth0.com",
@@ -87,6 +88,9 @@ function App() {
                     <Switch>
                         <Route path="/tour/:tourId">
                             <TourPage {...tourProps}/>
+                        </Route>
+                        <Route path="/admin">
+                            <AdminPage/>
                         </Route>
                         <Route path="/" render={()=><FrontPage availableTours={availableTours}/>}>
                         </Route>

@@ -20,3 +20,15 @@ VTu75ayZv9zIBbvC7ZsSPKqw4SSF9ijHYrCGfCy8sX3wyrelYuhTjx8GDSGU1ghw
 rSDfm4Nb9gIHPCx2o6fuRvou5Z/rbbPjrfWPOq05VO+F48NaFJ54aLKVCjtFJl1g
 bnc8OwBYpw==
 -----END CERTIFICATE-----`
+
+const q = require('faunadb').query;
+
+exports.TOUR_DB = q.Ref("collections/tours")
+exports.VESTIBULE_DB = q.Ref("collections/vestibule")
+
+exports.ADMINISTRATE = 'Administrator'
+exports.CONTRIBUTE = 'Contributor'
+exports.CLAIMS_ROLE = 'http://schemas.microsoft.com/ws/2008/06/identity/claims/role'
+
+
+

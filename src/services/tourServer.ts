@@ -2,6 +2,7 @@ import {Kml, Document, Folder} from "../Kml";
 import xml2js from "xml2js";
 import {IdToken} from "@auth0/auth0-spa-js";
 import JSZip from 'jszip'
+import Auth0Client from "@auth0/auth0-spa-js/dist/typings/Auth0Client";
 
 export const fetchTourList = () : Promise<any> => {
     return new Promise(async (success, failure) => {
@@ -55,6 +56,40 @@ export function fetchJsonTour(url: string): Promise<Document> {
             const folder: Folder[] = [{Placemark, description}];
             return {Folder: folder, name};
         })
+}
+
+export const fetchVestibuleTour = (auth0 : Auth0Client, id:string) : Promise<any> => {
+    return new Promise(async (success, failure) => {
+        try {
+            const response = await fetch(`/.netlify/functions/tourById/vestibule/${id}`, {
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
+                },
+            });
+            success(await response.json());
+        }
+        catch(e) {
+            failure(e);
+        }
+    })
+}
+
+export const fetchVestibule = (auth0 : Auth0Client) : Promise<any> => {
+    return new Promise(async (success, failure) => {
+        try {
+            const response = await fetch('/.netlify/functions/listVestibule', {
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
+                },
+            });
+            success(await response.json());
+        }
+        catch(e) {
+            failure(e);
+        }
+    })
 }
 
 export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Response> => {
