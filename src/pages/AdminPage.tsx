@@ -2,9 +2,11 @@ import React, {useEffect, useState} from 'react';
 import {fetchVestibule, fetchVestibuleTour} from "../services/tourServer";
 import {useAuth0} from "../components/Auth0Provider";
 import ResponsiveDrawer from "../components/ResponsiveDrawer";
-import {Link} from "@material-ui/core";
-import {Link as RouterLink} from "react-router-dom";
-
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {Typography} from "@material-ui/core";
 export default () => {
     const auth0 = useAuth0();
 
@@ -26,26 +28,27 @@ export default () => {
             ? <div>Vestibule is empty. Good job!</div>
             : <div>
                 {vestibule!.map((tour: any, i) =>
-                    <div key={i}>
-                        <Link
-                            to="."
-                            onClick={(e:React.MouseEvent) => {
-                                e.preventDefault();
-                                fetchVestibuleTour(auth0, tour.ref)
-                                    .then(tour => {
-                                         const t2 : any[] = [...tours];
-                                         t2[i] = tour;
-                                         setTours(t2);
-                                    })
-                            }}
-                            component={RouterLink}>
-                            {tour.name.trim()}
-                        </Link>
-                        &nbsp;
-                        {tour.description}
-                        {tours[i] && <pre>{JSON.stringify(tours[i], null, 4)}</pre>}
-
-                    </div>
+                    <ExpansionPanel key={i}
+                        onChange={() => {
+                            tours[i] ||
+                            fetchVestibuleTour(auth0, tour.ref)
+                                .then(tour => {
+                                    const t2 : any[] = [...tours];
+                                    t2[i] = tour;
+                                    setTours(t2);
+                                })
+                        }}
+                    >
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                        >
+                            <Typography>{tour.name.trim()}</Typography>
+                        </ExpansionPanelSummary>
+                        <ExpansionPanelDetails>
+                            {tour.description}
+                            {tours[i] && <pre>{JSON.stringify(tours[i], null, 4)}</pre>}
+                        </ExpansionPanelDetails>
+                    </ExpansionPanel>
                 )}
             </div>}
         <ResponsiveDrawer
