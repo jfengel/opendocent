@@ -76,9 +76,17 @@ export const fetchVestibuleTour = (auth0 : Auth0Client, id:string) : Promise<any
 }
 
 export const fetchVestibule = (auth0 : Auth0Client) : Promise<any> => {
+    return fetchWithAuth('/.netlify/functions/listVestibule', auth0);
+}
+
+export const approveVestibule = (id: string, auth0 : Auth0Client) : Promise<any> => {
+    return fetchWithAuth(`/.netlify/functions/approveVestibule/${id}`, auth0);
+}
+
+const fetchWithAuth = (url: string, auth0 : Auth0Client) : Promise<any> => {
     return new Promise(async (success, failure) => {
         try {
-            const response = await fetch('/.netlify/functions/listVestibule', {
+            const response = await fetch(url, {
                 headers: {
                     "Content-Type": 'application/json',
                     "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
