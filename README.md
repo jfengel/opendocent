@@ -16,5 +16,5 @@ This application uses
 
 ### Auth0
 * Obtain pem from https://opendocent.auth0.com/pem and store it in src/lambdas/constants.js
-
+* Set up a management API and configure environment variable AUTH0_MGMT_SECRET
 

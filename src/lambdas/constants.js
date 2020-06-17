@@ -30,5 +30,7 @@ exports.ADMINISTRATE = 'Administrator'
 exports.CONTRIBUTE = 'Contributor'
 exports.CLAIMS_ROLE = 'http://schemas.microsoft.com/ws/2008/06/identity/claims/role'
 
+exports.DOMAIN = 'https://opendocent.auth0.com'
+
 
 
