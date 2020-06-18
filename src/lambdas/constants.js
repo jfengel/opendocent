@@ -30,7 +30,11 @@ exports.ADMINISTRATE = 'Administrator'
 exports.CONTRIBUTE = 'Contributor'
 exports.CLAIMS_ROLE = 'http://schemas.microsoft.com/ws/2008/06/identity/claims/role'
 
-exports.DOMAIN = 'https://opendocent.auth0.com'
+exports.AUTH0_CLIENT_ID = 'M0ACG5QykJeTA8EVLkI5wiQmwtNjvhlq';
+exports.AUTH0_URL = 'https://opendocent.auth0.com'
+exports.AUTH0_DOMAIN = 'opendocent.auth0.com'
+exports.ROLE_CONTRIBUTOR = 'rol_JV40b0FI69a752XG';  // TODO this should be looked up instead
+
 
 
 
