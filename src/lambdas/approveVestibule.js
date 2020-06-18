@@ -4,6 +4,7 @@ const { AUTH0_DOMAIN, AUTH0_CLIENT_ID, ADMINISTRATE, VESTIBULE_DB, TOUR_DB,
   ROLE_CONTRIBUTOR} = require('./constants');
 const faunadb = require('faunadb')
 const ManagementClient = require('auth0').ManagementClient;
+const nodemailer = require('nodemailer');
 
 const q = faunadb.query
 const client = new faunadb.Client({
@@ -21,6 +22,30 @@ const auth0 = new ManagementClient({
     cacheTTLInSeconds: 10
   }
 });
+
+const sendEmail = (from, to, subject, text) => {
+  return new Promise((success, failure) => {
+    let transporter = nodemailer.createTransport({
+      service: 'SendInBlue', // no need to set host or port etc.
+      auth: {
+        user: 'catchall@purgo.net',
+        pass: process.env.SENDINBLUE_SECRET
+      }});
+
+      transporter.sendMail({
+        from,
+        to,
+        subject,
+        text
+      }, function(error, info) {
+        if (error) {
+          failure(error);
+        } else {
+          success(info);
+        }
+      });
+    })
+}
 
 const approveUser = async (user) => {
   const p = new Promise((success, failure) => {
@@ -56,6 +81,14 @@ exports.handler = async (event, context, callback) => {
     const result = await client.query(q.Create(TOUR_DB, data))
     await client.query(q.Delete(vestibuleTour));
     await approveUser(user.sub);
+    const info = await sendEmail('opendocent@purgo.net', user.email,
+      'Your OpenDocent submission has been approved',
+      `Thank you for sending us your tour named ${data.name}. It looks like fun!
+      It's up on our web site now, so lots of people can take your tour (or just
+      browse it from home).
+      
+      Thanks for helping us build OpenDocent.`)
+    console.info('sendemail', info);
     return callback(null, {
       statusCode: 200,
       body: JSON.stringify(result, null, 4)
