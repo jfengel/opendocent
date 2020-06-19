@@ -112,6 +112,10 @@ export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Res
             text = await new Response(file).text();
         }
         const parse = await xml2js.parseStringPromise(text, {explicitArray: false});
+        if(!(parse && parse.kml && parse.kml.Document)) {
+            failure();
+            return;
+        }
         const data = parse.kml.Document;
         data.text = text;
 
