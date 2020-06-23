@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import {approveVestibule, fetchVestibule, fetchVestibuleTour} from "../services/tourServer";
+import {approveVestibule, rejectVestibule,
+    fetchVestibule, fetchVestibuleTour} from "../services/tourServer";
 import {useAuth0} from "../components/Auth0Provider";
 import ResponsiveDrawer from "../components/ResponsiveDrawer";
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
@@ -27,15 +28,21 @@ export default () => {
 
     const auth0 = useAuth0();
 
-    const [vestibule, setVestibule] = useState<any[] | null>(null);
+    const [vestibule, setVestibuleDirect] = useState<any[] | undefined>();
     const [loading, setLoading] = useState(false);
     const [tours, setTours] = useState<any[]>([]);
+    const [messages, setMessages] = useState<string[]>([])
+
+    const setVestibule = (vestibule? : string[]) => {
+        setVestibuleDirect(vestibule);
+        setTours([]);
+        setMessages([]);
+    }
     useEffect(() => {
         if (!auth0 || !auth0.isAuthenticated || vestibule || loading) return;
         setLoading(true);
         fetchVestibule(auth0)
             .then(setVestibule)
-            .then(() => setTours([]));
     }, [auth0, loading, vestibule])
     if(!vestibule) {
         return <div>Fetching...</div>
@@ -46,8 +53,10 @@ export default () => {
             .then(() => fetchVestibule(auth0))
             .then(setVestibule);
     }
-    const reject = (e : any) => {
-        console.info('reject', e.target);
+    const reject = (id : string, text? : string ) => {
+        rejectVestibule(id, auth0, true, text)
+            .then(() => fetchVestibule(auth0))
+            .then(setVestibule);
     }
 
     return <div style={{width: "100%"}}>
@@ -80,12 +89,21 @@ export default () => {
                                     <Button onClick={() => approve(tour.ref)} variant="contained" color="primary">
                                         <Typography>Approve</Typography>
                                     </Button>
-                                    <Button onClick={reject} variant="contained">
+                                    <Button
+                                        onClick={() => reject(tour.ref, messages[i])}
+                                        variant="contained">
                                         <Typography>reject</Typography>
                                     </Button>
                                 </div>
                                 <div>
-                                    <TextareaAutosize rowsMin={5}/>
+                                    <TextareaAutosize
+                                        cols={60} rowsMin={5}
+                                        onChange={e => {
+                                            const m = [...messages];
+                                            m[i] = e.target.value;
+                                            setMessages(m);
+                                        }}
+                                        />
                                 </div>
                             </div>
 

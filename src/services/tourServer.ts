@@ -82,6 +82,30 @@ export const fetchVestibule = (auth0 : Auth0Client) : Promise<any> => {
 export const approveVestibule = (id: string, auth0 : Auth0Client) : Promise<any> => {
     return fetchWithAuth(`/.netlify/functions/approveVestibule/${id}`, auth0);
 }
+export const rejectVestibule = (id: string, auth0: Auth0Client,
+                                banUser: boolean, text?: string): Promise<any> => {
+    return new Promise((success, failure) => {
+        auth0.getIdTokenClaims()
+            .then(claims => {
+                fetch(`/.netlify/functions/rejectVestibule/${id}`, {
+                    method: 'POST',
+                        headers: {
+                            "Content-Type": 'application/json',
+                            "Authorization": 'Bearer ' + (claims).__raw,
+                        },
+                        body: JSON.stringify({
+                            text, banUser
+                        }),
+                    }
+                )
+                    .then(success)
+                    .catch(failure)
+
+            })
+
+    })
+;
+}
 
 const fetchWithAuth = (url: string, auth0 : Auth0Client) : Promise<any> => {
     return new Promise(async (success, failure) => {
@@ -90,9 +114,13 @@ const fetchWithAuth = (url: string, auth0 : Auth0Client) : Promise<any> => {
                 headers: {
                     "Content-Type": 'application/json',
                     "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
-                },
+                }
             });
-            success(await response.json());
+            if(response.ok) {
+                success(await response.json());
+            } else {
+                failure(response);
+            }
         }
         catch(e) {
             failure(e);

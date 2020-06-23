@@ -1,5 +1,5 @@
 const HttpStatus = require('http-status-codes')
-const {userMay,authenticate} = require('./authenticate');
+const {userMay,authenticate} = require('./lib/authenticate');
 const { ADMINISTRATE, VESTIBULE_DB } = require('./constants');
 const faunadb = require('faunadb')
 

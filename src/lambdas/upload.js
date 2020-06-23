@@ -1,7 +1,7 @@
 const faunadb = require('faunadb')
 const { VESTIBULE_DB, TOUR_DB, CONTRIBUTE } = require('./constants');
 const HttpStatus = require('http-status-codes')
-const {authenticate, userMay} = require('./authenticate')
+const {authenticate, userMay} = require('./lib/authenticate')
 const q = faunadb.query
 const client = new faunadb.Client({
   secret: process.env.FAUNA_SERVER_SECRET
