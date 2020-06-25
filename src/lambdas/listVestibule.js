@@ -1,10 +1,26 @@
+const HttpStatus = require('http-status-codes')
+const {userMay,authenticate} = require('./lib/authenticate');
+const { ADMINISTRATE, VESTIBULE_DB } = require('./constants');
 const faunadb = require('faunadb')
+
 const q = faunadb.query
 const client = new faunadb.Client({
   secret: process.env.FAUNA_SERVER_SECRET
 })
 exports.handler = async (event, context, callback) => {
-  return client.query(q.Map(q.Paginate(q.Documents(q.Collection("tours"))),
+  const user = authenticate(event, context, callback);
+  if (!user) {
+    return;
+  }
+  if (!userMay(user, ADMINISTRATE)) {
+    return callback(null, {
+      statusCode: HttpStatus.FORBIDDEN,
+      body: JSON.stringify({
+        message: 'You do not have permission.' })
+    })
+  }
+
+    return client.query(q.Map(q.Paginate(q.Documents(VESTIBULE_DB)),
     q.Lambda("X", [
       q.Select(["ref"], q.Get(q.Var("X")), ""),
       q.Select(["data", "name"], q.Get(q.Var("X")), ""),

@@ -2,6 +2,7 @@ import {Kml, Document, Folder} from "../Kml";
 import xml2js from "xml2js";
 import {IdToken} from "@auth0/auth0-spa-js";
 import JSZip from 'jszip'
+import Auth0Client from "@auth0/auth0-spa-js/dist/typings/Auth0Client";
 
 export const fetchTourList = () : Promise<any> => {
     return new Promise(async (success, failure) => {
@@ -57,6 +58,76 @@ export function fetchJsonTour(url: string): Promise<Document> {
         })
 }
 
+export const fetchVestibuleTour = (auth0 : Auth0Client, id:string) : Promise<any> => {
+    return new Promise(async (success, failure) => {
+        try {
+            const response = await fetch(`/.netlify/functions/tourById/vestibule/${id}`, {
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
+                },
+            });
+            success(await response.json());
+        }
+        catch(e) {
+            failure(e);
+        }
+    })
+}
+
+export const fetchVestibule = (auth0 : Auth0Client) : Promise<any> => {
+    return fetchWithAuth('/.netlify/functions/listVestibule', auth0);
+}
+
+export const approveVestibule = (id: string, auth0 : Auth0Client) : Promise<any> => {
+    return fetchWithAuth(`/.netlify/functions/approveVestibule/${id}`, auth0);
+}
+export const rejectVestibule = (id: string, auth0: Auth0Client,
+                                banUser: boolean, text?: string): Promise<any> => {
+    return new Promise((success, failure) => {
+        auth0.getIdTokenClaims()
+            .then(claims => {
+                fetch(`/.netlify/functions/rejectVestibule/${id}`, {
+                    method: 'POST',
+                        headers: {
+                            "Content-Type": 'application/json',
+                            "Authorization": 'Bearer ' + (claims).__raw,
+                        },
+                        body: JSON.stringify({
+                            text, banUser
+                        }),
+                    }
+                )
+                    .then(success)
+                    .catch(failure)
+
+            })
+
+    })
+;
+}
+
+const fetchWithAuth = (url: string, auth0 : Auth0Client) : Promise<any> => {
+    return new Promise(async (success, failure) => {
+        try {
+            const response = await fetch(url, {
+                headers: {
+                    "Content-Type": 'application/json',
+                    "Authorization": 'Bearer ' + (await auth0.getIdTokenClaims()).__raw,
+                }
+            });
+            if(response.ok) {
+                success(await response.json());
+            } else {
+                failure(response);
+            }
+        }
+        catch(e) {
+            failure(e);
+        }
+    })
+}
+
 export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Response> => {
 
     const file = files[0]; // Need to loop over them but we need to coalesce the promises together.
@@ -69,6 +140,10 @@ export const uploadTour = (files: Blob[], token: Promise<IdToken>) : Promise<Res
             text = await new Response(file).text();
         }
         const parse = await xml2js.parseStringPromise(text, {explicitArray: false});
+        if(!(parse && parse.kml && parse.kml.Document)) {
+            failure();
+            return;
+        }
         const data = parse.kml.Document;
         data.text = text;
 

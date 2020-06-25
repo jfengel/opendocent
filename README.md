@@ -7,6 +7,7 @@ This application uses
 * Auth0 for user identity
 * Faunadb as the database
 * Netlify as the server
+* Sendinblue for email notifications
 
 ### FaunaDB
 
@@ -16,5 +17,7 @@ This application uses
 
 ### Auth0
 * Obtain pem from https://opendocent.auth0.com/pem and store it in src/lambdas/constants.js
+* Set up a management API and configure environment variable AUTH0_MGMT_SECRET
 
-
+### Sendinblue
+* Configure SENDINBLUE_SECRET

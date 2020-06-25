@@ -1,36 +1,11 @@
 const faunadb = require('faunadb')
-const jsonwebtoken = require('jsonwebtoken');
-const { pem } = require('./constants');
+const { VESTIBULE_DB, TOUR_DB, CONTRIBUTE } = require('./constants');
 const HttpStatus = require('http-status-codes')
+const {authenticate, userMay} = require('./lib/authenticate')
 const q = faunadb.query
 const client = new faunadb.Client({
   secret: process.env.FAUNA_SERVER_SECRET
 })
-
-const TOUR_DB = q.Ref("collections/tours")
-const VESTIBULE_DB = q.Ref("collections/vestibule")
-// const ADMINISTRATE = 'Administrator'
-const CONTRIBUTE = 'Contributor'
-const CLAIMS_ROLE = 'http://schemas.microsoft.com/ws/2008/06/identity/claims/role'
-
-const userMay = (user, role) => {
-  return user[CLAIMS_ROLE].indexOf(role) >= 0;
-}
-const authenticate = (event, context, callback) => {
-  try {
-    const token = event.headers.authorization.split(' ')[1];
-
-    return jsonwebtoken.verify(token, pem);
-  } catch(e) {
-    callback(null, {
-      statusCode: HttpStatus.UNAUTHORIZED,
-      body: JSON.stringify(e)
-    })
-    return null;
-  }
-
-
-}
 
 // This is added to the JWT token following the suggestion in https://community.auth0.com/t/how-do-i-get-role-claims-added-to-my-access-token/28761/2
 exports.handler = async (event, context, callback) => {
