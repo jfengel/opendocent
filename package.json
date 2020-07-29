@@ -18,7 +18,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-leaflet": "^2.5.1",
     "@types/xml2js": "*",
-    "auth0": "^2.26.0",
+    "auth0": "^2.27.1",
     "dompurify": "^2.0.11",
     "dts-gen": "^0.6.0",
     "faunadb": "^2.14.1",
